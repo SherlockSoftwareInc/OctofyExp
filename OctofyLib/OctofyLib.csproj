@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A356A02-F00E-4A45-AD71-F35C7B6FD322}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OctofyLib</RootNamespace>
+    <AssemblyName>OctofyLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Charts\AnalysisChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\AnalysisChartPanel.Designer.cs">
+      <DependentUpon>AnalysisChartPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\AreaChart.cs" />
+    <Compile Include="Charts\AreaPlot.cs" />
+    <Compile Include="Charts\ChartElementBase.cs" />
+    <Compile Include="Charts\ChartLabel.cs" />
+    <Compile Include="Charts\ChartLegends.cs" />
+    <Compile Include="Charts\LabelsRow.cs" />
+    <Compile Include="Charts\LegendItem.cs" />
+    <Compile Include="Charts\LegendPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\LegendPanel.Designer.cs">
+      <DependentUpon>LegendPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\MarkerDataItem.cs" />
+    <Compile Include="Charts\StackedAreaChartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\StackedAreaChartControl.Designer.cs">
+      <DependentUpon>StackedAreaChartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\StackedCategoryBarItem.cs" />
+    <Compile Include="Charts\StackedColumn.cs" />
+    <Compile Include="Charts\StackedColumnChart.cs" />
+    <Compile Include="Charts\StackedColumnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\StackedColumnControl.Designer.cs">
+      <DependentUpon>StackedColumnControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\StackedColumnPlot.cs" />
+    <Compile Include="Charts\VScrollBarChartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\VScrollBarChartControl.Designer.cs">
+      <DependentUpon>VScrollBarChartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\VScrollBarChartControlEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\VScrollBarChartControlEx.Designer.cs">
+      <DependentUpon>VScrollBarChartControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\VScrollStackedBarChart.cs" />
+    <Compile Include="Charts\XAxisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\XAxisControl.Designer.cs">
+      <DependentUpon>XAxisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\XAxisMarkerPlot.cs" />
+    <Compile Include="Charts\YAxisMarkers.cs" />
+    <Compile Include="Common\CollapsibleSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ColorSchema.cs" />
+    <Compile Include="Common\ColorSchemas.cs" />
+    <Compile Include="Common\ColorUtil.cs" />
+    <Compile Include="Common\ColumnCellItem.cs" />
+    <Compile Include="Common\CustomizedDataBuilder.cs" />
+    <Compile Include="Common\DateGrouper.cs" />
+    <Compile Include="Common\DateRangeNode.cs" />
+    <Compile Include="Common\DataRowFilter.cs" />
+    <Compile Include="Common\DateColumnNode.cs" />
+    <Compile Include="Common\DateDuration.cs" />
+    <Compile Include="Common\DateRangePickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\DateRangePickerDialog.Designer.cs">
+      <DependentUpon>DateRangePickerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DateTimeExtensions.cs" />
+    <Compile Include="Common\Encryption.cs" />
+    <Compile Include="Common\FakeChildNode.cs" />
+    <Compile Include="Common\FilterCategoryNode.cs" />
+    <Compile Include="Common\FilterColumnItem.cs" />
+    <Compile Include="Common\FilterColumns.cs" />
+    <Compile Include="Common\FilterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\FilterPanel.Designer.cs">
+      <DependentUpon>FilterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FilterValueNode.cs" />
+    <Compile Include="Common\MyColorTranslator.cs" />
+    <Compile Include="Common\NumGrouper.cs" />
+    <Compile Include="Common\NumBin.cs" />
+    <Compile Include="Common\OctofyRing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\OctofyRing.Designer.cs">
+      <DependentUpon>OctofyRing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReportingDates.cs" />
+    <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="Common\TableAnalysis.cs" />
+    <Compile Include="Common\TableColumn.cs" />
+    <Compile Include="Common\TimePeriod.cs" />
+    <Compile Include="Common\ValueGroups.cs" />
+    <Compile Include="Common\ValueRange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Common\CollapsibleSplitter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Charts\AnalysisChartPanel.resx">
+      <DependentUpon>AnalysisChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\LegendPanel.resx">
+      <DependentUpon>LegendPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedAreaChartControl.resx">
+      <DependentUpon>StackedAreaChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedColumnControl.resx">
+      <DependentUpon>StackedColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControl.resx">
+      <DependentUpon>VScrollBarChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControlEx.resx">
+      <DependentUpon>VScrollBarChartControlEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\XAxisControl.resx">
+      <DependentUpon>XAxisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateRangePickerDialog.resx">
+      <DependentUpon>DateRangePickerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FilterPanel.resx">
+      <DependentUpon>FilterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OctofyRing.resx">
+      <DependentUpon>OctofyRing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
