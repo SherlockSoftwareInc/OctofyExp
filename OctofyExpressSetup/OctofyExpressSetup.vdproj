@@ -15,13 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_ABCF870015454A3994034235102233E2"
+        "MsmKey" = "8:_1625FB90E0054C268FC79575939F1D4D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C7624B42C13387B9F87EB4D26731E5BD"
+        "MsmKey" = "8:_71E9083BDBFBD4BC6E98665122BA472C"
         "OwnerKey" = "8:_F911DA58BB484256BC9D2025E94C1E0C"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C7624B42C13387B9F87EB4D26731E5BD"
+        "OwnerKey" = "8:_F911DA58BB484256BC9D2025E94C1E0C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F911DA58BB484256BC9D2025E94C1E0C"
+        "OwnerKey" = "8:_71E9083BDBFBD4BC6E98665122BA472C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -138,10 +138,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ABCF870015454A3994034235102233E2"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1625FB90E0054C268FC79575939F1D4D"
             {
-            "SourcePath" = "8:..\\OctofyExp\\octofy3.ico"
-            "TargetName" = "8:octofy3.ico"
+            "SourcePath" = "8:..\\OctofyExp\\octofy_icon.ico"
+            "TargetName" = "8:octofy_icon.ico"
             "Tag" = "8:"
             "Folder" = "8:_C3861B6177F7411293727BA604A4D321"
             "Condition" = "8:"
@@ -158,14 +158,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C7624B42C13387B9F87EB4D26731E5BD"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_71E9083BDBFBD4BC6E98665122BA472C"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:OctofyLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C7624B42C13387B9F87EB4D26731E5BD"
+                    "_71E9083BDBFBD4BC6E98665122BA472C"
                     {
                     "Name" = "8:OctofyLib.dll"
                     "Attributes" = "3:512"
@@ -246,7 +246,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Octofy Express"
         "ProductCode" = "8:{A900D228-1126-4BB0-9E37-3D91935DC655}"
-        "PackageCode" = "8:{492E88F8-DA3D-46AA-8067-88EFBDC0E9D4}"
+        "PackageCode" = "8:{544DB5A8-6E88-4EEF-A21D-618F58EFDBD3}"
         "UpgradeCode" = "8:{1758A647-CC6E-4486-A6DC-28680614EB50}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -377,7 +377,7 @@
             "Target" = "8:_F911DA58BB484256BC9D2025E94C1E0C"
             "Folder" = "8:_A590EC1F1E1545F7A11DB2EDAD4A4BCB"
             "WorkingFolder" = "8:_C3861B6177F7411293727BA604A4D321"
-            "Icon" = "8:_ABCF870015454A3994034235102233E2"
+            "Icon" = "8:_1625FB90E0054C268FC79575939F1D4D"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F3FAF9EE72EF4B80803393A277DA83F9"
@@ -391,7 +391,7 @@
             "Target" = "8:_F911DA58BB484256BC9D2025E94C1E0C"
             "Folder" = "8:_05DC3B3F62CF40FB9AD9CB9F42D6958B"
             "WorkingFolder" = "8:_C3861B6177F7411293727BA604A4D321"
-            "Icon" = "8:_ABCF870015454A3994034235102233E2"
+            "Icon" = "8:_1625FB90E0054C268FC79575939F1D4D"
             "Feature" = "8:"
             }
         }
@@ -795,7 +795,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F911DA58BB484256BC9D2025E94C1E0C"
             {
-            "SourcePath" = "8:..\\OctofyExp\\obj\\Debug\\OctofyExp.exe"
+            "SourcePath" = "8:..\\OctofyExp\\obj\\Release\\OctofyExp.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C3861B6177F7411293727BA604A4D321"
