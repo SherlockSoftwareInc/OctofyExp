@@ -115,7 +115,7 @@ namespace OctofyExp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There is no column in the table take can used for analysis..
+        ///   Looks up a localized string similar to There is no column in the table that can be used for analysis..
         /// </summary>
         internal static string A006 {
             get {
@@ -750,6 +750,42 @@ namespace OctofyExp.Properties {
         internal static string A077 {
             get {
                 return ResourceManager.GetString("A077", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Succeed!.
+        /// </summary>
+        internal static string A078 {
+            get {
+                return ResourceManager.GetString("A078", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Connection testing.
+        /// </summary>
+        internal static string A079 {
+            get {
+                return ResourceManager.GetString("A079", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to connect to the database!.
+        /// </summary>
+        internal static string A080 {
+            get {
+                return ResourceManager.GetString("A080", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter database connection string..
+        /// </summary>
+        internal static string A081 {
+            get {
+                return ResourceManager.GetString("A081", resourceCulture);
             }
         }
         

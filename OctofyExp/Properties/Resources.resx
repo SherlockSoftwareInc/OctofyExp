@@ -158,7 +158,7 @@
     <value>Count</value>
   </data>
   <data name="A006" xml:space="preserve">
-    <value>There is no column in the table take can used for analysis.</value>
+    <value>There is no column in the table that can be used for analysis.</value>
   </data>
   <data name="A024" xml:space="preserve">
     <value>{0} blanks excluded</value>
@@ -430,5 +430,17 @@
   </data>
   <data name="clear_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clear_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A078" xml:space="preserve">
+    <value>Succeed!</value>
+  </data>
+  <data name="A079" xml:space="preserve">
+    <value>Connection testing</value>
+  </data>
+  <data name="A080" xml:space="preserve">
+    <value>Failed to connect to the database!</value>
+  </data>
+  <data name="A081" xml:space="preserve">
+    <value>Please enter database connection string.</value>
   </data>
 </root>

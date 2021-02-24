@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A000" xml:space="preserve">
+    <value>Octofy Express</value>
+  </data>
+  <data name="A001" xml:space="preserve">
+    <value>（空白）</value>
+  </data>
+  <data name="A002" xml:space="preserve">
+    <value>快速分析前{0}行</value>
+  </data>
+  <data name="A003" xml:space="preserve">
+    <value>连接到{0} ...</value>
+  </data>
+  <data name="A004" xml:space="preserve">
+    <value>无法连接到数据源。</value>
+  </data>
+  <data name="A005" xml:space="preserve">
+    <value>连接失败</value>
+  </data>
+  <data name="A006" xml:space="preserve">
+    <value>表中没有可用于分析的列。</value>
+  </data>
+  <data name="A007" xml:space="preserve">
+    <value>没有分类列</value>
+  </data>
+  <data name="A008" xml:space="preserve">
+    <value>发生错误</value>
+  </data>
+  <data name="A009" xml:space="preserve">
+    <value>没有可用数据</value>
+  </data>
+  <data name="A010" xml:space="preserve">
+    <value>正在计算{0}％...，请稍候...</value>
+  </data>
+  <data name="A011" xml:space="preserve">
+    <value>数据加载中...</value>
+  </data>
+  <data name="A012" xml:space="preserve">
+    <value>正在加载数据，请稍候。 可能要花一点时间</value>
+  </data>
+  <data name="A013" xml:space="preserve">
+    <value>加载数据失败</value>
+  </data>
+  <data name="A014" xml:space="preserve">
+    <value>{0}中的以下列已被排除：</value>
+  </data>
+  <data name="A015" xml:space="preserve">
+    <value>排除栏</value>
+  </data>
+  <data name="A016" xml:space="preserve">
+    <value>载入数据：{0}秒</value>
+  </data>
+  <data name="A017" xml:space="preserve">
+    <value>{0}行</value>
+  </data>
+  <data name="A018" xml:space="preserve">
+    <value>正在分析数据表...</value>
+  </data>
+  <data name="A019" xml:space="preserve">
+    <value>正在进行数据分析，请稍候...</value>
+  </data>
+  <data name="A020" xml:space="preserve">
+    <value>数据表分析：{0}秒</value>
+  </data>
+  <data name="A021" xml:space="preserve">
+    <value>正在建立图表数据...</value>
+  </data>
+  <data name="A022" xml:space="preserve">
+    <value>建立图表数据：{0}秒</value>
+  </data>
+  <data name="A023" xml:space="preserve">
+    <value>移除1个空白</value>
+  </data>
+  <data name="A024" xml:space="preserve">
+    <value>移除{0}个空白</value>
+  </data>
+  <data name="A025" xml:space="preserve">
+    <value>类别：{0}</value>
+  </data>
+  <data name="A026" xml:space="preserve">
+    <value>（小计）</value>
+  </data>
+  <data name="A027" xml:space="preserve">
+    <value>计数</value>
+  </data>
+  <data name="A028" xml:space="preserve">
+    <value>百分比</value>
+  </data>
+  <data name="A029" xml:space="preserve">
+    <value>正在计算中，请稍候...</value>
+  </data>
+  <data name="A030" xml:space="preserve">
+    <value>除去Y轴的空白</value>
+  </data>
+  <data name="A031" xml:space="preserve">
+    <value>计入Y轴的空白</value>
+  </data>
+  <data name="A032" xml:space="preserve">
+    <value>没有找到匹配项！</value>
+  </data>
+  <data name="A033" xml:space="preserve">
+    <value>该表列中的类别太多。</value>
+  </data>
+  <data name="A034" xml:space="preserve">
+    <value>类别名称太长。</value>
+  </data>
+  <data name="A035" xml:space="preserve">
+    <value>不支持该列的数据类型。</value>
+  </data>
+  <data name="A036" xml:space="preserve">
+    <value>未指定数据库连接。</value>
+  </data>
+  <data name="A037" xml:space="preserve">
+    <value>除去空白</value>
+  </data>
+  <data name="A038" xml:space="preserve">
+    <value>计入空白</value>
+  </data>
+  <data name="A039" xml:space="preserve">
+    <value>正在计算...</value>
+  </data>
+  <data name="A040" xml:space="preserve">
+    <value>正在绘制图表...</value>
+  </data>
+  <data name="A041" xml:space="preserve">
+    <value>频率</value>
+  </data>
+  <data name="A042" xml:space="preserve">
+    <value>预览数据-{0}</value>
+  </data>
+  <data name="A043" xml:space="preserve">
+    <value>行数: {0}</value>
+  </data>
+  <data name="A044" xml:space="preserve">
+    <value>{0}中的以下列已被移除：</value>
+  </data>
+  <data name="A045" xml:space="preserve">
+    <value>未指定表或视图。</value>
+  </data>
+  <data name="A046" xml:space="preserve">
+    <value>没有要查看的对象</value>
+  </data>
+  <data name="A047" xml:space="preserve">
+    <value>Y轴栏：</value>
+  </data>
+  <data name="A048" xml:space="preserve">
+    <value>测量栏：</value>
+  </data>
+  <data name="A049" xml:space="preserve">
+    <value>类别数超出了最大设置</value>
+  </data>
+  <data name="A050" xml:space="preserve">
+    <value>类别文字长度超出了最大设置</value>
+  </data>
+  <data name="A051" xml:space="preserve">
+    <value>非分类栏</value>
+  </data>
+  <data name="A052" xml:space="preserve">
+    <value>日期时间栏</value>
+  </data>
+  <data name="A053" xml:space="preserve">
+    <value>空白栏</value>
+  </data>
+  <data name="A054" xml:space="preserve">
+    <value>系统无法计算二进制栏的频率。</value>
+  </data>
+  <data name="A055" xml:space="preserve">
+    <value>数据类型不支持</value>
+  </data>
+  <data name="A056" xml:space="preserve">
+    <value>系统无法计算长文本栏的频率。</value>
+  </data>
+  <data name="A057" xml:space="preserve">
+    <value>新</value>
+  </data>
+  <data name="A058" xml:space="preserve">
+    <value>您要删除{0}吗？</value>
+  </data>
+  <data name="A059" xml:space="preserve">
+    <value>删除连接项</value>
+  </data>
+  <data name="A060" xml:space="preserve">
+    <value>请填写上面的字段。</value>
+  </data>
+  <data name="A061" xml:space="preserve">
+    <value>没有填写完整</value>
+  </data>
+  <data name="A062" xml:space="preserve">
+    <value>脚本已复制到剪贴板。</value>
+  </data>
+  <data name="A063" xml:space="preserve">
+    <value>（以...开始）</value>
+  </data>
+  <data name="A064" xml:space="preserve">
+    <value>（以...结尾）</value>
+  </data>
+  <data name="A065" xml:space="preserve">
+    <value>（等于）</value>
+  </data>
+  <data name="A067" xml:space="preserve">
+    <value>（包含）</value>
+  </data>
+  <data name="A068" xml:space="preserve">
+    <value>找不到匹配项</value>
+  </data>
+  <data name="A069" xml:space="preserve">
+    <value>找到一个匹配项</value>
+  </data>
+  <data name="A070" xml:space="preserve">
+    <value>找到{0}个匹配项</value>
+  </data>
+  <data name="A071" xml:space="preserve">
+    <value>请仅输入数字。</value>
+  </data>
+  <data name="A072" xml:space="preserve">
+    <value>输入无效</value>
+  </data>
+  <data name="A073" xml:space="preserve">
+    <value>请输入一个介于256和{0}之间的数字。</value>
+  </data>
+  <data name="A074" xml:space="preserve">
+    <value>请输入一个介于16到128之间的数字。</value>
+  </data>
+  <data name="A075" xml:space="preserve">
+    <value>请输入一个介于100和999999之间的数字。</value>
+  </data>
+  <data name="A076" xml:space="preserve">
+    <value>{0} by {1}</value>
+  </data>
+  <data name="A077" xml:space="preserve">
+    <value>系统无法计算该列的频率。</value>
+  </data>
+  <data name="A078" xml:space="preserve">
+    <value>成功！</value>
+  </data>
+  <data name="A079" xml:space="preserve">
+    <value>连接测试</value>
+  </data>
+  <data name="A080" xml:space="preserve">
+    <value>连接数据库失败！</value>
+  </data>
+  <data name="A081" xml:space="preserve">
+    <value>请输入数据库连接字符串。</value>
+  </data>
+</root>

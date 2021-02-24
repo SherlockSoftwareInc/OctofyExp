@@ -579,16 +579,16 @@ namespace OctofyExp
                 }
                 if (result)
                 {
-                    MessageBox.Show("Succeed!", "Connection testing", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(Properties.Resources.A078, Properties.Resources.A079, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Failed to connect to the database!", "Connection testing", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Properties.Resources.A080, Properties.Resources.A079, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Please enter database connection string.", "Connection testing", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.A081, Properties.Resources.A079, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             Cursor = Cursors.Default;
         }

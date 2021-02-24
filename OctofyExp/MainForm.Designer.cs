@@ -53,6 +53,7 @@
             this.tableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quickAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analysisOnEntireTableviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anaysisOnSelectedColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.previewDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -75,7 +76,6 @@
             this.dataSourcesToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.addConnectionToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.anaysisOnSelectedColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
@@ -293,6 +293,12 @@
             resources.ApplyResources(this.analysisOnEntireTableviewToolStripMenuItem, "analysisOnEntireTableviewToolStripMenuItem");
             this.analysisOnEntireTableviewToolStripMenuItem.Click += new System.EventHandler(this.AnalysisOnEntireTableviewToolStripMenuItem_Click);
             // 
+            // anaysisOnSelectedColumnsToolStripMenuItem
+            // 
+            this.anaysisOnSelectedColumnsToolStripMenuItem.Name = "anaysisOnSelectedColumnsToolStripMenuItem";
+            resources.ApplyResources(this.anaysisOnSelectedColumnsToolStripMenuItem, "anaysisOnSelectedColumnsToolStripMenuItem");
+            this.anaysisOnSelectedColumnsToolStripMenuItem.Click += new System.EventHandler(this.AnaysisOnSelectedColumnsToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -432,12 +438,6 @@
             resources.ApplyResources(this.addConnectionToolStripButton, "addConnectionToolStripButton");
             this.addConnectionToolStripButton.Name = "addConnectionToolStripButton";
             this.addConnectionToolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
-            // 
-            // anaysisOnSelectedColumnsToolStripMenuItem
-            // 
-            this.anaysisOnSelectedColumnsToolStripMenuItem.Name = "anaysisOnSelectedColumnsToolStripMenuItem";
-            resources.ApplyResources(this.anaysisOnSelectedColumnsToolStripMenuItem, "anaysisOnSelectedColumnsToolStripMenuItem");
-            this.anaysisOnSelectedColumnsToolStripMenuItem.Click += new System.EventHandler(this.AnaysisOnSelectedColumnsToolStripMenuItem_Click);
             // 
             // MainForm
             // 

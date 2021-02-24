@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctofyLib", "OctofyLib\OctofyLib.csproj", "{5A356A02-F00E-4A45-AD71-F35C7B6FD322}"
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "OctofyPackaging", "OctofyPackaging\OctofyPackaging.wapproj", "{268CD2FF-E899-4BA5-8CB3-F2B7AD8E0482}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A356A02-F00E-4A45-AD71-F35C7B6FD322} = {5A356A02-F00E-4A45-AD71-F35C7B6FD322}
+	EndProjectSection
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OctofyExpressSetup", "OctofyExpressSetup\OctofyExpressSetup.vdproj", "{1E92DC92-48D5-455B-8C18-55D148973611}"
 EndProject

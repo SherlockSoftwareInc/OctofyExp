@@ -7,9 +7,9 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="42c7dce7-a302-4cb2-b8a5-facc7099b4df"
-    Publisher="CN=Sherlock Software Inc., O=Sherlock Software Inc., STREET=1001-5051 Lougheed Hwy., L=Burnaby, S=British Columbia, PostalCode=V5B4T5, C=CA"
-    Version="1.1.4.0" />
+    Name="3977SherlockSoftwareInc.OctofyExpress"
+    Publisher="CN=691AAF11-7ECE-4865-B3C9-00A04CA42AF5"
+    Version="1.1.11.0" />
 
   <Properties>
     <DisplayName>Octofy Express</DisplayName>
