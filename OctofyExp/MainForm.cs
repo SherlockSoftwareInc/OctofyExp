@@ -7,7 +7,6 @@ namespace OctofyExp
 {
     public partial class MainForm : Form
     {
-
         class ConnectionMenuItem : ToolStripMenuItem
         {
             public ConnectionMenuItem(SQLDatabaseConnectionItem connectionItem)
@@ -35,6 +34,11 @@ namespace OctofyExp
 
         public MainForm()
         {
+            var ci = new System.Globalization.CultureInfo("zh-Hans");
+            System.Threading.Thread.CurrentThread.CurrentCulture = ci;
+            System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
+            Properties.Resources.Culture = ci;
+
             InitializeComponent();
         }
 
@@ -138,6 +142,8 @@ namespace OctofyExp
 
                 dataSourcesToolStripComboBox.SelectedIndex = index;
             }
+
+            //System.Diagnostics.Debug.Print(Properties.Resources.Culture.ToString());
 
             int numOfRows = Properties.Settings.Default.NumOfRowOnDoubleClick;
             dbObjectsTree.DefaultNumOfRows = numOfRows;

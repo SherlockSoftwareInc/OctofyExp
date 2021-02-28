@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnDefView));
             this.columnDefDataGridView = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.frequcneyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,23 +45,19 @@
             // 
             // columnDefDataGridView
             // 
+            resources.ApplyResources(this.columnDefDataGridView, "columnDefDataGridView");
             this.columnDefDataGridView.AllowUserToAddRows = false;
             this.columnDefDataGridView.AllowUserToDeleteRows = false;
             this.columnDefDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.columnDefDataGridView.ContextMenuStrip = this.contextMenuStrip;
-            this.columnDefDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.columnDefDataGridView.Location = new System.Drawing.Point(0, 37);
-            this.columnDefDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.columnDefDataGridView.Name = "columnDefDataGridView";
             this.columnDefDataGridView.ReadOnly = true;
-            this.columnDefDataGridView.RowHeadersWidth = 51;
-            this.columnDefDataGridView.Size = new System.Drawing.Size(501, 464);
-            this.columnDefDataGridView.TabIndex = 2;
             this.columnDefDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ColumnDefDataGridView_CellClick);
             this.columnDefDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ColumnDefDataGridView_CellDoubleClick);
             // 
             // contextMenuStrip
             // 
+            resources.ApplyResources(this.contextMenuStrip, "contextMenuStrip");
             this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.frequcneyToolStripMenuItem,
@@ -68,65 +65,50 @@
             this.copyToolStripMenuItem,
             this.copySelectionToolStripMenuItem});
             this.contextMenuStrip.Name = "ContextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(211, 110);
             // 
             // frequcneyToolStripMenuItem
             // 
+            resources.ApplyResources(this.frequcneyToolStripMenuItem, "frequcneyToolStripMenuItem");
             this.frequcneyToolStripMenuItem.Name = "frequcneyToolStripMenuItem";
-            this.frequcneyToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.frequcneyToolStripMenuItem.Text = "Frequencies";
             this.frequcneyToolStripMenuItem.Click += new System.EventHandler(this.FrequcneyToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(207, 6);
             // 
             // copyToolStripMenuItem
             // 
+            resources.ApplyResources(this.copyToolStripMenuItem, "copyToolStripMenuItem");
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.copyToolStripMenuItem.Text = "Copy column name";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
             // 
             // copySelectionToolStripMenuItem
             // 
+            resources.ApplyResources(this.copySelectionToolStripMenuItem, "copySelectionToolStripMenuItem");
             this.copySelectionToolStripMenuItem.Name = "copySelectionToolStripMenuItem";
-            this.copySelectionToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.copySelectionToolStripMenuItem.Text = "Copy selection";
             this.copySelectionToolStripMenuItem.Click += new System.EventHandler(this.CopySelectionToolStripMenuItem_Click);
             // 
             // panel
             // 
+            resources.ApplyResources(this.panel, "panel");
             this.panel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel.Controls.Add(this.tablenameLabel);
-            this.panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel.Location = new System.Drawing.Point(0, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(4);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(501, 37);
-            this.panel.TabIndex = 3;
             // 
             // tablenameLabel
             // 
-            this.tablenameLabel.AutoSize = true;
-            this.tablenameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.tablenameLabel, "tablenameLabel");
             this.tablenameLabel.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.tablenameLabel.Location = new System.Drawing.Point(8, 7);
-            this.tablenameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tablenameLabel.Name = "tablenameLabel";
-            this.tablenameLabel.Size = new System.Drawing.Size(0, 24);
-            this.tablenameLabel.TabIndex = 0;
             // 
             // ColumnDefView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.columnDefDataGridView);
             this.Controls.Add(this.panel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ColumnDefView";
-            this.Size = new System.Drawing.Size(501, 501);
             ((System.ComponentModel.ISupportInitialize)(this.columnDefDataGridView)).EndInit();
             this.contextMenuStrip.ResumeLayout(false);
             this.panel.ResumeLayout(false);

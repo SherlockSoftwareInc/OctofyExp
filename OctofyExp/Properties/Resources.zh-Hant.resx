@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A048" xml:space="preserve">
+    <value>計量欄：</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SimplBarChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SimplBarChart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A045" xml:space="preserve">
+    <value>未指定表或視圖。</value>
+  </data>
+  <data name="A010" xml:space="preserve">
+    <value>請稍候，正在計算{0}％...</value>
+  </data>
+  <data name="A046" xml:space="preserve">
+    <value>沒有要查看的對象</value>
+  </data>
+  <data name="A020" xml:space="preserve">
+    <value>數據表分析：{0}秒</value>
+  </data>
+  <data name="down_arrow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down_arrow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excla_mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excla_mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A008" xml:space="preserve">
+    <value>發生錯誤</value>
+  </data>
+  <data name="down_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A033" xml:space="preserve">
+    <value>該表列中的類別太多。</value>
+  </data>
+  <data name="A027" xml:space="preserve">
+    <value>計數</value>
+  </data>
+  <data name="A006" xml:space="preserve">
+    <value>表中沒有可用於分析的列。</value>
+  </data>
+  <data name="A024" xml:space="preserve">
+    <value>移除{0}個空白</value>
+  </data>
+  <data name="A029" xml:space="preserve">
+    <value>正在計算中，請稍候...</value>
+  </data>
+  <data name="copy_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A077" xml:space="preserve">
+    <value>系統無法計算該列的頻率。</value>
+  </data>
+  <data name="A003" xml:space="preserve">
+    <value>連接到{0} ...</value>
+  </data>
+  <data name="A052" xml:space="preserve">
+    <value>日期時間欄</value>
+  </data>
+  <data name="A037" xml:space="preserve">
+    <value>除去空白</value>
+  </data>
+  <data name="A005" xml:space="preserve">
+    <value>連接失敗</value>
+  </data>
+  <data name="A039" xml:space="preserve">
+    <value>正在計算...</value>
+  </data>
+  <data name="A011" xml:space="preserve">
+    <value>加載數據中...</value>
+  </data>
+  <data name="A040" xml:space="preserve">
+    <value>正在繪製圖表...</value>
+  </data>
+  <data name="A047" xml:space="preserve">
+    <value>Y軸欄：</value>
+  </data>
+  <data name="A073" xml:space="preserve">
+    <value>請輸入一個介於256和{0}之間的數字。</value>
+  </data>
+  <data name="icon_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pie_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pie_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BarChartIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BarChartIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A055" xml:space="preserve">
+    <value>數據類型不支持</value>
+  </data>
+  <data name="A032" xml:space="preserve">
+    <value>沒有找到匹配項！</value>
+  </data>
+  <data name="A065" xml:space="preserve">
+    <value>（等於）</value>
+  </data>
+  <data name="A041" xml:space="preserve">
+    <value>欄值頻率</value>
+  </data>
+  <data name="A031" xml:space="preserve">
+    <value>計入Y軸的空白</value>
+  </data>
+  <data name="A015" xml:space="preserve">
+    <value>移除欄</value>
+  </data>
+  <data name="A042" xml:space="preserve">
+    <value>預覽數據-{0}</value>
+  </data>
+  <data name="A025" xml:space="preserve">
+    <value>類別：{0}</value>
+  </data>
+  <data name="A018" xml:space="preserve">
+    <value>表分析中...</value>
+  </data>
+  <data name="A004" xml:space="preserve">
+    <value>無法連接到數據源。</value>
+  </data>
+  <data name="data_grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data_grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A049" xml:space="preserve">
+    <value>類別數超出了最大設置</value>
+  </data>
+  <data name="A007" xml:space="preserve">
+    <value>沒有分類列</value>
+  </data>
+  <data name="A076" xml:space="preserve">
+    <value>{0} by {1}</value>
+  </data>
+  <data name="A075" xml:space="preserve">
+    <value>請輸入一個介於100和999999之間的數字。</value>
+  </data>
+  <data name="A051" xml:space="preserve">
+    <value>非可分類欄</value>
+  </data>
+  <data name="A036" xml:space="preserve">
+    <value>未指定數據庫連接。</value>
+  </data>
+  <data name="A061" xml:space="preserve">
+    <value>沒有填寫完整</value>
+  </data>
+  <data name="A035" xml:space="preserve">
+    <value>不支持該列的數據類型。</value>
+  </data>
+  <data name="A038" xml:space="preserve">
+    <value>計入空白</value>
+  </data>
+  <data name="A022" xml:space="preserve">
+    <value>建立圖表數據：{0} s</value>
+  </data>
+  <data name="A013" xml:space="preserve">
+    <value>無法加載數據</value>
+  </data>
+  <data name="A021" xml:space="preserve">
+    <value>為圖表建立數據...</value>
+  </data>
+  <data name="A069" xml:space="preserve">
+    <value>找到一個匹配項</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A002" xml:space="preserve">
+    <value>快速分析前{0}行</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A060" xml:space="preserve">
+    <value>請填寫上面的字段。</value>
+  </data>
+  <data name="A054" xml:space="preserve">
+    <value>系統無法計算二進制欄的頻率。</value>
+  </data>
+  <data name="A030" xml:space="preserve">
+    <value>排除Y軸空白</value>
+  </data>
+  <data name="include_blanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\include_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A014" xml:space="preserve">
+    <value>{0}中的以下列已被移除：</value>
+  </data>
+  <data name="A043" xml:space="preserve">
+    <value>行數：{0}</value>
+  </data>
+  <data name="A026" xml:space="preserve">
+    <value>（小計）</value>
+  </data>
+  <data name="A017" xml:space="preserve">
+    <value>{0}行</value>
+  </data>
+  <data name="A068" xml:space="preserve">
+    <value>找不到匹配項</value>
+  </data>
+  <data name="sort_icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sort_icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_blanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy_selections" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_selections.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A070" xml:space="preserve">
+    <value>找到{0}個匹配項</value>
+  </data>
+  <data name="to_excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\to_excel.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A001" xml:space="preserve">
+    <value>（空白）</value>
+    <comment>How to express blanks in both chart and data grid</comment>
+  </data>
+  <data name="A059" xml:space="preserve">
+    <value>刪除連接項</value>
+  </data>
+  <data name="up_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\up_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A053" xml:space="preserve">
+    <value>空白欄</value>
+  </data>
+  <data name="A044" xml:space="preserve">
+    <value>{0}中的以下列已被移除：</value>
+  </data>
+  <data name="A023" xml:space="preserve">
+    <value>移除1個空白</value>
+  </data>
+  <data name="A012" xml:space="preserve">
+    <value>正在加載數據，請稍候。 可能要花一點時間。</value>
+  </data>
+  <data name="A072" xml:space="preserve">
+    <value>輸入無效</value>
+  </data>
+  <data name="A074" xml:space="preserve">
+    <value>請輸入一個介於16到128之間的數字。</value>
+  </data>
+  <data name="A071" xml:space="preserve">
+    <value>請僅輸入數字。</value>
+  </data>
+  <data name="stacked_column" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stacked_column.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToPPT16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToPPT16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A009" xml:space="preserve">
+    <value>沒有可用數據</value>
+  </data>
+  <data name="A058" xml:space="preserve">
+    <value>您要刪除{0}嗎？</value>
+  </data>
+  <data name="area_percentage_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\area_percentage_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A067" xml:space="preserve">
+    <value>（包含）</value>
+  </data>
+  <data name="A056" xml:space="preserve">
+    <value>系統無法計算長文本欄的​​頻率。</value>
+  </data>
+  <data name="A028" xml:space="preserve">
+    <value>百分率</value>
+  </data>
+  <data name="A064" xml:space="preserve">
+    <value>（以...結尾）</value>
+  </data>
+  <data name="A057" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="A016" xml:space="preserve">
+    <value>載入數據：{0}秒</value>
+  </data>
+  <data name="A019" xml:space="preserve">
+    <value>正在執行數據分析，請稍候...</value>
+  </data>
+  <data name="select_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\select_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A000" xml:space="preserve">
+    <value>Octofy精簡版</value>
+  </data>
+  <data name="cancel_icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A062" xml:space="preserve">
+    <value>腳本已復製到剪貼板。</value>
+  </data>
+  <data name="A034" xml:space="preserve">
+    <value>類別名稱太長。</value>
+  </data>
+  <data name="search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A050" xml:space="preserve">
+    <value>類別文字長度超出了最大設置</value>
+  </data>
+  <data name="A063" xml:space="preserve">
+    <value>（以...開始）</value>
+  </data>
+  <data name="clear_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A078" xml:space="preserve">
+    <value>成功！</value>
+  </data>
+  <data name="A079" xml:space="preserve">
+    <value>連接測試</value>
+  </data>
+  <data name="A080" xml:space="preserve">
+    <value>連接數據庫失敗！</value>
+  </data>
+  <data name="A081" xml:space="preserve">
+    <value>請輸入數據庫連接字符串。</value>
+  </data>
+</root>
