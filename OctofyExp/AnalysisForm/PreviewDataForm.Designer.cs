@@ -47,55 +47,55 @@
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Spring = true;
             // 
             // closeToolStripButton
             // 
-            this.closeToolStripButton.Image = global::OctofyExp.Properties.Resources.icon_exit;
             resources.ApplyResources(this.closeToolStripButton, "closeToolStripButton");
+            this.closeToolStripButton.Image = global::OctofyExp.Properties.Resources.icon_exit;
             this.closeToolStripButton.Name = "closeToolStripButton";
             this.closeToolStripButton.Click += new System.EventHandler(this.CloseToolStripButton_Click);
             // 
             // toolStripSeparator5
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
             resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
             // 
             // previewTypeToolStripComboBox
             // 
+            resources.ApplyResources(this.previewTypeToolStripComboBox, "previewTypeToolStripComboBox");
             this.previewTypeToolStripComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.previewTypeToolStripComboBox.Items.AddRange(new object[] {
             resources.GetString("previewTypeToolStripComboBox.Items"),
             resources.GetString("previewTypeToolStripComboBox.Items1"),
             resources.GetString("previewTypeToolStripComboBox.Items2")});
             this.previewTypeToolStripComboBox.Name = "previewTypeToolStripComboBox";
-            resources.ApplyResources(this.previewTypeToolStripComboBox, "previewTypeToolStripComboBox");
             this.previewTypeToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.PreviewTypeToolStripComboBox_SelectedIndexChanged);
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
             resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
+            this.toolStripLabel1.Name = "toolStripLabel1";
             // 
             // toolStrip1
             // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.previewTypeToolStripComboBox,
             this.toolStripSeparator5,
             this.closeToolStripButton});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
             // dataGrid
             // 
+            resources.ApplyResources(this.dataGrid, "dataGrid");
             this.dataGrid.AllowUserToAddRows = false;
             this.dataGrid.AllowUserToDeleteRows = false;
             this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGrid, "dataGrid");
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.ReadOnly = true;
             this.dataGrid.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView1_CellMouseUp);
@@ -107,16 +107,16 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label3);
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Name = "panel1";
             // 
             // statusStrip1
             // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
             // PreviewDataForm

@@ -443,4 +443,10 @@
   <data name="A081" xml:space="preserve">
     <value>請輸入數據庫連接字符串。</value>
   </data>
+  <data name="A082" xml:space="preserve">
+    <value>X轴栏：</value>
+  </data>
+  <data name="A083" xml:space="preserve">
+    <value>版本{0}</value>
+  </data>
 </root>

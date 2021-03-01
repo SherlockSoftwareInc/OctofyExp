@@ -39,15 +39,15 @@
             // 
             // toolStrip1
             // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.closeToolStripButton});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
             // closeToolStripButton
             // 
-            this.closeToolStripButton.Image = global::OctofyExp.Properties.Resources.icon_exit;
             resources.ApplyResources(this.closeToolStripButton, "closeToolStripButton");
+            this.closeToolStripButton.Image = global::OctofyExp.Properties.Resources.icon_exit;
             this.closeToolStripButton.Name = "closeToolStripButton";
             this.closeToolStripButton.Click += new System.EventHandler(this.CloseToolStripButton_Click);
             // 
@@ -58,10 +58,10 @@
             // 
             // dataGridView1
             // 
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             // 

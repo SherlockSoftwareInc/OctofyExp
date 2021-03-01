@@ -53,14 +53,14 @@ namespace OctofyExp
             // 
             // copyrightLabel
             // 
-            this.copyrightLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.copyrightLabel, "copyrightLabel");
+            this.copyrightLabel.BackColor = System.Drawing.Color.Transparent;
             this.copyrightLabel.Name = "copyrightLabel";
             // 
             // versionLabel
             // 
-            this.versionLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.versionLabel, "versionLabel");
+            this.versionLabel.BackColor = System.Drawing.Color.Transparent;
             this.versionLabel.Name = "versionLabel";
             // 
             // subtitleLabel
@@ -75,10 +75,11 @@ namespace OctofyExp
             // 
             // octofyLogoControl
             // 
-            this.octofyLogoControl.Animation = false;
-            this.octofyLogoControl.Colors = "#94C600,#94C600,#94C600,#94C600,#94C600,#71685A,#FF6700,#909465,#956B43,#FEA022";
-            this.octofyLogoControl.InitialAngle = 0F;
             resources.ApplyResources(this.octofyLogoControl, "octofyLogoControl");
+            this.octofyLogoControl.Animation = false;
+            this.octofyLogoControl.Colors = "#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#71685A,#FF6700,#" +
+    "909465,#956B43,#FEA022";
+            this.octofyLogoControl.InitialAngle = 0F;
             this.octofyLogoControl.Name = "octofyLogoControl";
             this.octofyLogoControl.SaveFolderName = "";
             this.octofyLogoControl.Values = new int[] {
@@ -110,8 +111,8 @@ namespace OctofyExp
             // 
             // descriptionLabel
             // 
-            this.descriptionLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.descriptionLabel, "descriptionLabel");
+            this.descriptionLabel.BackColor = System.Drawing.Color.Transparent;
             this.descriptionLabel.Name = "descriptionLabel";
             // 
             // websiteButton

@@ -29,6 +29,7 @@ namespace OctofyExp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnsSelecteForm));
             this.label1 = new System.Windows.Forms.Label();
             this.columnsCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -42,89 +43,69 @@ namespace OctofyExp
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 25);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Select columns for analysis:";
             // 
             // columnsCheckedListBox
             // 
+            resources.ApplyResources(this.columnsCheckedListBox, "columnsCheckedListBox");
             this.columnsCheckedListBox.FormattingEnabled = true;
-            this.columnsCheckedListBox.Location = new System.Drawing.Point(12, 41);
             this.columnsCheckedListBox.Name = "columnsCheckedListBox";
-            this.columnsCheckedListBox.Size = new System.Drawing.Size(406, 274);
-            this.columnsCheckedListBox.TabIndex = 1;
             this.columnsCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ColumnsCheckedListBox_ItemCheck);
             // 
             // toolStrip1
             // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.okToolStripButton,
             this.cancelToolStripButton,
             this.toolStripSeparator1,
             this.selectAllToolStripButton,
             this.clearToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(430, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
             // 
             // okToolStripButton
             // 
-            this.okToolStripButton.Enabled = false;
+            resources.ApplyResources(this.okToolStripButton, "okToolStripButton");
             this.okToolStripButton.Image = global::OctofyExp.Properties.Resources.checkmark;
-            this.okToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.okToolStripButton.Name = "okToolStripButton";
-            this.okToolStripButton.Size = new System.Drawing.Size(43, 22);
-            this.okToolStripButton.Text = "OK";
             this.okToolStripButton.Click += new System.EventHandler(this.OKToolStripButton_Click);
             // 
             // cancelToolStripButton
             // 
+            resources.ApplyResources(this.cancelToolStripButton, "cancelToolStripButton");
             this.cancelToolStripButton.Image = global::OctofyExp.Properties.Resources.delete_icon;
-            this.cancelToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cancelToolStripButton.Name = "cancelToolStripButton";
-            this.cancelToolStripButton.Size = new System.Drawing.Size(63, 22);
-            this.cancelToolStripButton.Text = "Cancel";
             this.cancelToolStripButton.Click += new System.EventHandler(this.CancelToolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // selectAllToolStripButton
             // 
+            resources.ApplyResources(this.selectAllToolStripButton, "selectAllToolStripButton");
             this.selectAllToolStripButton.Image = global::OctofyExp.Properties.Resources.select_all_16;
-            this.selectAllToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.selectAllToolStripButton.Name = "selectAllToolStripButton";
-            this.selectAllToolStripButton.Size = new System.Drawing.Size(75, 22);
-            this.selectAllToolStripButton.Text = "Select All";
             this.selectAllToolStripButton.Click += new System.EventHandler(this.SelectAllToolStripButton_Click);
             // 
             // clearToolStripButton
             // 
+            resources.ApplyResources(this.clearToolStripButton, "clearToolStripButton");
             this.clearToolStripButton.Image = global::OctofyExp.Properties.Resources.clear_all_16;
-            this.clearToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.clearToolStripButton.Name = "clearToolStripButton";
-            this.clearToolStripButton.Size = new System.Drawing.Size(54, 22);
-            this.clearToolStripButton.Text = "Clear";
             this.clearToolStripButton.Click += new System.EventHandler(this.ClearToolStripButton_Click);
             // 
             // ColumnsSelecteForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 326);
             this.Controls.Add(this.columnsCheckedListBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ColumnsSelecteForm";
-            this.Text = "Columns Picker Dialog";
             this.Load += new System.EventHandler(this.ColumnsSelecteForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

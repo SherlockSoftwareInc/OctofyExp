@@ -118,62 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="messageToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>814, 19</value>
+  <data name="copyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 26</value>
   </data>
-  <data name="serverToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 19</value>
+  <data name="copyToolStripMenuItem.Text" xml:space="preserve">
+    <value>複製匯總數據</value>
   </data>
-  <data name="serverToolStripStatusLabel.Text" xml:space="preserve">
-    <value>服务器</value>
+  <data name="summaryExportToExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 26</value>
   </data>
-  <data name="databaseToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 19</value>
+  <data name="summaryExportToExcelToolStripMenuItem.Text" xml:space="preserve">
+    <value>將匯總數據導出到Excel</value>
   </data>
-  <data name="databaseToolStripStatusLabel.Text" xml:space="preserve">
-    <value>数据库</value>
+  <data name="summaryContextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 56</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>对象资源浏览器</value>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>搜索</value>
-  </data>
-  <data name="columnView.ExcludedColumns" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAJoBbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1u
-        ZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0sIG1zY29ybGliLCBWZXJzaW9u
-        PTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUB
-        AAAAMFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU3lzdGVtLlN0cmluZwMAAAAGX2l0
-        ZW1zBV9zaXplCF92ZXJzaW9uBgAACAgCAAAACQMAAAAAAAAAAAAAABEDAAAAAAAAAAs=
-</value>
-  </data>
-  <data name="connectToToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
-  </data>
-  <data name="connectToToolStripMenuItem.Text" xml:space="preserve">
-    <value>连接到 ...</value>
-  </data>
-  <data name="addNewDBConnectionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
-  </data>
-  <data name="addNewDBConnectionToolStripMenuItem.Text" xml:space="preserve">
-    <value>添加新数据库连接</value>
-  </data>
-  <data name="manageConnectionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
-  </data>
-  <data name="manageConnectionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>管理数据库连接</value>
-  </data>
-  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 6</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>退出</value>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>關閉</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -181,131 +145,108 @@
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>文件</value>
   </data>
-  <data name="quickAnalysisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
+  <data name="copyChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 22</value>
   </data>
-  <data name="quickAnalysisToolStripMenuItem.Text" xml:space="preserve">
-    <value>快速分析前1000行</value>
+  <data name="copyChartToolStripMenuItem.Text" xml:space="preserve">
+    <value>複製圖表</value>
   </data>
-  <data name="analysisOnEntireTableviewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
+  <data name="copyAggregateDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 22</value>
   </data>
-  <data name="analysisOnEntireTableviewToolStripMenuItem.Text" xml:space="preserve">
-    <value>整表/视图分析</value>
-  </data>
-  <data name="anaysisOnSelectedColumnsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="anaysisOnSelectedColumnsToolStripMenuItem.Text" xml:space="preserve">
-    <value>分析选定的数据栏</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 6</value>
-  </data>
-  <data name="previewDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="previewDataToolStripMenuItem.Text" xml:space="preserve">
-    <value>预览数据</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 6</value>
-  </data>
-  <data name="copyTableviewNameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="copyTableviewNameToolStripMenuItem.Text" xml:space="preserve">
-    <value>复制表格/视图名称</value>
-  </data>
-  <data name="tableToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
-  </data>
-  <data name="tableToolStripMenuItem.Text" xml:space="preserve">
-    <value>数据表</value>
-  </data>
-  <data name="FrequenciesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 22</value>
-  </data>
-  <data name="FrequenciesToolStripMenuItem.Text" xml:space="preserve">
-    <value>栏值频率</value>
+  <data name="copyAggregateDataToolStripMenuItem.Text" xml:space="preserve">
+    <value>複製圖表數據</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 6</value>
+    <value>194, 6</value>
   </data>
-  <data name="copyColumnNameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 22</value>
+  <data name="exportAggregateDataToExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 22</value>
   </data>
-  <data name="copyColumnNameToolStripMenuItem.Text" xml:space="preserve">
-    <value>复制数据栏名称</value>
-  </data>
-  <data name="columnToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 20</value>
-  </data>
-  <data name="columnToolStripMenuItem.Text" xml:space="preserve">
-    <value>数据栏</value>
-  </data>
-  <data name="copyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="copyToolStripMenuItem.Text" xml:space="preserve">
-    <value>复制</value>
+  <data name="exportAggregateDataToExcelToolStripMenuItem.Text" xml:space="preserve">
+    <value>將圖表數據導出到Excel</value>
   </data>
   <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
-    <value>编辑</value>
+    <value>編輯</value>
   </data>
-  <data name="toolBarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
+  <data name="barChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
   </data>
-  <data name="toolBarToolStripMenuItem.Text" xml:space="preserve">
-    <value>工具栏</value>
+  <data name="barChartToolStripMenuItem.Text" xml:space="preserve">
+    <value>条形图</value>
   </data>
-  <data name="statusBarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
+  <data name="stackedBarChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
   </data>
-  <data name="statusBarToolStripMenuItem.Text" xml:space="preserve">
-    <value>状态栏</value>
+  <data name="stackedBarChartToolStripMenuItem.Text" xml:space="preserve">
+    <value>堆積條形圖</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 6</value>
+  </data>
+  <data name="allCasesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="allCasesToolStripMenuItem.Text" xml:space="preserve">
+    <value>列出所有數據</value>
   </data>
   <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="viewToolStripMenuItem.Text" xml:space="preserve">
-    <value>视图</value>
+    <value>視圖</value>
   </data>
-  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+  <data name="closeToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
   </data>
-  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>选项</value>
-  </data>
-  <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>工具</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>关于...</value>
-  </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>帮助</value>
+  <data name="closeToolStripButton.Text" xml:space="preserve">
+    <value>關閉</value>
   </data>
   <data name="toolStripLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 24</value>
+    <value>61, 24</value>
   </data>
   <data name="toolStripLabel1.Text" xml:space="preserve">
-    <value>数据源:</value>
+    <value>圖表類型：</value>
   </data>
-  <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 27</value>
+  <data name="barChartToolStripButton.ToolTipText" xml:space="preserve">
+    <value>條形圖</value>
+  </data>
+  <data name="stackedBarChartToolStripButton.ToolTipText" xml:space="preserve">
+    <value>堆積條形圖</value>
+  </data>
+  <data name="excludeBlanksToolStripButton.ToolTipText" xml:space="preserve">
+    <value>除去Y軸的空白項</value>
+  </data>
+  <data name="sortToolStripButton.ToolTipText" xml:space="preserve">
+    <value>按數量從大到小排序</value>
+  </data>
+  <data name="searchForToolStripLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 24</value>
+  </data>
+  <data name="searchForToolStripLabel.Text" xml:space="preserve">
+    <value>搜索：</value>
+  </data>
+  <data name="searchToolStripTextBox.ToolTipText" xml:space="preserve">
+    <value>搜索Y軸類別</value>
+  </data>
+  <data name="nextToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADdSURBVDhPYxhmYNu2bXxQJk5w5MgRXigTE8yfP986MjJy
+        XWdnpypUCA46Ojo0Y2NjN86ZM8cEKoQdODo6bpeUlPzl5+dX/+/fP3YQ9vf3b5aVlf3t5ua2EaoMN7h4
+        8aIMyAB2dvb/Ghoa15SUlK6xsLD8V1BQ+Pby5UsJqDL8ICkpqYqNje0/kAnGHBwc/5OTkwvBksSA////
+        sxkYGNwFMUHY0NDwBlCMFSxJLKitrQ3m5eX9z8fH97+pqckPKkwasLW1vWhnZ3cGyiUdrFy5Unf58uWa
+        UO4owAoYGABgako9pqf6IgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="nextToolStripButton.ToolTipText" xml:space="preserve">
+    <value>後一個符合項</value>
+  </data>
+  <data name="previousToolStripButton.ToolTipText" xml:space="preserve">
+    <value>前一個符合項</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -865,6 +806,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Octofy精简版</value>
+    <value>數據表分析</value>
   </data>
 </root>

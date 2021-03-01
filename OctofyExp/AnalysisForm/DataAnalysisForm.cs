@@ -1219,6 +1219,8 @@ namespace OctofyExp
             copyAggregateDataToolStripMenuItem.Enabled = state;
             allCasesToolStripMenuItem.Enabled = state;
             stackedBarChartToolStripMenuItem.Enabled = state;
+            toolStripSeparator5.Visible = false;
+            allCasesToolStripMenuItem.Visible = false;
         }
 
         /// <summary>

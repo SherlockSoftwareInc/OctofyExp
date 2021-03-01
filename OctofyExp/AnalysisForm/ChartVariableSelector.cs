@@ -148,6 +148,7 @@ namespace OctofyExp
         /// </summary>
         private void Populate()
         {
+            xAxisVariableSelector.MeasurementColumn = Properties.Resources.A082;
             if (VariableType == DataAnalysisForm.Views.CategoryBarChart)
             {
                 yAxisVariableSelector.MeasurementColumn = Properties.Resources.A047;    //A047: Y-axis column:

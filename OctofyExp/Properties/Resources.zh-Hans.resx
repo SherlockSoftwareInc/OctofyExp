@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="A048" xml:space="preserve">
-    <value>测量栏：</value>
+    <value>计量栏：</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="SimplBarChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -442,5 +442,11 @@
   </data>
   <data name="A081" xml:space="preserve">
     <value>请输入数据库连接字符串。</value>
+  </data>
+  <data name="A082" xml:space="preserve">
+    <value>X轴栏：</value>
+  </data>
+  <data name="A083" xml:space="preserve">
+    <value>版本{0}</value>
   </data>
 </root>

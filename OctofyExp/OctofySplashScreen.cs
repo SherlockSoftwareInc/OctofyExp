@@ -10,9 +10,9 @@ namespace OctofyExp
         {
             InitializeComponent();
             this.copyrightLabel.Text = AssemblyCopyright;
-            this.versionLabel.Text = String.Format("Version {0}", AssemblyVersion);
-            editionLabel.Text = "Express";
-            subtitleLabel.Text = "SQL Server Visualized";
+            this.versionLabel.Text = String.Format(Properties.Resources.A083, AssemblyVersion);
+            //editionLabel.Text = "Express";
+            //subtitleLabel.Text = "SQL Server Visualized";
         }
 
         #region Assembly Attribute Accessors

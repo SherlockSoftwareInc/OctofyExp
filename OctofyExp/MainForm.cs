@@ -34,7 +34,7 @@ namespace OctofyExp
 
         public MainForm()
         {
-            var ci = new System.Globalization.CultureInfo("zh-Hans");
+            var ci = new System.Globalization.CultureInfo("zh-Hant");
             System.Threading.Thread.CurrentThread.CurrentCulture = ci;
             System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
             Properties.Resources.Culture = ci;

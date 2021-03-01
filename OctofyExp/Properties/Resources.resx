@@ -443,4 +443,10 @@
   <data name="A081" xml:space="preserve">
     <value>Please enter database connection string.</value>
   </data>
+  <data name="A082" xml:space="preserve">
+    <value>X-axis column:</value>
+  </data>
+  <data name="A083" xml:space="preserve">
+    <value>Version {0}</value>
+  </data>
 </root>

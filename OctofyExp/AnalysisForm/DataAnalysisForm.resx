@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 51</value>
+    <value>0, 51</value>
   </data>
   <data name="measurementVariables.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -135,7 +135,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="measurementVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 664</value>
+    <value>194, 599</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="measurementVariables.TabIndex" type="System.Int32, mscorlib">
@@ -175,7 +175,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>638, 660</value>
+    <value>471, 595</value>
   </data>
   <data name="chart.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -193,7 +193,7 @@
     <value>0</value>
   </data>
   <metadata name="summaryContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>632, 17</value>
+    <value>439, 17</value>
   </metadata>
   <data name="copyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 26</value>
@@ -220,13 +220,13 @@
     <value>Right</value>
   </data>
   <data name="summaryDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 0</value>
+    <value>479, 0</value>
   </data>
   <data name="summaryDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="summaryDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 660</value>
+    <value>330, 595</value>
   </data>
   <data name="summaryDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -247,10 +247,10 @@
     <value>Right</value>
   </data>
   <data name="summaryDataCollapsibleSplitter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>638, 0</value>
+    <value>471, 0</value>
   </data>
   <data name="summaryDataCollapsibleSplitter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 660</value>
+    <value>8, 595</value>
   </data>
   <data name="summaryDataCollapsibleSplitter.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -277,7 +277,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 664</value>
+    <value>813, 599</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -307,10 +307,10 @@
     <value>1</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1219, 664</value>
+    <value>1011, 599</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>235</value>
+    <value>194</value>
   </data>
   <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -325,55 +325,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="caseListContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>126, 17</value>
-  </metadata>
-  <data name="copyCaseListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 26</value>
-  </data>
-  <data name="copyCaseListToolStripMenuItem.Text" xml:space="preserve">
-    <value>Copy case list selections</value>
-  </data>
-  <data name="exportCaseListToExcelToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 26</value>
-  </data>
-  <data name="exportCaseListToExcelToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Export case list to Excel</value>
-  </data>
-  <data name="caseListContextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 56</value>
-  </data>
-  <data name="&gt;&gt;caseListContextMenuStrip.Name" xml:space="preserve">
-    <value>caseListContextMenuStrip</value>
-  </data>
-  <data name="&gt;&gt;caseListContextMenuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="caseListDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="caseListDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 150</value>
-  </data>
-  <data name="caseListDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;caseListDataGridView.Name" xml:space="preserve">
-    <value>caseListDataGridView</value>
-  </data>
-  <data name="&gt;&gt;caseListDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;caseListDataGridView.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;caseListDataGridView.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <metadata name="startTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>319, 17</value>
+    <value>126, 17</value>
   </metadata>
   <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 22</value>
@@ -388,7 +343,7 @@
     <value>&amp;File</value>
   </data>
   <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>426, 17</value>
+    <value>233, 17</value>
   </metadata>
   <data name="copyChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 22</value>
@@ -402,12 +357,6 @@
   <data name="copyAggregateDataToolStripMenuItem.Text" xml:space="preserve">
     <value>Copy Chart Data</value>
   </data>
-  <data name="copyCaseListSelectionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
-  </data>
-  <data name="copyCaseListSelectionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Copy Case List Selections</value>
-  </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 6</value>
   </data>
@@ -417,12 +366,6 @@
   <data name="exportAggregateDataToExcelToolStripMenuItem.Text" xml:space="preserve">
     <value>Export Chart Data to Excel</value>
   </data>
-  <data name="exportCaseListToExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
-  </data>
-  <data name="exportCaseListToExcelToolStripMenuItem.Text" xml:space="preserve">
-    <value>Export Case List to Excel</value>
-  </data>
   <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
   </data>
@@ -430,34 +373,31 @@
     <value>&amp;Edit</value>
   </data>
   <data name="barChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
+    <value>184, 26</value>
   </data>
   <data name="barChartToolStripMenuItem.Text" xml:space="preserve">
     <value>Bar Chart</value>
   </data>
   <data name="stackedBarChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
+    <value>184, 26</value>
   </data>
   <data name="stackedBarChartToolStripMenuItem.Text" xml:space="preserve">
     <value>Stacked Bar Chart</value>
   </data>
-  <data name="pieChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 6</value>
   </data>
-  <data name="pieChartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Pie Chart</value>
-  </data>
-  <data name="pieChartToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+  <data name="toolStripSeparator5.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 6</value>
-  </data>
   <data name="allCasesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
+    <value>184, 26</value>
   </data>
   <data name="allCasesToolStripMenuItem.Text" xml:space="preserve">
     <value>List All Cases</value>
+  </data>
+  <data name="allCasesToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
@@ -472,7 +412,7 @@
     <value>4, 2, 0, 2</value>
   </data>
   <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 24</value>
+    <value>1011, 24</value>
   </data>
   <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -490,10 +430,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>4</value>
   </data>
   <metadata name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>534, 17</value>
+    <value>341, 17</value>
   </metadata>
   <data name="closeToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -530,18 +470,6 @@
   </data>
   <data name="stackedBarChartToolStripButton.Text" xml:space="preserve">
     <value>Stacked bar chart</value>
-  </data>
-  <data name="pieChartToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="pieChartToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pieChartToolStripButton.Text" xml:space="preserve">
-    <value>Pie Chart</value>
-  </data>
-  <data name="pieChartToolStripButton.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
@@ -596,6 +524,9 @@
   </data>
   <data name="searchForToolStripLabel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="searchToolStripTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="searchToolStripTextBox.MaxLength" type="System.Int32, mscorlib">
     <value>255</value>
@@ -662,7 +593,7 @@
     <value>0, 24</value>
   </data>
   <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 27</value>
+    <value>1011, 27</value>
   </data>
   <data name="toolStrip.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -680,13 +611,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;toolStrip.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>3</value>
   </data>
   <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="messageToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1153, 17</value>
+    <value>968, 17</value>
   </data>
   <data name="tableNameToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>4, 17</value>
@@ -710,10 +641,10 @@
     <value>4, 17</value>
   </data>
   <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 715</value>
+    <value>0, 650</value>
   </data>
   <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 22</value>
+    <value>1011, 22</value>
   </data>
   <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -728,28 +659,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="caseListCollapsibleSplitter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 51</value>
-  </data>
-  <data name="caseListCollapsibleSplitter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 664</value>
-  </data>
-  <data name="caseListCollapsibleSplitter.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;caseListCollapsibleSplitter.Name" xml:space="preserve">
-    <value>caseListCollapsibleSplitter</value>
-  </data>
-  <data name="&gt;&gt;caseListCollapsibleSplitter.Type" xml:space="preserve">
-    <value>OctofyLib.CollapsibleSplitter, OctofyLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;caseListCollapsibleSplitter.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;caseListCollapsibleSplitter.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="collapsibleSplitter0.Location" type="System.Drawing.Point, System.Drawing">
     <value>192, 49</value>
@@ -776,7 +686,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1227, 737</value>
+    <value>1011, 672</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1353,18 +1263,6 @@
   <data name="&gt;&gt;summaryExportToExcelToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;copyCaseListToolStripMenuItem.Name" xml:space="preserve">
-    <value>copyCaseListToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;copyCaseListToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exportCaseListToExcelToolStripMenuItem1.Name" xml:space="preserve">
-    <value>exportCaseListToExcelToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;exportCaseListToExcelToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;startTimer.Name" xml:space="preserve">
     <value>startTimer</value>
   </data>
@@ -1401,12 +1299,6 @@
   <data name="&gt;&gt;copyAggregateDataToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;copyCaseListSelectionsToolStripMenuItem.Name" xml:space="preserve">
-    <value>copyCaseListSelectionsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;copyCaseListSelectionsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
     <value>toolStripSeparator4</value>
   </data>
@@ -1417,12 +1309,6 @@
     <value>exportAggregateDataToExcelToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;exportAggregateDataToExcelToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exportCaseListToExcelToolStripMenuItem.Name" xml:space="preserve">
-    <value>exportCaseListToExcelToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;exportCaseListToExcelToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;viewToolStripMenuItem.Name" xml:space="preserve">
@@ -1441,12 +1327,6 @@
     <value>stackedBarChartToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;stackedBarChartToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pieChartToolStripMenuItem.Name" xml:space="preserve">
-    <value>pieChartToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;pieChartToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
@@ -1489,12 +1369,6 @@
     <value>stackedBarChartToolStripButton</value>
   </data>
   <data name="&gt;&gt;stackedBarChartToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pieChartToolStripButton.Name" xml:space="preserve">
-    <value>pieChartToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;pieChartToolStripButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">

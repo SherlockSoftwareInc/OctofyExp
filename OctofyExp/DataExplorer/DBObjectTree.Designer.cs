@@ -53,6 +53,7 @@
             // 
             // contextMenuStrip1
             // 
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tableAnalysisToolStripMenuItem,
             this.analyzeEntireTableviewToolStripMenuItem,
@@ -62,46 +63,45 @@
             this.copyToolStripMenuItem,
             this.scriptToolStripMenuItem});
             this.contextMenuStrip1.Name = "ContextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // tableAnalysisToolStripMenuItem
             // 
-            this.tableAnalysisToolStripMenuItem.Name = "tableAnalysisToolStripMenuItem";
             resources.ApplyResources(this.tableAnalysisToolStripMenuItem, "tableAnalysisToolStripMenuItem");
+            this.tableAnalysisToolStripMenuItem.Name = "tableAnalysisToolStripMenuItem";
             this.tableAnalysisToolStripMenuItem.Click += new System.EventHandler(this.TableAnalysisToolStripMenuItem_Click);
             // 
             // analyzeEntireTableviewToolStripMenuItem
             // 
-            this.analyzeEntireTableviewToolStripMenuItem.Name = "analyzeEntireTableviewToolStripMenuItem";
             resources.ApplyResources(this.analyzeEntireTableviewToolStripMenuItem, "analyzeEntireTableviewToolStripMenuItem");
+            this.analyzeEntireTableviewToolStripMenuItem.Name = "analyzeEntireTableviewToolStripMenuItem";
             this.analyzeEntireTableviewToolStripMenuItem.Click += new System.EventHandler(this.AnalyzeEntireTableviewToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // previewDataToolStripMenuItem
             // 
-            this.previewDataToolStripMenuItem.Name = "previewDataToolStripMenuItem";
             resources.ApplyResources(this.previewDataToolStripMenuItem, "previewDataToolStripMenuItem");
+            this.previewDataToolStripMenuItem.Name = "previewDataToolStripMenuItem";
             this.previewDataToolStripMenuItem.Click += new System.EventHandler(this.PreviewDataToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // copyToolStripMenuItem
             // 
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             resources.ApplyResources(this.copyToolStripMenuItem, "copyToolStripMenuItem");
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
             // 
             // scriptToolStripMenuItem
             // 
-            this.scriptToolStripMenuItem.Name = "scriptToolStripMenuItem";
             resources.ApplyResources(this.scriptToolStripMenuItem, "scriptToolStripMenuItem");
+            this.scriptToolStripMenuItem.Name = "scriptToolStripMenuItem";
             this.scriptToolStripMenuItem.Click += new System.EventHandler(this.ScriptToolStripMenuItem_Click);
             // 
             // DBObjectTree

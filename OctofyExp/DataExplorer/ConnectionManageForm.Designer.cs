@@ -40,9 +40,10 @@
             this.closeToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.cancelToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.connectionGroupBox = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.connectionStringLabel = new System.Windows.Forms.Label();
             this.useCustomConectionCheckBox = new System.Windows.Forms.CheckBox();
             this.connectionStringTextBox = new System.Windows.Forms.TextBox();
-            this.connectionStringLabel = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
             this.databaseTextBox = new System.Windows.Forms.ComboBox();
             this.databaseNameLabel = new System.Windows.Forms.Label();
@@ -58,11 +59,10 @@
             this.userNameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.userNameTextBox = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.connectionGroupBox.SuspendLayout();
-            this.authenticationGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.authenticationGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // connectionsLabel
@@ -72,13 +72,14 @@
             // 
             // connectionsListBox
             // 
-            this.connectionsListBox.FormattingEnabled = true;
             resources.ApplyResources(this.connectionsListBox, "connectionsListBox");
+            this.connectionsListBox.FormattingEnabled = true;
             this.connectionsListBox.Name = "connectionsListBox";
             this.connectionsListBox.SelectedIndexChanged += new System.EventHandler(this.ConnectionsListBox_SelectedIndexChanged);
             // 
             // toolStrip1
             // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStripButton,
@@ -88,56 +89,56 @@
             this.toolStripSeparator2,
             this.closeToolStripButton,
             this.cancelToolStripButton});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
             // addToolStripButton
             // 
-            this.addToolStripButton.Image = global::OctofyExp.Properties.Resources.add;
             resources.ApplyResources(this.addToolStripButton, "addToolStripButton");
+            this.addToolStripButton.Image = global::OctofyExp.Properties.Resources.add;
             this.addToolStripButton.Name = "addToolStripButton";
             this.addToolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
             // 
             // deleteToolStripButton
             // 
-            this.deleteToolStripButton.Image = global::OctofyExp.Properties.Resources.delete_icon;
             resources.ApplyResources(this.deleteToolStripButton, "deleteToolStripButton");
+            this.deleteToolStripButton.Image = global::OctofyExp.Properties.Resources.delete_icon;
             this.deleteToolStripButton.Name = "deleteToolStripButton";
             this.deleteToolStripButton.Click += new System.EventHandler(this.DeleteToolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // TestToolStripButton
             // 
-            this.TestToolStripButton.Image = global::OctofyExp.Properties.Resources.checkmark;
             resources.ApplyResources(this.TestToolStripButton, "TestToolStripButton");
+            this.TestToolStripButton.Image = global::OctofyExp.Properties.Resources.checkmark;
             this.TestToolStripButton.Name = "TestToolStripButton";
             this.TestToolStripButton.Click += new System.EventHandler(this.TestButton_Click);
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // closeToolStripButton
             // 
-            this.closeToolStripButton.Image = global::OctofyExp.Properties.Resources.save;
             resources.ApplyResources(this.closeToolStripButton, "closeToolStripButton");
+            this.closeToolStripButton.Image = global::OctofyExp.Properties.Resources.save;
             this.closeToolStripButton.Name = "closeToolStripButton";
             this.closeToolStripButton.Click += new System.EventHandler(this.CloseToolStripButton_Click);
             // 
             // cancelToolStripButton
             // 
-            this.cancelToolStripButton.Image = global::OctofyExp.Properties.Resources.cancel_icon_16;
             resources.ApplyResources(this.cancelToolStripButton, "cancelToolStripButton");
+            this.cancelToolStripButton.Image = global::OctofyExp.Properties.Resources.cancel_icon_16;
             this.cancelToolStripButton.Name = "cancelToolStripButton";
             this.cancelToolStripButton.Click += new System.EventHandler(this.CancelToolStripButton1_Click);
             // 
             // connectionGroupBox
             // 
+            resources.ApplyResources(this.connectionGroupBox, "connectionGroupBox");
             this.connectionGroupBox.Controls.Add(this.panel1);
             this.connectionGroupBox.Controls.Add(this.saveButton);
             this.connectionGroupBox.Controls.Add(this.databaseTextBox);
@@ -147,9 +148,21 @@
             this.connectionGroupBox.Controls.Add(this.serverNameTextBox);
             this.connectionGroupBox.Controls.Add(this.serverNameLabel);
             this.connectionGroupBox.Controls.Add(this.authenticationGroupBox);
-            resources.ApplyResources(this.connectionGroupBox, "connectionGroupBox");
             this.connectionGroupBox.Name = "connectionGroupBox";
             this.connectionGroupBox.TabStop = false;
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.connectionStringLabel);
+            this.panel1.Controls.Add(this.useCustomConectionCheckBox);
+            this.panel1.Controls.Add(this.connectionStringTextBox);
+            this.panel1.Name = "panel1";
+            // 
+            // connectionStringLabel
+            // 
+            resources.ApplyResources(this.connectionStringLabel, "connectionStringLabel");
+            this.connectionStringLabel.Name = "connectionStringLabel";
             // 
             // useCustomConectionCheckBox
             // 
@@ -165,11 +178,6 @@
             this.connectionStringTextBox.ReadOnly = true;
             this.connectionStringTextBox.TextChanged += new System.EventHandler(this.ConnectionStringTextBox_TextChanged);
             this.connectionStringTextBox.Validated += new System.EventHandler(this.ConnectionStringTextBox_Validated);
-            // 
-            // connectionStringLabel
-            // 
-            resources.ApplyResources(this.connectionStringLabel, "connectionStringLabel");
-            this.connectionStringLabel.Name = "connectionStringLabel";
             // 
             // saveButton
             // 
@@ -216,6 +224,7 @@
             // 
             // authenticationGroupBox
             // 
+            resources.ApplyResources(this.authenticationGroupBox, "authenticationGroupBox");
             this.authenticationGroupBox.Controls.Add(this.rememberPasswordCheckBox);
             this.authenticationGroupBox.Controls.Add(this.authenticationLabel);
             this.authenticationGroupBox.Controls.Add(this.passwordTextBox);
@@ -223,7 +232,6 @@
             this.authenticationGroupBox.Controls.Add(this.userNameLabel);
             this.authenticationGroupBox.Controls.Add(this.passwordLabel);
             this.authenticationGroupBox.Controls.Add(this.userNameTextBox);
-            resources.ApplyResources(this.authenticationGroupBox, "authenticationGroupBox");
             this.authenticationGroupBox.Name = "authenticationGroupBox";
             this.authenticationGroupBox.TabStop = false;
             // 
@@ -248,12 +256,12 @@
             // 
             // authenticationComboBox
             // 
+            resources.ApplyResources(this.authenticationComboBox, "authenticationComboBox");
             this.authenticationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.authenticationComboBox.FormattingEnabled = true;
             this.authenticationComboBox.Items.AddRange(new object[] {
             resources.GetString("authenticationComboBox.Items"),
             resources.GetString("authenticationComboBox.Items1")});
-            resources.ApplyResources(this.authenticationComboBox, "authenticationComboBox");
             this.authenticationComboBox.Name = "authenticationComboBox";
             this.authenticationComboBox.SelectedIndexChanged += new System.EventHandler(this.AuthenticationComboBox_SelectedIndexChanged);
             // 
@@ -274,14 +282,6 @@
             this.userNameTextBox.TextChanged += new System.EventHandler(this.SettingsChanged);
             this.userNameTextBox.Validated += new System.EventHandler(this.FieldVerified);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.connectionStringLabel);
-            this.panel1.Controls.Add(this.useCustomConectionCheckBox);
-            this.panel1.Controls.Add(this.connectionStringTextBox);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
             // ConnectionManageForm
             // 
             resources.ApplyResources(this, "$this");
@@ -299,10 +299,10 @@
             this.toolStrip1.PerformLayout();
             this.connectionGroupBox.ResumeLayout(false);
             this.connectionGroupBox.PerformLayout();
-            this.authenticationGroupBox.ResumeLayout(false);
-            this.authenticationGroupBox.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.authenticationGroupBox.ResumeLayout(false);
+            this.authenticationGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

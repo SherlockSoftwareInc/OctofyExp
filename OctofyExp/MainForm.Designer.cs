@@ -94,22 +94,38 @@
             // 
             // toolStripContainer
             // 
+            resources.ApplyResources(this.toolStripContainer, "toolStripContainer");
             // 
             // toolStripContainer.BottomToolStripPanel
             // 
+            resources.ApplyResources(this.toolStripContainer.BottomToolStripPanel, "toolStripContainer.BottomToolStripPanel");
             this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip);
+            this.toolTip.SetToolTip(this.toolStripContainer.BottomToolStripPanel, resources.GetString("toolStripContainer.BottomToolStripPanel.ToolTip"));
             // 
             // toolStripContainer.ContentPanel
             // 
-            this.toolStripContainer.ContentPanel.Controls.Add(this.splitContainer);
             resources.ApplyResources(this.toolStripContainer.ContentPanel, "toolStripContainer.ContentPanel");
-            resources.ApplyResources(this.toolStripContainer, "toolStripContainer");
+            this.toolStripContainer.ContentPanel.Controls.Add(this.splitContainer);
+            this.toolTip.SetToolTip(this.toolStripContainer.ContentPanel, resources.GetString("toolStripContainer.ContentPanel.ToolTip"));
+            // 
+            // toolStripContainer.LeftToolStripPanel
+            // 
+            resources.ApplyResources(this.toolStripContainer.LeftToolStripPanel, "toolStripContainer.LeftToolStripPanel");
+            this.toolTip.SetToolTip(this.toolStripContainer.LeftToolStripPanel, resources.GetString("toolStripContainer.LeftToolStripPanel.ToolTip"));
             this.toolStripContainer.Name = "toolStripContainer";
+            // 
+            // toolStripContainer.RightToolStripPanel
+            // 
+            resources.ApplyResources(this.toolStripContainer.RightToolStripPanel, "toolStripContainer.RightToolStripPanel");
+            this.toolTip.SetToolTip(this.toolStripContainer.RightToolStripPanel, resources.GetString("toolStripContainer.RightToolStripPanel.ToolTip"));
+            this.toolTip.SetToolTip(this.toolStripContainer, resources.GetString("toolStripContainer.ToolTip"));
             // 
             // toolStripContainer.TopToolStripPanel
             // 
+            resources.ApplyResources(this.toolStripContainer.TopToolStripPanel, "toolStripContainer.TopToolStripPanel");
             this.toolStripContainer.TopToolStripPanel.Controls.Add(this.menuStrip);
             this.toolStripContainer.TopToolStripPanel.Controls.Add(this.toolStrip);
+            this.toolTip.SetToolTip(this.toolStripContainer.TopToolStripPanel, resources.GetString("toolStripContainer.TopToolStripPanel.ToolTip"));
             // 
             // statusStrip
             // 
@@ -121,29 +137,30 @@
             this.serverToolStripStatusLabel,
             this.databaseToolStripStatusLabel});
             this.statusStrip.Name = "statusStrip";
+            this.toolTip.SetToolTip(this.statusStrip, resources.GetString("statusStrip.ToolTip"));
             // 
             // statusToolStripStatusLabe
             // 
-            this.statusToolStripStatusLabe.Name = "statusToolStripStatusLabe";
             resources.ApplyResources(this.statusToolStripStatusLabe, "statusToolStripStatusLabe");
+            this.statusToolStripStatusLabe.Name = "statusToolStripStatusLabe";
             // 
             // messageToolStripStatusLabel
             // 
-            this.messageToolStripStatusLabel.Name = "messageToolStripStatusLabel";
             resources.ApplyResources(this.messageToolStripStatusLabel, "messageToolStripStatusLabel");
+            this.messageToolStripStatusLabel.Name = "messageToolStripStatusLabel";
             this.messageToolStripStatusLabel.Spring = true;
             // 
             // serverToolStripStatusLabel
             // 
+            resources.ApplyResources(this.serverToolStripStatusLabel, "serverToolStripStatusLabel");
             this.serverToolStripStatusLabel.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
             this.serverToolStripStatusLabel.Name = "serverToolStripStatusLabel";
-            resources.ApplyResources(this.serverToolStripStatusLabel, "serverToolStripStatusLabel");
             // 
             // databaseToolStripStatusLabel
             // 
+            resources.ApplyResources(this.databaseToolStripStatusLabel, "databaseToolStripStatusLabel");
             this.databaseToolStripStatusLabel.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
             this.databaseToolStripStatusLabel.Name = "databaseToolStripStatusLabel";
-            resources.ApplyResources(this.databaseToolStripStatusLabel, "databaseToolStripStatusLabel");
             // 
             // splitContainer
             // 
@@ -152,65 +169,76 @@
             // 
             // splitContainer.Panel1
             // 
+            resources.ApplyResources(this.splitContainer.Panel1, "splitContainer.Panel1");
             this.splitContainer.Panel1.Controls.Add(this.tabControl);
+            this.toolTip.SetToolTip(this.splitContainer.Panel1, resources.GetString("splitContainer.Panel1.ToolTip"));
             // 
             // splitContainer.Panel2
             // 
+            resources.ApplyResources(this.splitContainer.Panel2, "splitContainer.Panel2");
             this.splitContainer.Panel2.Controls.Add(this.columnView);
+            this.toolTip.SetToolTip(this.splitContainer.Panel2, resources.GetString("splitContainer.Panel2.ToolTip"));
+            this.toolTip.SetToolTip(this.splitContainer, resources.GetString("splitContainer.ToolTip"));
             // 
             // tabControl
             // 
+            resources.ApplyResources(this.tabControl, "tabControl");
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.tabControl, "tabControl");
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
+            this.toolTip.SetToolTip(this.tabControl, resources.GetString("tabControl.ToolTip"));
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.dbObjectsTree);
             resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.Add(this.dbObjectsTree);
             this.tabPage1.Name = "tabPage1";
+            this.toolTip.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // dbObjectsTree
             // 
-            this.dbObjectsTree.DefaultNumOfRows = 10000;
             resources.ApplyResources(this.dbObjectsTree, "dbObjectsTree");
+            this.dbObjectsTree.DefaultNumOfRows = 10000;
             this.dbObjectsTree.Name = "dbObjectsTree";
+            this.toolTip.SetToolTip(this.dbObjectsTree, resources.GetString("dbObjectsTree.ToolTip"));
             this.dbObjectsTree.AfterSelect += new System.EventHandler(this.DbObjects_AfterSelect);
             this.dbObjectsTree.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
             this.dbObjectsTree.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.serachPanel);
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.serachPanel);
             this.tabPage2.Name = "tabPage2";
+            this.toolTip.SetToolTip(this.tabPage2, resources.GetString("tabPage2.ToolTip"));
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // serachPanel
             // 
+            resources.ApplyResources(this.serachPanel, "serachPanel");
             this.serachPanel.ConnectionString = "";
             this.serachPanel.DefaultNumOfRows = 10000;
-            resources.ApplyResources(this.serachPanel, "serachPanel");
             this.serachPanel.Name = "serachPanel";
             this.serachPanel.SearchFor = "";
             this.serachPanel.SearchHistory = "";
             this.serachPanel.SearchType = OctofyExp.TableSearchPanel.SearchTypeNums.TableName;
             this.serachPanel.SelectedTable = "";
             this.serachPanel.TableType = "";
+            this.toolTip.SetToolTip(this.serachPanel, resources.GetString("serachPanel.ToolTip"));
             this.serachPanel.AfterSelect += new System.EventHandler(this.OnSerachPanel_AfterSelect);
             this.serachPanel.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
             this.serachPanel.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
             // 
             // columnView
             // 
-            this.columnView.ConnectionString = "";
             resources.ApplyResources(this.columnView, "columnView");
+            this.columnView.ConnectionString = "";
             this.columnView.ExcludedColumns = ((System.Collections.Generic.List<string>)(resources.GetObject("columnView.ExcludedColumns")));
             this.columnView.Name = "columnView";
             this.columnView.ObjectName = "";
+            this.toolTip.SetToolTip(this.columnView, resources.GetString("columnView.ToolTip"));
             this.columnView.OnColumnFrequency += new System.EventHandler(this.OnColumnFrequency);
             this.columnView.SelectedColumnChanged += new System.EventHandler(this.ColumnView_SelectedColumnChanged);
             // 
@@ -227,9 +255,11 @@
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip.Name = "menuStrip";
+            this.toolTip.SetToolTip(this.menuStrip, resources.GetString("menuStrip.ToolTip"));
             // 
             // fileToolStripMenuItem
             // 
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectToToolStripMenuItem,
             this.addNewDBConnectionToolStripMenuItem,
@@ -237,7 +267,6 @@
             this.toolStripSeparator3,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             // 
             // connectToToolStripMenuItem
             // 
@@ -246,30 +275,31 @@
             // 
             // addNewDBConnectionToolStripMenuItem
             // 
+            resources.ApplyResources(this.addNewDBConnectionToolStripMenuItem, "addNewDBConnectionToolStripMenuItem");
             this.addNewDBConnectionToolStripMenuItem.Image = global::OctofyExp.Properties.Resources.add;
             this.addNewDBConnectionToolStripMenuItem.Name = "addNewDBConnectionToolStripMenuItem";
-            resources.ApplyResources(this.addNewDBConnectionToolStripMenuItem, "addNewDBConnectionToolStripMenuItem");
             this.addNewDBConnectionToolStripMenuItem.Click += new System.EventHandler(this.AddToolStripButton_Click);
             // 
             // manageConnectionsToolStripMenuItem
             // 
-            this.manageConnectionsToolStripMenuItem.Name = "manageConnectionsToolStripMenuItem";
             resources.ApplyResources(this.manageConnectionsToolStripMenuItem, "manageConnectionsToolStripMenuItem");
+            this.manageConnectionsToolStripMenuItem.Name = "manageConnectionsToolStripMenuItem";
             this.manageConnectionsToolStripMenuItem.Click += new System.EventHandler(this.ManageConnectionsToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
             resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // tableToolStripMenuItem
             // 
+            resources.ApplyResources(this.tableToolStripMenuItem, "tableToolStripMenuItem");
             this.tableToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quickAnalysisToolStripMenuItem,
             this.analysisOnEntireTableviewToolStripMenuItem,
@@ -278,81 +308,80 @@
             this.previewDataToolStripMenuItem,
             this.toolStripSeparator2,
             this.copyTableviewNameToolStripMenuItem});
-            resources.ApplyResources(this.tableToolStripMenuItem, "tableToolStripMenuItem");
             this.tableToolStripMenuItem.Name = "tableToolStripMenuItem";
             // 
             // quickAnalysisToolStripMenuItem
             // 
-            this.quickAnalysisToolStripMenuItem.Name = "quickAnalysisToolStripMenuItem";
             resources.ApplyResources(this.quickAnalysisToolStripMenuItem, "quickAnalysisToolStripMenuItem");
+            this.quickAnalysisToolStripMenuItem.Name = "quickAnalysisToolStripMenuItem";
             this.quickAnalysisToolStripMenuItem.Click += new System.EventHandler(this.QuickAnalysisToolStripMenuItem_Click);
             // 
             // analysisOnEntireTableviewToolStripMenuItem
             // 
-            this.analysisOnEntireTableviewToolStripMenuItem.Name = "analysisOnEntireTableviewToolStripMenuItem";
             resources.ApplyResources(this.analysisOnEntireTableviewToolStripMenuItem, "analysisOnEntireTableviewToolStripMenuItem");
+            this.analysisOnEntireTableviewToolStripMenuItem.Name = "analysisOnEntireTableviewToolStripMenuItem";
             this.analysisOnEntireTableviewToolStripMenuItem.Click += new System.EventHandler(this.AnalysisOnEntireTableviewToolStripMenuItem_Click);
             // 
             // anaysisOnSelectedColumnsToolStripMenuItem
             // 
-            this.anaysisOnSelectedColumnsToolStripMenuItem.Name = "anaysisOnSelectedColumnsToolStripMenuItem";
             resources.ApplyResources(this.anaysisOnSelectedColumnsToolStripMenuItem, "anaysisOnSelectedColumnsToolStripMenuItem");
+            this.anaysisOnSelectedColumnsToolStripMenuItem.Name = "anaysisOnSelectedColumnsToolStripMenuItem";
             this.anaysisOnSelectedColumnsToolStripMenuItem.Click += new System.EventHandler(this.AnaysisOnSelectedColumnsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // previewDataToolStripMenuItem
             // 
-            this.previewDataToolStripMenuItem.Name = "previewDataToolStripMenuItem";
             resources.ApplyResources(this.previewDataToolStripMenuItem, "previewDataToolStripMenuItem");
+            this.previewDataToolStripMenuItem.Name = "previewDataToolStripMenuItem";
             this.previewDataToolStripMenuItem.Click += new System.EventHandler(this.PreviewDataToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // copyTableviewNameToolStripMenuItem
             // 
-            this.copyTableviewNameToolStripMenuItem.Name = "copyTableviewNameToolStripMenuItem";
             resources.ApplyResources(this.copyTableviewNameToolStripMenuItem, "copyTableviewNameToolStripMenuItem");
+            this.copyTableviewNameToolStripMenuItem.Name = "copyTableviewNameToolStripMenuItem";
             this.copyTableviewNameToolStripMenuItem.Click += new System.EventHandler(this.CopyTableviewNameToolStripMenuItem_Click);
             // 
             // columnToolStripMenuItem
             // 
+            resources.ApplyResources(this.columnToolStripMenuItem, "columnToolStripMenuItem");
             this.columnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FrequenciesToolStripMenuItem,
             this.toolStripSeparator4,
             this.copyColumnNameToolStripMenuItem});
-            resources.ApplyResources(this.columnToolStripMenuItem, "columnToolStripMenuItem");
             this.columnToolStripMenuItem.Name = "columnToolStripMenuItem";
             // 
             // FrequenciesToolStripMenuItem
             // 
-            this.FrequenciesToolStripMenuItem.Name = "FrequenciesToolStripMenuItem";
             resources.ApplyResources(this.FrequenciesToolStripMenuItem, "FrequenciesToolStripMenuItem");
+            this.FrequenciesToolStripMenuItem.Name = "FrequenciesToolStripMenuItem";
             this.FrequenciesToolStripMenuItem.Click += new System.EventHandler(this.FrequenciesToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
             resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
             // 
             // copyColumnNameToolStripMenuItem
             // 
-            this.copyColumnNameToolStripMenuItem.Name = "copyColumnNameToolStripMenuItem";
             resources.ApplyResources(this.copyColumnNameToolStripMenuItem, "copyColumnNameToolStripMenuItem");
+            this.copyColumnNameToolStripMenuItem.Name = "copyColumnNameToolStripMenuItem";
             this.copyColumnNameToolStripMenuItem.Click += new System.EventHandler(this.CopyColumnNameToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
+            resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.copyToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
             // 
             // copyToolStripMenuItem
             // 
@@ -361,52 +390,52 @@
             // 
             // viewToolStripMenuItem
             // 
+            resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolBarToolStripMenuItem,
             this.statusBarToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
             // 
             // toolBarToolStripMenuItem
             // 
+            resources.ApplyResources(this.toolBarToolStripMenuItem, "toolBarToolStripMenuItem");
             this.toolBarToolStripMenuItem.Checked = true;
             this.toolBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toolBarToolStripMenuItem.Name = "toolBarToolStripMenuItem";
-            resources.ApplyResources(this.toolBarToolStripMenuItem, "toolBarToolStripMenuItem");
             this.toolBarToolStripMenuItem.Click += new System.EventHandler(this.ToolBarToolStripMenuItem_Click);
             // 
             // statusBarToolStripMenuItem
             // 
+            resources.ApplyResources(this.statusBarToolStripMenuItem, "statusBarToolStripMenuItem");
             this.statusBarToolStripMenuItem.Checked = true;
             this.statusBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.statusBarToolStripMenuItem.Name = "statusBarToolStripMenuItem";
-            resources.ApplyResources(this.statusBarToolStripMenuItem, "statusBarToolStripMenuItem");
             this.statusBarToolStripMenuItem.Click += new System.EventHandler(this.StatusBarToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
+            resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
             // 
             // optionsToolStripMenuItem
             // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             resources.ApplyResources(this.optionsToolStripMenuItem, "optionsToolStripMenuItem");
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.OptionsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
             // aboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // toolStrip
@@ -418,24 +447,25 @@
             this.dataSourcesToolStripComboBox,
             this.addConnectionToolStripButton});
             this.toolStrip.Name = "toolStrip";
+            this.toolTip.SetToolTip(this.toolStrip, resources.GetString("toolStrip.ToolTip"));
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
             resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
+            this.toolStripLabel1.Name = "toolStripLabel1";
             // 
             // dataSourcesToolStripComboBox
             // 
+            resources.ApplyResources(this.dataSourcesToolStripComboBox, "dataSourcesToolStripComboBox");
             this.dataSourcesToolStripComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dataSourcesToolStripComboBox.Name = "dataSourcesToolStripComboBox";
-            resources.ApplyResources(this.dataSourcesToolStripComboBox, "dataSourcesToolStripComboBox");
             this.dataSourcesToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.DataSourcesToolStripComboBox_SelectedIndexChanged);
             // 
             // addConnectionToolStripButton
             // 
+            resources.ApplyResources(this.addConnectionToolStripButton, "addConnectionToolStripButton");
             this.addConnectionToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.addConnectionToolStripButton.Image = global::OctofyExp.Properties.Resources.add;
-            resources.ApplyResources(this.addConnectionToolStripButton, "addConnectionToolStripButton");
             this.addConnectionToolStripButton.Name = "addConnectionToolStripButton";
             this.addConnectionToolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
             // 
@@ -445,6 +475,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.toolStripContainer);
             this.Name = "MainForm";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DBExpoMain_FormClosing);
             this.Load += new System.EventHandler(this.DBExpoMain_Load);
             this.toolStripContainer.BottomToolStripPanel.ResumeLayout(false);

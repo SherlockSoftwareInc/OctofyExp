@@ -790,6 +790,24 @@ namespace OctofyExp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to X-axis column:.
+        /// </summary>
+        internal static string A082 {
+            get {
+                return ResourceManager.GetString("A082", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version {0}.
+        /// </summary>
+        internal static string A083 {
+            get {
+                return ResourceManager.GetString("A083", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap add {

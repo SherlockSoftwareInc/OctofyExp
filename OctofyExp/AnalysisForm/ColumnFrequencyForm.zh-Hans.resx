@@ -163,15 +163,6 @@
   <data name="excludeBlanksToolStripButton.ToolTipText" xml:space="preserve">
     <value>隐藏空白</value>
   </data>
-  <data name="groupByToolStripLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 24</value>
-  </data>
-  <data name="groupByToolStripLabel.Text" xml:space="preserve">
-    <value>分组:</value>
-  </data>
-  <data name="groupByToolStripComboBox.ToolTipText" xml:space="preserve">
-    <value>分组方式</value>
-  </data>
   <data name="searchForToolStripLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 24</value>
   </data>
@@ -190,12 +181,6 @@
         sxkYGNwFMUHY0NDwBlCMFSxJLKitrQ3m5eX9z8fH97+pqckPKkwasLW1vWhnZ3cGyiUdrFy5Unf58uWa
         UO4owAoYGABgako9pqf6IgAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="nextToolStripButton.ToolTipText" xml:space="preserve">
-    <value>下一个</value>
-  </data>
-  <data name="previousToolStripButton.ToolTipText" xml:space="preserve">
-    <value>上一个</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -755,6 +740,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>列值频率</value>
+    <value>栏值频率</value>
   </data>
 </root>

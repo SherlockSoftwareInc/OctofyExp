@@ -145,7 +145,7 @@
     <value>xAxisVariableSelector</value>
   </data>
   <data name="&gt;&gt;xAxisVariableSelector.Type" xml:space="preserve">
-    <value>OctofyExp.VariableSelector, OctofyExp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>OctofyExp.VariableSelector, OctofyExp, Version=1.1.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;xAxisVariableSelector.Parent" xml:space="preserve">
     <value>$this</value>
@@ -175,7 +175,7 @@
     <value>yAxisVariableSelector</value>
   </data>
   <data name="&gt;&gt;yAxisVariableSelector.Type" xml:space="preserve">
-    <value>OctofyExp.VariableSelector, OctofyExp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>OctofyExp.VariableSelector, OctofyExp, Version=1.1.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;yAxisVariableSelector.Parent" xml:space="preserve">
     <value>$this</value>

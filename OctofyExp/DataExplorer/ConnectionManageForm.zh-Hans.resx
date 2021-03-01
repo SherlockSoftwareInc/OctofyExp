@@ -117,124 +117,125 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="connectionsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
   </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
+  <data name="connectionsLabel.Text" xml:space="preserve">
+    <value>数据源：</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="addToolStripButton.Text" xml:space="preserve">
+    <value>新增</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="deleteToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 24</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 348</value>
+  <data name="deleteToolStripButton.Text" xml:space="preserve">
+    <value>删除</value>
   </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 351</value>
+  <data name="TestToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 24</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 25</value>
-  </data>
-  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 22</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>413, 373</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dataGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;closeToolStripButton.Name" xml:space="preserve">
-    <value>closeToolStripButton</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 25</value>
-  </data>
-  <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="statusStrip1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;closeToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="closeToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="TestToolStripButton.Text" xml:space="preserve">
+    <value>测试</value>
   </data>
   <data name="closeToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 22</value>
+    <value>56, 24</value>
+  </data>
+  <data name="closeToolStripButton.Text" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="cancelToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="cancelToolStripButton.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="connectionStringLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="connectionStringLabel.Text" xml:space="preserve">
+    <value>连接字符串：</value>
+  </data>
+  <data name="useCustomConectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 17</value>
+  </data>
+  <data name="useCustomConectionCheckBox.Text" xml:space="preserve">
+    <value>使用自定义连接字符串</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="databaseNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 68</value>
+  </data>
+  <data name="databaseNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="databaseNameLabel.Text" xml:space="preserve">
+    <value>数据库：</value>
+  </data>
+  <data name="connectionNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 21</value>
+  </data>
+  <data name="connectionNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="connectionNameLabel.Text" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="serverNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 45</value>
+  </data>
+  <data name="serverNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="serverNameLabel.Text" xml:space="preserve">
+    <value>服务器：</value>
+  </data>
+  <data name="authenticationGroupBox.Text" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="rememberPasswordCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 17</value>
+  </data>
+  <data name="rememberPasswordCheckBox.Text" xml:space="preserve">
+    <value>记住密码</value>
+  </data>
+  <data name="authenticationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 27</value>
+  </data>
+  <data name="authenticationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="authenticationLabel.Text" xml:space="preserve">
+    <value>验证方式：</value>
+  </data>
+  <data name="authenticationComboBox.Items" xml:space="preserve">
+    <value>Windows身份验证</value>
+  </data>
+  <data name="authenticationComboBox.Items1" xml:space="preserve">
+    <value>SQL Server身份验证</value>
+  </data>
+  <data name="userNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 51</value>
+  </data>
+  <data name="userNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="userNameLabel.Text" xml:space="preserve">
+    <value>用户名：</value>
+  </data>
+  <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 76</value>
+  </data>
+  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="passwordLabel.Text" xml:space="preserve">
+    <value>密码：</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Excluded Columns</value>
+    <value>数据源管理器</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ExcludeColumnsForm</value>
-  </data>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>122, 17</value>
-  </metadata>
 </root>

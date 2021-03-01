@@ -211,8 +211,29 @@
     <EmbeddedResource Include="AnalysisForm\ChartVariableSelector.resx">
       <DependentUpon>ChartVariableSelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnalysisForm\ColumnFrequencyForm.zh-CN.resx">
+    <EmbeddedResource Include="AnalysisForm\ColumnFrequencyForm.zh-Hans.resx">
       <DependentUpon>ColumnFrequencyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\ColumnFrequencyForm.zh-Hant.resx">
+      <DependentUpon>ColumnFrequencyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\DataAnalysisForm.zh-Hans.resx">
+      <DependentUpon>DataAnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\DataAnalysisForm.zh-Hant.resx">
+      <DependentUpon>DataAnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\ExcludeColumnsForm.zh-Hans.resx">
+      <DependentUpon>ExcludeColumnsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\ExcludeColumnsForm.zh-Hant.resx">
+      <DependentUpon>ExcludeColumnsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\PreviewDataForm.zh-Hans.resx">
+      <DependentUpon>PreviewDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\PreviewDataForm.zh-Hant.resx">
+      <DependentUpon>PreviewDataForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\ColumnDefView.zh-Hans.resx">
       <DependentUpon>ColumnDefView.cs</DependentUpon>
@@ -241,10 +262,28 @@
     <EmbeddedResource Include="AnalysisForm\ColumnFrequencyForm.resx">
       <DependentUpon>ColumnFrequencyForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\ColumnsSelecteForm.zh-Hans.resx">
+      <DependentUpon>ColumnsSelecteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\ColumnsSelecteForm.zh-Hant.resx">
+      <DependentUpon>ColumnsSelecteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\ConnectionManageForm.resx">
       <DependentUpon>ConnectionManageForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\ConnectionManageForm.zh-Hans.resx">
+      <DependentUpon>ConnectionManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\ConnectionManageForm.zh-Hant.resx">
+      <DependentUpon>ConnectionManageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\DBObjectTree.resx">
+      <DependentUpon>DBObjectTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\DBObjectTree.zh-Hans.resx">
+      <DependentUpon>DBObjectTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\DBObjectTree.zh-Hant.resx">
       <DependentUpon>DBObjectTree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\NewSQLServerConnectionDialog.resx">
@@ -252,6 +291,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\PreviewDataForm.resx">
       <DependentUpon>PreviewDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\NewSQLServerConnectionDialog.zh-Hans.resx">
+      <DependentUpon>NewSQLServerConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\NewSQLServerConnectionDialog.zh-Hant.resx">
+      <DependentUpon>NewSQLServerConnectionDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\SearchOptionsDialog.resx">
       <DependentUpon>SearchOptionsDialog.cs</DependentUpon>
@@ -262,16 +307,34 @@
     <EmbeddedResource Include="DataExplorer\TableSearchPanel.resx">
       <DependentUpon>TableSearchPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\TableSearchPanel.zh-Hans.resx">
+      <DependentUpon>TableSearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\TableSearchPanel.zh-Hant.resx">
+      <DependentUpon>TableSearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.zh-Hans.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.zh-Hant.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OctofySplashScreen.resx">
       <DependentUpon>OctofySplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OctofySplashScreen.zh-Hans.resx">
+      <DependentUpon>OctofySplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.zh-Hans.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.zh-Hant.resx">
       <DependentUpon>OptionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.zh-Hant.resx">
