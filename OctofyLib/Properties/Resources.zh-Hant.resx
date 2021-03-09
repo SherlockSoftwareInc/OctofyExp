@@ -118,48 +118,48 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="B001" xml:space="preserve">
-    <value>There are too many data points to fit into the chart.</value>
+    <value>太多數據點無法顯示圖表。</value>
   </data>
   <data name="B002" xml:space="preserve">
-    <value>There are too many data series to display.</value>
+    <value>太多數據序列無法顯示圖表。</value>
   </data>
   <data name="B003" xml:space="preserve">
-    <value>(Blanks)</value>
+    <value>（空白）</value>
   </data>
   <data name="B004" xml:space="preserve">
-    <value>Count:  {0}</value>
+    <value>計數：{0}</value>
   </data>
   <data name="B005" xml:space="preserve">
-    <value>Grand total:  {0}</value>
+    <value>總計：{0}</value>
   </data>
   <data name="B006" xml:space="preserve">
-    <value>Number of legend item</value>
+    <value>圖例項數</value>
   </data>
   <data name="B007" xml:space="preserve">
-    <value>The maximum number of legend items is 1 to 256.</value>
+    <value>圖例項的最大數量為1到256。</value>
   </data>
   <data name="B008" xml:space="preserve">
-    <value>{0}: {1} to {2}</value>
+    <value>{0}：從{1}到{2}</value>
   </data>
   <data name="B009" xml:space="preserve">
-    <value>There are too many data series or data points to fit in this chart.</value>
+    <value>此圖表無法容納太多的數據系列或數據點。</value>
   </data>
   <data name="B010" xml:space="preserve">
-    <value>Grand total of {0}:  {1}</value>
+    <value>總計{0}：{1}</value>
   </data>
   <data name="B011" xml:space="preserve">
-    <value>{0} Group by {1}</value>
+    <value>按{0}分類的{1}</value>
   </data>
   <data name="B012" xml:space="preserve">
-    <value>{0} to {1}</value>
+    <value>{0}至{1}</value>
   </data>
   <data name="B013" xml:space="preserve">
-    <value>Please select a reporting date range.</value>
+    <value>請選擇報告日期範圍。</value>
   </data>
   <data name="B014" xml:space="preserve">
-    <value>There are {0} items in this category. Do you want to load them?</value>
+    <value>此類別中有{0}個項目。您要加載它們嗎？</value>
   </data>
   <data name="B015" xml:space="preserve">
-    <value>Warning of slow operation</value>
+    <value>耗時操作警告</value>
   </data>
 </root>

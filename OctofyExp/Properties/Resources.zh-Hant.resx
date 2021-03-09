@@ -158,7 +158,7 @@
     <value>計數</value>
   </data>
   <data name="A006" xml:space="preserve">
-    <value>表中沒有可用於分析的列。</value>
+    <value>表中沒有可用於分析的欄。</value>
   </data>
   <data name="A024" xml:space="preserve">
     <value>移除{0}個空白</value>
@@ -173,7 +173,7 @@
     <value>..\Resources\checkmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A077" xml:space="preserve">
-    <value>系統無法計算該列的頻率。</value>
+    <value>系統無法計算該欄的頻率。</value>
   </data>
   <data name="A003" xml:space="preserve">
     <value>連接到{0} ...</value>
@@ -248,10 +248,10 @@
     <value>類別數超出了最大設置</value>
   </data>
   <data name="A007" xml:space="preserve">
-    <value>沒有分類列</value>
+    <value>沒有可分類欄</value>
   </data>
   <data name="A076" xml:space="preserve">
-    <value>{0} by {1}</value>
+    <value>按{0}分類的{1}</value>
   </data>
   <data name="A075" xml:space="preserve">
     <value>請輸入一個介於100和999999之間的數字。</value>
@@ -266,7 +266,7 @@
     <value>沒有填寫完整</value>
   </data>
   <data name="A035" xml:space="preserve">
-    <value>不支持該列的數據類型。</value>
+    <value>不支持該欄的數據類型。</value>
   </data>
   <data name="A038" xml:space="preserve">
     <value>計入空白</value>
@@ -305,7 +305,7 @@
     <value>..\Resources\include_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A014" xml:space="preserve">
-    <value>{0}中的以下列已被移除：</value>
+    <value>{0}中的以下數據欄無法分類，已被移除：</value>
   </data>
   <data name="A043" xml:space="preserve">
     <value>行數：{0}</value>
@@ -348,7 +348,7 @@
     <value>空白欄</value>
   </data>
   <data name="A044" xml:space="preserve">
-    <value>{0}中的以下列已被移除：</value>
+    <value>因無法顯示內容，{0}中的以下欄已被移除：</value>
   </data>
   <data name="A023" xml:space="preserve">
     <value>移除1個空白</value>
@@ -444,7 +444,7 @@
     <value>請輸入數據庫連接字符串。</value>
   </data>
   <data name="A082" xml:space="preserve">
-    <value>X轴栏：</value>
+    <value>X軸欄：</value>
   </data>
   <data name="A083" xml:space="preserve">
     <value>版本{0}</value>

@@ -457,7 +457,7 @@ namespace OctofyExp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Following column(s) in {0} have been excluded:.
+        ///   Looks up a localized string similar to Due to the inability to display content, the following columns in {0} have been excluded:.
         /// </summary>
         internal static string A044 {
             get {
@@ -736,7 +736,7 @@ namespace OctofyExp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} by {1}.
+        ///   Looks up a localized string similar to {0} Group by {1}.
         /// </summary>
         internal static string A076 {
             get {

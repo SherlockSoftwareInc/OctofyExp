@@ -151,7 +151,7 @@ namespace OctofyLib.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} by {1}.
+        ///   Looks up a localized string similar to {0} Group by {1}.
         /// </summary>
         internal static string B011 {
             get {
@@ -169,7 +169,7 @@ namespace OctofyLib.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please select reporting date range..
+        ///   Looks up a localized string similar to Please select a reporting date range..
         /// </summary>
         internal static string B013 {
             get {

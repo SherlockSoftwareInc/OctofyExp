@@ -251,7 +251,7 @@
     <value>No categorical column</value>
   </data>
   <data name="A076" xml:space="preserve">
-    <value>{0} by {1}</value>
+    <value>{0} Group by {1}</value>
   </data>
   <data name="A075" xml:space="preserve">
     <value>Please enter a number between 100 and 999999.</value>
@@ -348,7 +348,7 @@
     <value>Empty column</value>
   </data>
   <data name="A044" xml:space="preserve">
-    <value>Following column(s) in {0} have been excluded:</value>
+    <value>Due to the inability to display content, the following columns in {0} have been excluded:</value>
   </data>
   <data name="A023" xml:space="preserve">
     <value>1 blank excluded</value>
