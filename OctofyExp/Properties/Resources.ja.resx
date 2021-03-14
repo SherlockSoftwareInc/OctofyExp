@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A048" xml:space="preserve">
+    <value>測定データ列：</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SimplBarChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SimplBarChart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A045" xml:space="preserve">
+    <value>テーブルまたはビューが指定されていません。</value>
+  </data>
+  <data name="A010" xml:space="preserve">
+    <value>{0}％を計算しています...お待ちください...</value>
+  </data>
+  <data name="A046" xml:space="preserve">
+    <value>表示するオブジェクトはありません</value>
+  </data>
+  <data name="A020" xml:space="preserve">
+    <value>データテーブル分析：{0}秒</value>
+  </data>
+  <data name="down_arrow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down_arrow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excla_mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excla_mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A008" xml:space="preserve">
+    <value>エラーが発生しました</value>
+  </data>
+  <data name="down_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A033" xml:space="preserve">
+    <value>このテーブル列にはカテゴリが多すぎます。</value>
+  </data>
+  <data name="A027" xml:space="preserve">
+    <value>カウント</value>
+  </data>
+  <data name="A006" xml:space="preserve">
+    <value>表には、分析に使用できる列はありません。</value>
+  </data>
+  <data name="A024" xml:space="preserve">
+    <value>{0}のブランクを除外</value>
+  </data>
+  <data name="A029" xml:space="preserve">
+    <value>計算中、お待ちください...</value>
+  </data>
+  <data name="copy_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A077" xml:space="preserve">
+    <value>システムはこの列の頻度を計算できません。</value>
+  </data>
+  <data name="A003" xml:space="preserve">
+    <value>{0}に接続します...</value>
+  </data>
+  <data name="A052" xml:space="preserve">
+    <value>日付と時刻列</value>
+  </data>
+  <data name="A037" xml:space="preserve">
+    <value>ブランクを削除する</value>
+  </data>
+  <data name="A005" xml:space="preserve">
+    <value>接続に失敗しました</value>
+  </data>
+  <data name="A039" xml:space="preserve">
+    <value>計算中...</value>
+  </data>
+  <data name="A011" xml:space="preserve">
+    <value>読み込み中...</value>
+  </data>
+  <data name="A040" xml:space="preserve">
+    <value>チャート...</value>
+  </data>
+  <data name="A047" xml:space="preserve">
+    <value>Y軸データ列：</value>
+  </data>
+  <data name="A073" xml:space="preserve">
+    <value>256から{0}までの数字を入力してください。</value>
+  </data>
+  <data name="icon_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pie_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pie_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BarChartIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BarChartIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A055" xml:space="preserve">
+    <value>データ型はサポートされていません</value>
+  </data>
+  <data name="A032" xml:space="preserve">
+    <value>一致するものが見つかりません！</value>
+  </data>
+  <data name="A065" xml:space="preserve">
+    <value>（等しい）</value>
+  </data>
+  <data name="A041" xml:space="preserve">
+    <value>列値の頻度</value>
+  </data>
+  <data name="A031" xml:space="preserve">
+    <value>Y軸のブランクを含める</value>
+  </data>
+  <data name="A015" xml:space="preserve">
+    <value>除外された列</value>
+  </data>
+  <data name="A042" xml:space="preserve">
+    <value>プレビューデータ-{0}</value>
+  </data>
+  <data name="A025" xml:space="preserve">
+    <value>カテゴリ：{0}</value>
+  </data>
+  <data name="A018" xml:space="preserve">
+    <value>データテーブル分析中...</value>
+  </data>
+  <data name="A004" xml:space="preserve">
+    <value>データソースへの接続に失敗しました。</value>
+  </data>
+  <data name="data_grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data_grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A049" xml:space="preserve">
+    <value>カテゴリ数が最大設定を超えています</value>
+  </data>
+  <data name="A007" xml:space="preserve">
+    <value>カテゴリ列はありません</value>
+  </data>
+  <data name="A076" xml:space="preserve">
+    <value>{1}は{0}で分類</value>
+  </data>
+  <data name="A075" xml:space="preserve">
+    <value>100から999999までの数字を入力してください。</value>
+  </data>
+  <data name="A051" xml:space="preserve">
+    <value>分類できない列</value>
+  </data>
+  <data name="A036" xml:space="preserve">
+    <value>データベース接続が指定されていません。</value>
+  </data>
+  <data name="A061" xml:space="preserve">
+    <value>完全に記入されていません</value>
+  </data>
+  <data name="A035" xml:space="preserve">
+    <value>この列のデータ型はサポートされていません。</value>
+  </data>
+  <data name="A038" xml:space="preserve">
+    <value>ブランクを含める</value>
+  </data>
+  <data name="A022" xml:space="preserve">
+    <value>チャートデータ作成：{0}秒</value>
+  </data>
+  <data name="A013" xml:space="preserve">
+    <value>データのロードに失敗しました</value>
+  </data>
+  <data name="A021" xml:space="preserve">
+    <value>チャートデータの作成中...</value>
+  </data>
+  <data name="A069" xml:space="preserve">
+    <value>一致するものが見つかりました</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A002" xml:space="preserve">
+    <value>クイック分析前の{0}行</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A060" xml:space="preserve">
+    <value>上記のフィールドに入力してください。</value>
+  </data>
+  <data name="A054" xml:space="preserve">
+    <value>システムはバイナリ列の頻度を計算できません。</value>
+  </data>
+  <data name="A030" xml:space="preserve">
+    <value>Y軸のブランクを除外します</value>
+  </data>
+  <data name="include_blanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\include_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A014" xml:space="preserve">
+    <value>{0}の次のデータ列は分類できず、除外されました：</value>
+  </data>
+  <data name="A043" xml:space="preserve">
+    <value>行数: {0}</value>
+  </data>
+  <data name="A026" xml:space="preserve">
+    <value>（小計）</value>
+  </data>
+  <data name="A017" xml:space="preserve">
+    <value>{0}行</value>
+  </data>
+  <data name="A068" xml:space="preserve">
+    <value>一致するものが見つかりません</value>
+  </data>
+  <data name="sort_icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sort_icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_blanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy_selections" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_selections.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A070" xml:space="preserve">
+    <value>{0}一致が見つかりました</value>
+  </data>
+  <data name="to_excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\to_excel.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A001" xml:space="preserve">
+    <value>（ブランク）</value>
+    <comment>How to express blanks in both chart and data grid</comment>
+  </data>
+  <data name="A059" xml:space="preserve">
+    <value>接続アイテムを削除する</value>
+  </data>
+  <data name="up_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\up_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A053" xml:space="preserve">
+    <value>空白の列</value>
+  </data>
+  <data name="A044" xml:space="preserve">
+    <value>コンテンツを表示できないため、{0}の次の列が除外されました。</value>
+  </data>
+  <data name="A023" xml:space="preserve">
+    <value>1つのブランクを除外</value>
+  </data>
+  <data name="A012" xml:space="preserve">
+    <value>データを読み込んでいます。しばらくお待ちください。</value>
+  </data>
+  <data name="A072" xml:space="preserve">
+    <value>無効入力</value>
+  </data>
+  <data name="A074" xml:space="preserve">
+    <value>16から128までの数字を入力してください。</value>
+  </data>
+  <data name="A071" xml:space="preserve">
+    <value>数字のみを入力してください。</value>
+  </data>
+  <data name="stacked_column" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stacked_column.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToPPT16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToPPT16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A009" xml:space="preserve">
+    <value>データなし</value>
+  </data>
+  <data name="A058" xml:space="preserve">
+    <value>{0}を削除しますか？</value>
+  </data>
+  <data name="area_percentage_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\area_percentage_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A067" xml:space="preserve">
+    <value>（含む）</value>
+  </data>
+  <data name="A056" xml:space="preserve">
+    <value>システムは長いテキスト列の頻度を計算できません。</value>
+  </data>
+  <data name="A028" xml:space="preserve">
+    <value>パーセント</value>
+  </data>
+  <data name="A064" xml:space="preserve">
+    <value>（終わる）</value>
+  </data>
+  <data name="A057" xml:space="preserve">
+    <value>新着</value>
+  </data>
+  <data name="A016" xml:space="preserve">
+    <value>データの読み込み：{0}秒</value>
+  </data>
+  <data name="A019" xml:space="preserve">
+    <value>データ分析を行っている間お待ちください...</value>
+  </data>
+  <data name="select_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\select_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A000" xml:space="preserve">
+    <value>Octofy Lite</value>
+  </data>
+  <data name="cancel_icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A062" xml:space="preserve">
+    <value>スクリプトがクリップボードにコピーされました。</value>
+  </data>
+  <data name="A034" xml:space="preserve">
+    <value>カテゴリ名が長すぎます。</value>
+  </data>
+  <data name="search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A050" xml:space="preserve">
+    <value>カテゴリテキストの長さが最大設定を超えています</value>
+  </data>
+  <data name="A063" xml:space="preserve">
+    <value>（始まる）</value>
+  </data>
+  <data name="clear_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A078" xml:space="preserve">
+    <value>成功！</value>
+  </data>
+  <data name="A079" xml:space="preserve">
+    <value>接続テスト</value>
+  </data>
+  <data name="A080" xml:space="preserve">
+    <value>データベースへの接続に失敗しました！</value>
+  </data>
+  <data name="A081" xml:space="preserve">
+    <value>データベース接続文字列を入力してください。</value>
+  </data>
+  <data name="A082" xml:space="preserve">
+    <value>X軸列：</value>
+  </data>
+  <data name="A083" xml:space="preserve">
+    <value>バージョン{0}</value>
+  </data>
+  <data name="A084" xml:space="preserve">
+    <value>この操作を完了するのに十分なメモリがありません。</value>
+  </data>
+  <data name="A085" xml:space="preserve">
+    <value>タスクがキャンセルされました</value>
+  </data>
+</root>

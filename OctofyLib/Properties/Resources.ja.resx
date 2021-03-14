@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="B001" xml:space="preserve">
+    <value>グラフに収まるようにデータ ポイントが多すぎます。</value>
+  </data>
+  <data name="B002" xml:space="preserve">
+    <value>表示するデータ系列が多すぎます。</value>
+  </data>
+  <data name="B003" xml:space="preserve">
+    <value>(空白)</value>
+  </data>
+  <data name="B004" xml:space="preserve">
+    <value>カウント: {0}</value>
+  </data>
+  <data name="B005" xml:space="preserve">
+    <value>総計: {0}</value>
+  </data>
+  <data name="B006" xml:space="preserve">
+    <value>凡例項目の数</value>
+  </data>
+  <data name="B007" xml:space="preserve">
+    <value>凡例項目の最大数は 1 から 256 です。</value>
+  </data>
+  <data name="B008" xml:space="preserve">
+    <value>{0}:{2}に{1}</value>
+  </data>
+  <data name="B009" xml:space="preserve">
+    <value>このグラフに収まるには、データ系列またはデータ 要素が多すぎます。</value>
+  </data>
+  <data name="B010" xml:space="preserve">
+    <value>総{0}:{1}</value>
+  </data>
+  <data name="B011" xml:space="preserve">
+    <value>{0} グループ化 ({1}別)</value>
+  </data>
+  <data name="B012" xml:space="preserve">
+    <value>{0} ～ {1}</value>
+  </data>
+  <data name="B013" xml:space="preserve">
+    <value>レポートの日付範囲を選択してください。</value>
+  </data>
+  <data name="B014" xml:space="preserve">
+    <value>このカテゴリには{0}アイテムがあります。読み込みしますか?</value>
+  </data>
+  <data name="B015" xml:space="preserve">
+    <value>低速動作の警告</value>
+  </data>
+</root>

@@ -393,9 +393,6 @@
   <data name="connectionNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="authenticationComboBox.Items" xml:space="preserve">
-    <value>Windows Authentication</value>
-  </data>
   <data name="&gt;&gt;connectionsListBox.Name" xml:space="preserve">
     <value>connectionsListBox</value>
   </data>
@@ -569,9 +566,6 @@
   </data>
   <data name="serverNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 45</value>
-  </data>
-  <data name="authenticationComboBox.Items1" xml:space="preserve">
-    <value>SQL Server Authentication</value>
   </data>
   <data name="authenticationLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -765,8 +759,11 @@
   <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
     <value>toolStripSeparator1</value>
   </data>
-  <data name="authenticationComboBox.Items2" xml:space="preserve">
-    <value>SQL Server身份验证</value>
+  <data name="authenticationComboBox.Items" xml:space="preserve">
+    <value>Windows Authentication</value>
+  </data>
+  <data name="authenticationComboBox.Items1" xml:space="preserve">
+    <value>SQL Server authentication</value>
   </data>
   <data name="&gt;&gt;databaseTextBox.Name" xml:space="preserve">
     <value>databaseTextBox</value>

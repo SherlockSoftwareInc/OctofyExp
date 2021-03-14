@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
+  <PropertyGroup Label="MultilingualAppToolkit">
+    <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
+    <MultilingualFallbackLanguage>en</MultilingualFallbackLanguage>
+    <TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
+    <SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -167,41 +173,136 @@
     </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\OctofyLib.ja.xlf" />
+    <XliffResource Include="MultilingualResources\OctofyLib.zh-Hans.xlf" />
+    <XliffResource Include="MultilingualResources\OctofyLib.zh-Hant.xlf" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Common\CollapsibleSplitter.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Charts\AnalysisChartPanel.ja.resx">
+      <DependentUpon>AnalysisChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Charts\AnalysisChartPanel.resx">
       <DependentUpon>AnalysisChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\AnalysisChartPanel.zh-Hans.resx">
+      <DependentUpon>AnalysisChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\AnalysisChartPanel.zh-Hant.resx">
+      <DependentUpon>AnalysisChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\LegendPanel.ja.resx">
+      <DependentUpon>LegendPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Charts\LegendPanel.resx">
       <DependentUpon>LegendPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Charts\LegendPanel.zh-Hans.resx">
+      <DependentUpon>LegendPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\LegendPanel.zh-Hant.resx">
+      <DependentUpon>LegendPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedAreaChartControl.ja.resx">
+      <DependentUpon>StackedAreaChartControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Charts\StackedAreaChartControl.resx">
       <DependentUpon>StackedAreaChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedAreaChartControl.zh-Hans.resx">
+      <DependentUpon>StackedAreaChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedAreaChartControl.zh-Hant.resx">
+      <DependentUpon>StackedAreaChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedColumnControl.ja.resx">
+      <DependentUpon>StackedColumnControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Charts\StackedColumnControl.resx">
       <DependentUpon>StackedColumnControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedColumnControl.zh-Hans.resx">
+      <DependentUpon>StackedColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\StackedColumnControl.zh-Hant.resx">
+      <DependentUpon>StackedColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControl.ja.resx">
+      <DependentUpon>VScrollBarChartControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Charts\VScrollBarChartControl.resx">
       <DependentUpon>VScrollBarChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControl.zh-Hans.resx">
+      <DependentUpon>VScrollBarChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControl.zh-Hant.resx">
+      <DependentUpon>VScrollBarChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControlEx.ja.resx">
+      <DependentUpon>VScrollBarChartControlEx.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Charts\VScrollBarChartControlEx.resx">
       <DependentUpon>VScrollBarChartControlEx.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControlEx.zh-Hans.resx">
+      <DependentUpon>VScrollBarChartControlEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\VScrollBarChartControlEx.zh-Hant.resx">
+      <DependentUpon>VScrollBarChartControlEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\XAxisControl.ja.resx">
+      <DependentUpon>XAxisControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Charts\XAxisControl.resx">
       <DependentUpon>XAxisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\XAxisControl.zh-Hans.resx">
+      <DependentUpon>XAxisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\XAxisControl.zh-Hant.resx">
+      <DependentUpon>XAxisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateRangePickerDialog.ja.resx">
+      <DependentUpon>DateRangePickerDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Common\DateRangePickerDialog.resx">
       <DependentUpon>DateRangePickerDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateRangePickerDialog.zh-Hans.resx">
+      <DependentUpon>DateRangePickerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateRangePickerDialog.zh-Hant.resx">
+      <DependentUpon>DateRangePickerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FilterPanel.ja.resx">
+      <DependentUpon>FilterPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Common\FilterPanel.resx">
       <DependentUpon>FilterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FilterPanel.zh-Hans.resx">
+      <DependentUpon>FilterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FilterPanel.zh-Hant.resx">
+      <DependentUpon>FilterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OctofyRing.ja.resx">
+      <DependentUpon>OctofyRing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Common\OctofyRing.resx">
       <DependentUpon>OctofyRing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Common\OctofyRing.zh-Hans.resx">
+      <DependentUpon>OctofyRing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OctofyRing.zh-Hant.resx">
+      <DependentUpon>OctofyRing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja.resx" />
     <EmbeddedResource Include="Properties\Resources.zh-Hant.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.zh-Hant.Designer.cs</LastGenOutput>
@@ -217,4 +318,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.ResxResources.targets')" />
+  <Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="!Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets')" Label="MultilingualAppToolkit">
+    <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
+  </Target>
 </Project>

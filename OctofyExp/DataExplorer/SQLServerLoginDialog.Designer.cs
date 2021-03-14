@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SQLServerLoginDialog));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.databaseTextBox = new System.Windows.Forms.TextBox();
@@ -43,16 +42,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.userNameTextBox = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.okButton, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cancelButton, 1, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // okButton
             // 
@@ -147,7 +138,8 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
             this.Controls.Add(this.databaseTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.serverNameTextBox);
@@ -158,7 +150,6 @@
             this.MinimizeBox = false;
             this.Name = "SQLServerLoginDialog";
             this.Load += new System.EventHandler(this.ConnectionStringDialog_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -167,8 +158,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.TextBox databaseTextBox;
