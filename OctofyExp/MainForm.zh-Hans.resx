@@ -45,9 +45,6 @@
   <data name="statusStrip.Text" xml:space="preserve">
     <value>StatusStrip</value>
   </data>
-  <data name="addConnectionToolStripButton.ToolTipText" xml:space="preserve">
-    <value>添加新的数据库连接</value>
-  </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
     <value>工具</value>
   </data>
@@ -106,7 +103,7 @@
     <value>188, 6</value>
   </data>
   <data name="statusBarToolStripMenuItem.Text" xml:space="preserve">
-    <value></value>
+    <value>状态栏</value>
   </data>
   <data name="columnView.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>615, 439</value>
@@ -695,9 +692,6 @@
   <data name="tableToolStripMenuItem.Text" xml:space="preserve">
     <value>数据表</value>
   </data>
-  <data name="addConnectionToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
   <data name="copyToolStripMenuItem.ShortcutKeys" xml:space="preserve" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+C</value>
   </data>
@@ -776,23 +770,14 @@
   <data name="dbObjectsTree.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="toolStrip.Dock" xml:space="preserve" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
   <data name="toolStripContainer.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>925, 514</value>
-  </data>
-  <data name="toolStrip.Anchor" xml:space="preserve" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
   </data>
   <data name="splitContainer.SplitterDistance" xml:space="preserve" type="System.Int32, mscorlib">
     <value>306</value>
   </data>
   <data name="manageConnectionsToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>172, 22</value>
-  </data>
-  <data name="toolStrip.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>384, 27</value>
   </data>
   <data name="quickAnalysisToolStripMenuItem.Text" xml:space="preserve">
     <value>快速分析前1000行</value>
@@ -857,9 +842,6 @@
   <data name="serachPanel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>292, 407</value>
   </data>
-  <data name="addConnectionToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
   <data name="optionsToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
   </data>
@@ -899,9 +881,6 @@
   <data name="dbObjectsTree.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="toolStrip.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>3, 24</value>
-  </data>
   <data name="statusStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -911,17 +890,11 @@
   <data name="copyToolStripMenuItem.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Black</value>
   </data>
-  <data name="addConnectionToolStripButton.Text" xml:space="preserve">
-    <value>添加连接</value>
-  </data>
   <data name="toolStripSeparator4.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>156, 6</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>编辑</value>
-  </data>
-  <data name="toolStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="menuStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>0</value>
@@ -989,9 +962,6 @@
   <metadata name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="toolStrip.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>324, 17</value>
-  </metadata>
   <metadata name="menuStrip.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>216, 17</value>
   </metadata>
@@ -1000,5 +970,44 @@
   </metadata>
   <metadata name="toolTip.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <data name="toolStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="toolStrip1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>427, 17</value>
+  </metadata>
+  <data name="$this.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="toolStripButton.Text" xml:space="preserve">
+    <value>添加数据源</value>
+  </data>
+  <data name="toolStrip.Dock" xml:space="preserve" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="toolStrip.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>3, 25</value>
+  </data>
+  <data name="toolStrip.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>449, 25</value>
+  </data>
+  <data name="toolStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="toolStrip.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>427, 17</value>
   </metadata>
 </root>

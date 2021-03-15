@@ -1,110 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -117,117 +12,112 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="closeToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="closeToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="closeToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="closeToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>60, 24</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>Close</value>
+    <value>閉じる</value>
   </data>
   <data name="closeToolStripButton.ToolTipText" xml:space="preserve">
-    <value>Close</value>
+    <value>閉じる</value>
   </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStripSeparator1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
   </data>
-  <data name="chartViewToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="chartViewToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="chartViewToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="chartViewToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>90, 24</value>
   </data>
   <data name="chartViewToolStripButton.Text" xml:space="preserve">
-    <value>Graph view</value>
+    <value>グラフビュー</value>
   </data>
   <data name="chartViewToolStripButton.ToolTipText" xml:space="preserve">
-    <value>View results in the graph chart</value>
+    <value>グラフチャートで結果を表示する</value>
   </data>
-  <data name="gridViewToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="gridViewToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="gridViewToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="gridViewToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>82, 24</value>
   </data>
   <data name="gridViewToolStripButton.Text" xml:space="preserve">
-    <value>Data view</value>
+    <value>データ ビュー</value>
   </data>
   <data name="gridViewToolStripButton.ToolTipText" xml:space="preserve">
-    <value>View results in the data grid</value>
+    <value>データ グリッドでの結果の表示</value>
   </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStripSeparator2.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
   </data>
-  <data name="sortToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="sortToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="sortToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="sortToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>52, 24</value>
   </data>
   <data name="sortToolStripButton.Text" xml:space="preserve">
-    <value>Sort</value>
+    <value>並べ替え</value>
   </data>
   <data name="sortToolStripButton.ToolTipText" xml:space="preserve">
-    <value>Sort by counts of category from large to small</value>
+    <value>大小のカテゴリのカウントで並べ替え</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="excludeBlanksToolStripButton.Enabled" type="System.Boolean, mscorlib">
+  <data name="excludeBlanksToolStripButton.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="excludeBlanksToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="excludeBlanksToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="excludeBlanksToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="excludeBlanksToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>65, 24</value>
   </data>
   <data name="excludeBlanksToolStripButton.Text" xml:space="preserve">
-    <value>Blanks</value>
+    <value>(ブランク)</value>
   </data>
   <data name="excludeBlanksToolStripButton.ToolTipText" xml:space="preserve">
-    <value>Exclude blanks</value>
+    <value>ブランクを除外する</value>
   </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStripSeparator4.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
   </data>
-  <data name="searchForToolStripLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="searchForToolStripLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>63, 24</value>
   </data>
   <data name="searchForToolStripLabel.Text" xml:space="preserve">
-    <value>Search for:</value>
+    <value>検索対象:</value>
   </data>
-  <data name="searchForToolStripLabel.Visible" type="System.Boolean, mscorlib">
+  <data name="searchForToolStripLabel.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="searchToolStripTextBox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="searchToolStripTextBox.Font" xml:space="preserve" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="searchToolStripTextBox.MaxLength" type="System.Int32, mscorlib">
+  <data name="searchToolStripTextBox.MaxLength" xml:space="preserve" type="System.Int32, mscorlib">
     <value>255</value>
   </data>
-  <data name="searchToolStripTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="searchToolStripTextBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>144, 27</value>
   </data>
   <data name="searchToolStripTextBox.ToolTipText" xml:space="preserve">
-    <value>Search Y-axis categories</value>
+    <value>Y 軸カテゴリの検索</value>
   </data>
-  <data name="searchToolStripTextBox.Visible" type="System.Boolean, mscorlib">
+  <data name="searchToolStripTextBox.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="searchResultToolStripLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="searchResultToolStripLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
   <data name="searchResultToolStripLabel.Text" xml:space="preserve">
     <value>0/0</value>
   </data>
-  <data name="searchResultToolStripLabel.Visible" type="System.Boolean, mscorlib">
+  <data name="searchResultToolStripLabel.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="nextToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="nextToolStripButton.Image" xml:space="preserve" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADdSURBVDhPYxhmYNu2bXxQJk5w5MgRXigTE8yfP986MjJy
@@ -237,197 +127,139 @@
         UO4owAoYGABgako9pqf6IgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="nextToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="nextToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="nextToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="nextToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
   <data name="nextToolStripButton.Text" xml:space="preserve">
     <value>?</value>
   </data>
   <data name="nextToolStripButton.ToolTipText" xml:space="preserve">
-    <value>Next</value>
+    <value>次へ</value>
   </data>
-  <data name="nextToolStripButton.Visible" type="System.Boolean, mscorlib">
+  <data name="nextToolStripButton.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="previousToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="previousToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="previousToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="previousToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
   <data name="previousToolStripButton.Text" xml:space="preserve">
     <value>↑</value>
   </data>
   <data name="previousToolStripButton.ToolTipText" xml:space="preserve">
-    <value>Previous</value>
+    <value>前へ</value>
   </data>
-  <data name="previousToolStripButton.Visible" type="System.Boolean, mscorlib">
+  <data name="previousToolStripButton.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="toolStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStrip1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>933, 27</value>
   </data>
-  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+  <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="toolStrip1.Text" xml:space="preserve">
     <value>ToolStrip1</value>
   </data>
-  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>122, 17</value>
-  </metadata>
-  <data name="messageToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="messageToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>726, 19</value>
   </data>
-  <data name="messageToolStripStatusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="messageToolStripStatusLabel.TextAlign" xml:space="preserve" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="tableNameToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tableNameToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>37, 19</value>
   </data>
   <data name="tableNameToolStripStatusLabel.Text" xml:space="preserve">
-    <value>table</value>
+    <value>テーブル</value>
   </data>
   <data name="tableNameToolStripStatusLabel.ToolTipText" xml:space="preserve">
-    <value>Table/View name</value>
+    <value>テーブル/ビュー名</value>
   </data>
-  <data name="columnToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="columnToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>52, 19</value>
   </data>
   <data name="columnToolStripStatusLabel.Text" xml:space="preserve">
-    <value>column</value>
+    <value>列</value>
   </data>
   <data name="columnToolStripStatusLabel.ToolTipText" xml:space="preserve">
-    <value>Column name</value>
+    <value>列名</value>
   </data>
-  <data name="rowsToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="rowsToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>66, 19</value>
   </data>
   <data name="rowsToolStripStatusLabel.Text" xml:space="preserve">
-    <value>0 category</value>
+    <value>0 カテゴリ</value>
   </data>
   <data name="rowsToolStripStatusLabel.ToolTipText" xml:space="preserve">
-    <value>Number of categories</value>
+    <value>カテゴリ数</value>
   </data>
-  <data name="rowNumToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="rowNumToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>37, 19</value>
   </data>
   <data name="rowNumToolStripStatusLabel.Text" xml:space="preserve">
     <value>Rn: 0</value>
   </data>
   <data name="rowNumToolStripStatusLabel.ToolTipText" xml:space="preserve">
-    <value>Current category position</value>
+    <value>現在のカテゴリの位置</value>
   </data>
-  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="statusStrip.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>0, 495</value>
   </data>
-  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="statusStrip.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>933, 24</value>
   </data>
-  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+  <data name="statusStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="statusStrip.Text" xml:space="preserve">
     <value>statusStrip1</value>
   </data>
-  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
-    <value>statusStrip</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="frequencyDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="frequencyDataGridView.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>211, 130</value>
   </data>
-  <data name="frequencyDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
+  <data name="frequencyDataGridView.RowHeadersWidth" xml:space="preserve" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="frequencyDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="frequencyDataGridView.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>240, 150</value>
   </data>
-  <data name="frequencyDataGridView.TabIndex" type="System.Int32, mscorlib">
+  <data name="frequencyDataGridView.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="frequencyDataGridView.Visible" type="System.Boolean, mscorlib">
+  <data name="frequencyDataGridView.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;frequencyDataGridView.Name" xml:space="preserve">
-    <value>frequencyDataGridView</value>
-  </data>
-  <data name="&gt;&gt;frequencyDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;frequencyDataGridView.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;frequencyDataGridView.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ctlChart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="ctlChart.Dock" xml:space="preserve" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="ctlChart.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ctlChart.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>0, 27</value>
   </data>
-  <data name="ctlChart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="ctlChart.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="ctlChart.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ctlChart.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>933, 468</value>
   </data>
-  <data name="ctlChart.TabIndex" type="System.Int32, mscorlib">
+  <data name="ctlChart.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;ctlChart.Name" xml:space="preserve">
-    <value>ctlChart</value>
-  </data>
-  <data name="&gt;&gt;ctlChart.Type" xml:space="preserve">
-    <value>OctofyLib.VScrollBarChartControlEx, OctofyLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ctlChart.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ctlChart.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="openFormTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>209, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+  <data name="$this.AutoScaleDimensions" xml:space="preserve" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+  <data name="$this.ClientSize" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>933, 519</value>
   </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="$this.Icon" xml:space="preserve" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAAAAAAAEAIABlRgAARgAAADAwAAABACAAqCUAAKtGAAAgIAAAAQAgAKgQAABTbAAAEBAAAAEA
         IABoBAAA+3wAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAARixJREFUeNrtXQecE0Xb
@@ -984,133 +816,25 @@
         /6xB
 </value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+  <data name="$this.MinimumSize" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>600, 297</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+  <data name="$this.StartPosition" xml:space="preserve" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>Manual</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Column Value Frequencies</value>
+    <value>列値の頻度</value>
   </data>
-  <data name="&gt;&gt;closeToolStripButton.Name" xml:space="preserve">
-    <value>closeToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;closeToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chartViewToolStripButton.Name" xml:space="preserve">
-    <value>chartViewToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;chartViewToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridViewToolStripButton.Name" xml:space="preserve">
-    <value>gridViewToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;gridViewToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
-    <value>toolStripSeparator2</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sortToolStripButton.Name" xml:space="preserve">
-    <value>sortToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;sortToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;excludeBlanksToolStripButton.Name" xml:space="preserve">
-    <value>excludeBlanksToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;excludeBlanksToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
-    <value>toolStripSeparator4</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchForToolStripLabel.Name" xml:space="preserve">
-    <value>searchForToolStripLabel</value>
-  </data>
-  <data name="&gt;&gt;searchForToolStripLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchToolStripTextBox.Name" xml:space="preserve">
-    <value>searchToolStripTextBox</value>
-  </data>
-  <data name="&gt;&gt;searchToolStripTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchResultToolStripLabel.Name" xml:space="preserve">
-    <value>searchResultToolStripLabel</value>
-  </data>
-  <data name="&gt;&gt;searchResultToolStripLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nextToolStripButton.Name" xml:space="preserve">
-    <value>nextToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;nextToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;previousToolStripButton.Name" xml:space="preserve">
-    <value>previousToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;previousToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;messageToolStripStatusLabel.Name" xml:space="preserve">
-    <value>messageToolStripStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;messageToolStripStatusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableNameToolStripStatusLabel.Name" xml:space="preserve">
-    <value>tableNameToolStripStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;tableNameToolStripStatusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnToolStripStatusLabel.Name" xml:space="preserve">
-    <value>columnToolStripStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;columnToolStripStatusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rowsToolStripStatusLabel.Name" xml:space="preserve">
-    <value>rowsToolStripStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;rowsToolStripStatusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rowNumToolStripStatusLabel.Name" xml:space="preserve">
-    <value>rowNumToolStripStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;rowNumToolStripStatusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openFormTimer.Name" xml:space="preserve">
-    <value>openFormTimer</value>
-  </data>
-  <data name="&gt;&gt;openFormTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ColumnFrequencyForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <metadata name="openFormTimer.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>209, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

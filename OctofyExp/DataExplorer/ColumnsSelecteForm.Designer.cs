@@ -48,20 +48,20 @@ namespace OctofyExp
             // 
             // columnsCheckedListBox
             // 
-            resources.ApplyResources(this.columnsCheckedListBox, "columnsCheckedListBox");
             this.columnsCheckedListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.columnsCheckedListBox, "columnsCheckedListBox");
             this.columnsCheckedListBox.Name = "columnsCheckedListBox";
             this.columnsCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ColumnsCheckedListBox_ItemCheck);
             // 
             // toolStrip1
             // 
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.okToolStripButton,
             this.cancelToolStripButton,
             this.toolStripSeparator1,
             this.selectAllToolStripButton,
             this.clearToolStripButton});
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
             // okToolStripButton
@@ -80,8 +80,8 @@ namespace OctofyExp
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // selectAllToolStripButton
             // 

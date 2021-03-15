@@ -197,17 +197,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.zh-Hant.Designer.cs">
-      <DependentUpon>Resources.zh-Hant.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="Properties\Resources.zh-Hans.Designer.cs">
       <DependentUpon>Resources.zh-Hans.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Properties\Resources.zh-Hant.Designer.cs">
+      <DependentUpon>Resources.zh-Hant.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Include="StringExtensions.cs" />
+    <EmbeddedResource Include="AnalysisForm\ChartVariableSelector.ja.resx">
+      <DependentUpon>ChartVariableSelector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\ChartVariableSelector.resx">
       <DependentUpon>ChartVariableSelector.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,11 +220,17 @@
     <EmbeddedResource Include="AnalysisForm\ChartVariableSelector.zh-Hant.resx">
       <DependentUpon>ChartVariableSelector.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\ColumnFrequencyForm.ja.resx">
+      <DependentUpon>ColumnFrequencyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\ColumnFrequencyForm.zh-Hans.resx">
       <DependentUpon>ColumnFrequencyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\ColumnFrequencyForm.zh-Hant.resx">
       <DependentUpon>ColumnFrequencyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\DataAnalysisForm.ja.resx">
+      <DependentUpon>DataAnalysisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\DataAnalysisForm.zh-Hans.resx">
       <DependentUpon>DataAnalysisForm.cs</DependentUpon>
@@ -229,11 +238,17 @@
     <EmbeddedResource Include="AnalysisForm\DataAnalysisForm.zh-Hant.resx">
       <DependentUpon>DataAnalysisForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\ExcludeColumnsForm.ja.resx">
+      <DependentUpon>ExcludeColumnsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\ExcludeColumnsForm.zh-Hans.resx">
       <DependentUpon>ExcludeColumnsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\ExcludeColumnsForm.zh-Hant.resx">
       <DependentUpon>ExcludeColumnsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\PreviewDataForm.ja.resx">
+      <DependentUpon>PreviewDataForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\PreviewDataForm.zh-Hans.resx">
       <DependentUpon>PreviewDataForm.cs</DependentUpon>
@@ -241,17 +256,26 @@
     <EmbeddedResource Include="AnalysisForm\PreviewDataForm.zh-Hant.resx">
       <DependentUpon>PreviewDataForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\VariableSelector.ja.resx">
+      <DependentUpon>VariableSelector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\VariableSelector.zh-Hans.resx">
       <DependentUpon>VariableSelector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\VariableSelector.zh-Hant.resx">
       <DependentUpon>VariableSelector.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\ColumnDefView.ja.resx">
+      <DependentUpon>ColumnDefView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\ColumnDefView.zh-Hans.resx">
       <DependentUpon>ColumnDefView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\ColumnDefView.zh-Hant.resx">
       <DependentUpon>ColumnDefView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\ColumnsSelecteForm.ja.resx">
+      <DependentUpon>ColumnsSelecteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\ColumnsSelecteForm.resx">
       <DependentUpon>ColumnsSelecteForm.cs</DependentUpon>
@@ -260,9 +284,6 @@
     <EmbeddedResource Include="AnalysisForm\DataAnalysisForm.resx">
       <DependentUpon>DataAnalysisForm.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AnalysisForm\DataAnalysisForm.zh-CN.resx">
-      <DependentUpon>DataAnalysisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\ExcludeColumnsForm.resx">
       <DependentUpon>ExcludeColumnsForm.cs</DependentUpon>
@@ -281,6 +302,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\ColumnsSelecteForm.zh-Hant.resx">
       <DependentUpon>ColumnsSelecteForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\ConnectionManageForm.ja.resx">
+      <DependentUpon>ConnectionManageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\ConnectionManageForm.resx">
       <DependentUpon>ConnectionManageForm.cs</DependentUpon>
@@ -292,6 +317,9 @@
     <EmbeddedResource Include="DataExplorer\ConnectionManageForm.zh-Hant.resx">
       <DependentUpon>ConnectionManageForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\DBObjectTree.ja.resx">
+      <DependentUpon>DBObjectTree.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\DBObjectTree.resx">
       <DependentUpon>DBObjectTree.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\DBObjectTree.zh-Hant.resx">
       <DependentUpon>DBObjectTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\NewSQLServerConnectionDialog.ja.resx">
+      <DependentUpon>NewSQLServerConnectionDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\NewSQLServerConnectionDialog.resx">
       <DependentUpon>NewSQLServerConnectionDialog.cs</DependentUpon>
@@ -314,6 +345,9 @@
     <EmbeddedResource Include="DataExplorer\NewSQLServerConnectionDialog.zh-Hant.resx">
       <DependentUpon>NewSQLServerConnectionDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\SearchOptionsDialog.ja.resx">
+      <DependentUpon>SearchOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\SearchOptionsDialog.resx">
       <DependentUpon>SearchOptionsDialog.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -323,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\SearchOptionsDialog.zh-Hant.resx">
       <DependentUpon>SearchOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\SQLServerLoginDialog.ja.resx">
+      <DependentUpon>SQLServerLoginDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\SQLServerLoginDialog.resx">
       <DependentUpon>SQLServerLoginDialog.cs</DependentUpon>
@@ -334,6 +371,9 @@
     <EmbeddedResource Include="DataExplorer\SQLServerLoginDialog.zh-Hant.resx">
       <DependentUpon>SQLServerLoginDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataExplorer\TableSearchPanel.ja.resx">
+      <DependentUpon>TableSearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\TableSearchPanel.resx">
       <DependentUpon>TableSearchPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataExplorer\TableSearchPanel.zh-Hant.resx">
       <DependentUpon>TableSearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.ja.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -353,6 +396,9 @@
     <EmbeddedResource Include="MainForm.zh-Hant.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OctofySplashScreen.ja.resx">
+      <DependentUpon>OctofySplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OctofySplashScreen.resx">
       <DependentUpon>OctofySplashScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -361,6 +407,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OctofySplashScreen.zh-Hant.resx">
       <DependentUpon>OctofySplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.ja.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionsForm.resx">
       <DependentUpon>OptionsForm.cs</DependentUpon>
@@ -372,11 +421,7 @@
     <EmbeddedResource Include="OptionsForm.zh-Hant.resx">
       <DependentUpon>OptionsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.zh-Hant.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.zh-Hant.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja.resx" />
     <EmbeddedResource Include="Properties\Resources.zh-Hans.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.zh-Hans.Designer.cs</LastGenOutput>
@@ -392,6 +437,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Properties\Resources.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-Hant.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -476,6 +526,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="octofy_icon.ico" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\server.png" />
     <None Include="Resources\clear_all_16.jpg" />
     <None Include="Resources\select_all_16.jpg" />
     <None Include="Resources\checkmark.png" />
@@ -496,8 +548,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <XliffResource Include="MultilingualResources\OctofyExp.ja.xlf" />
     <XliffResource Include="MultilingualResources\OctofyExp.zh-Hans.xlf" />
-    <XliffResource Include="MultilingualResources\OctofyExp.zh-Hant.xlf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.ResxResources.targets')" />

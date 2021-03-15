@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -12,421 +117,116 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TestToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
-  </data>
-  <data name="userNameLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="connectionNameLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>67, 21</value>
-  </data>
-  <data name="connectionNameLabel.Text" xml:space="preserve">
-    <value>名稱：</value>
-  </data>
-  <data name="addToolStripButton.Text" xml:space="preserve">
-    <value>新增</value>
-  </data>
-  <data name="userNameTextBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>162, 20</value>
-  </data>
-  <data name="connectionNameLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cancelToolStripButton.Text" xml:space="preserve">
-    <value>取消</value>
-  </data>
-  <data name="passwordLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="databaseNameLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="passwordLabel.Text" xml:space="preserve">
-    <value>密碼：</value>
-  </data>
-  <data name="userNameLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>48, 51</value>
-  </data>
-  <data name="databaseNameLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="rememberPasswordCheckBox.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="authenticationLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>33, 27</value>
-  </data>
-  <data name="authenticationComboBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>204, 21</value>
-  </data>
-  <data name="saveButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="connectionsListBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>15, 41</value>
-  </data>
-  <data name="cancelToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="connectionStringTextBox.Multiline" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="authenticationLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>數據源管理器</value>
-  </data>
-  <data name="databaseTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>108, 66</value>
-  </data>
-  <data name="connectionsListBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>285, 342</value>
-  </data>
-  <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>確認</value>
-  </data>
-  <data name="closeToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
-  </data>
-  <data name="passwordTextBox.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="connectionNameTextBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>208, 20</value>
-  </data>
-  <data name="toolStripSeparator2.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>6, 27</value>
-  </data>
-  <data name="connectionStringLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>0, 3</value>
-  </data>
-  <data name="authenticationGroupBox.Padding" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="TestToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="panel1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>10, 214</value>
-  </data>
-  <data name="toolStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="addToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
-  </data>
-  <data name="authenticationLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
-  </data>
-  <data name="databaseTextBox.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="connectionNameTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>108, 18</value>
-  </data>
-  <data name="userNameLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="authenticationGroupBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="databaseNameLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>55, 68</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="connectionsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
   </data>
   <data name="connectionsLabel.Text" xml:space="preserve">
     <value>數據源：</value>
   </data>
-  <data name="authenticationGroupBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>306, 117</value>
-  </data>
-  <data name="TestToolStripButton.Text" xml:space="preserve">
-    <value>測試</value>
-  </data>
-  <data name="connectionNameLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="authenticationComboBox.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="saveButton.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="databaseNameLabel.Text" xml:space="preserve">
-    <value>資料庫名稱:</value>
-  </data>
-  <data name="passwordTextBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="authenticationGroupBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>10, 92</value>
-  </data>
-  <data name="rememberPasswordCheckBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="deleteToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+  <data name="addToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 24</value>
   </data>
-  <data name="deleteToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="addToolStripButton.Text" xml:space="preserve">
+    <value>新增</value>
   </data>
-  <data name="serverNameTextBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>208, 20</value>
-  </data>
-  <data name="authenticationComboBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>98, 24</value>
-  </data>
-  <data name="connectionsLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="passwordTextBox.PasswordChar" xml:space="preserve" type="System.Char, mscorlib">
-    <value>*</value>
-  </data>
-  <data name="passwordLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="saveButton.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="saveButton.Text" xml:space="preserve">
-    <value>添加</value>
-  </data>
-  <data name="useCustomConectionCheckBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="userNameTextBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="deleteToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
   </data>
   <data name="deleteToolStripButton.Text" xml:space="preserve">
     <value>刪除</value>
   </data>
-  <data name="connectionsListBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="TestToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
   </data>
-  <data name="connectionStringLabel.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="TestToolStripButton.Text" xml:space="preserve">
+    <value>測試</value>
   </data>
-  <data name="databaseTextBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>208, 21</value>
+  <data name="closeToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
   </data>
-  <data name="panel1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>312, 104</value>
+  <data name="closeToolStripButton.Text" xml:space="preserve">
+    <value>確認</value>
   </data>
-  <data name="connectionStringTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>3, 22</value>
+  <data name="cancelToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
   </data>
-  <data name="connectionNameLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
+  <data name="cancelToolStripButton.Text" xml:space="preserve">
+    <value>取消</value>
   </data>
-  <data name="serverNameLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="addToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="userNameLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>46, 13</value>
-  </data>
-  <data name="databaseTextBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="authenticationComboBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="serverNameLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>55, 45</value>
-  </data>
-  <data name="authenticationComboBox.Items" xml:space="preserve">
-    <value>Windows 驗證</value>
-  </data>
-  <data name="authenticationLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="toolStrip1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>651, 27</value>
-  </data>
-  <data name="connectionStringLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+  <data name="connectionStringLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>
-  </data>
-  <data name="passwordTextBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>162, 20</value>
-  </data>
-  <data name="rememberPasswordCheckBox.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="connectionsLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
   </data>
   <data name="connectionStringLabel.Text" xml:space="preserve">
     <value>連接字符串：</value>
   </data>
-  <data name="panel1.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="panel1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="toolStripSeparator1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>6, 27</value>
-  </data>
-  <data name="serverNameTextBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="connectionNameTextBox.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="authenticationGroupBox.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="authenticationGroupBox.Text" xml:space="preserve">
-    <value>登錄</value>
+  <data name="useCustomConectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 17</value>
   </data>
   <data name="useCustomConectionCheckBox.Text" xml:space="preserve">
     <value>使用自定義連接字符串</value>
   </data>
-  <data name="connectionsLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>12, 25</value>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>添加</value>
   </data>
-  <data name="connectionNameTextBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="databaseNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 68</value>
   </data>
-  <data name="rememberPasswordCheckBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>74, 17</value>
+  <data name="databaseNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
   </data>
-  <data name="serverNameLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
+  <data name="databaseNameLabel.Text" xml:space="preserve">
+    <value>資料庫名稱:</value>
   </data>
-  <data name="connectionStringLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="connectionNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 21</value>
   </data>
-  <data name="connectionStringLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="connectionNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
   </data>
-  <data name="useCustomConectionCheckBox.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" xml:space="preserve" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="useCustomConectionCheckBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>143, 2</value>
-  </data>
-  <data name="authenticationLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="serverNameLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="serverNameTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>108, 42</value>
-  </data>
-  <data name="userNameLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="serverNameLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="connectionNameLabel.Text" xml:space="preserve">
+    <value>名稱：</value>
   </data>
   <data name="serverNameLabel.Text" xml:space="preserve">
     <value>伺服器名稱:</value>
   </data>
-  <data name="serverNameTextBox.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="authenticationGroupBox.Text" xml:space="preserve">
+    <value>登錄</value>
   </data>
-  <data name="databaseNameLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
-  </data>
-  <data name="connectionsLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="$this.ClientSize" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>651, 397</value>
-  </data>
-  <data name="userNameTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>98, 49</value>
-  </data>
-  <data name="authenticationLabel.Text" xml:space="preserve">
-    <value>驗證方式：</value>
-  </data>
-  <data name="authenticationComboBox.Items1" xml:space="preserve">
-    <value>SQL Server 驗證</value>
-  </data>
-  <data name="useCustomConectionCheckBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>146, 17</value>
-  </data>
-  <data name="userNameTextBox.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="connectionNameLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="connectionGroupBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>330, 348</value>
-  </data>
-  <data name="passwordLabel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>57, 76</value>
-  </data>
-  <data name="connectionStringTextBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="rememberPasswordCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 17</value>
   </data>
   <data name="rememberPasswordCheckBox.Text" xml:space="preserve">
     <value>記住密碼</value>
   </data>
-  <data name="connectionGroupBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>306, 35</value>
+  <data name="authenticationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 27</value>
   </data>
-  <data name="cancelToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
+  <data name="authenticationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="authenticationLabel.Text" xml:space="preserve">
+    <value>驗證方式：</value>
+  </data>
+  <data name="authenticationComboBox.Items" xml:space="preserve">
+    <value>Windows 驗證</value>
+  </data>
+  <data name="authenticationComboBox.Items1" xml:space="preserve">
+    <value>SQL Server 驗證</value>
   </data>
   <data name="userNameLabel.Text" xml:space="preserve">
     <value>使用者名：</value>
   </data>
-  <data name="closeToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 76</value>
   </data>
-  <data name="databaseNameLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="passwordLabel.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="saveButton.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>241, 319</value>
-  </data>
-  <data name="connectionStringTextBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>306, 79</value>
-  </data>
-  <data name="passwordTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>98, 73</value>
-  </data>
-  <data name="connectionGroupBox.Enabled" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="passwordLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
   </data>
-  <data name="rememberPasswordCheckBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>98, 98</value>
+  <data name="passwordLabel.Text" xml:space="preserve">
+    <value>密碼：</value>
   </data>
-  <data name="connectionStringLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>數據源管理器</value>
   </data>
-  <data name="connectionGroupBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <metadata name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" xml:space="preserve" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

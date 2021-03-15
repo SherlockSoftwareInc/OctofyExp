@@ -39,10 +39,7 @@
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dbObjectsTree = new OctofyExp.DBObjectTree();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.serachPanel = new OctofyExp.TableSearchPanel();
-            this.columnView = new OctofyExp.ColumnDefView();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,8 +71,11 @@
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.dataSourcesToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
-            this.addConnectionToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.dbObjectsTree = new OctofyExp.DBObjectTree();
+            this.serachPanel = new OctofyExp.TableSearchPanel();
+            this.columnView = new OctofyExp.ColumnDefView();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
@@ -173,46 +173,12 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dbObjectsTree
-            // 
-            this.dbObjectsTree.DefaultNumOfRows = 10000;
-            resources.ApplyResources(this.dbObjectsTree, "dbObjectsTree");
-            this.dbObjectsTree.Name = "dbObjectsTree";
-            this.dbObjectsTree.AfterSelect += new System.EventHandler(this.DbObjects_AfterSelect);
-            this.dbObjectsTree.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
-            this.dbObjectsTree.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.serachPanel);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // serachPanel
-            // 
-            this.serachPanel.ConnectionString = "";
-            this.serachPanel.DefaultNumOfRows = 10000;
-            resources.ApplyResources(this.serachPanel, "serachPanel");
-            this.serachPanel.Name = "serachPanel";
-            this.serachPanel.SearchFor = "";
-            this.serachPanel.SearchHistory = "";
-            this.serachPanel.SearchType = OctofyExp.TableSearchPanel.SearchTypeNums.TableName;
-            this.serachPanel.SelectedTable = "";
-            this.serachPanel.TableType = "";
-            this.serachPanel.AfterSelect += new System.EventHandler(this.OnSerachPanel_AfterSelect);
-            this.serachPanel.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
-            this.serachPanel.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
-            // 
-            // columnView
-            // 
-            this.columnView.ConnectionString = "";
-            resources.ApplyResources(this.columnView, "columnView");
-            this.columnView.ExcludedColumns = ((System.Collections.Generic.List<string>)(resources.GetObject("columnView.ExcludedColumns")));
-            this.columnView.Name = "columnView";
-            this.columnView.ObjectName = "";
-            this.columnView.OnColumnFrequency += new System.EventHandler(this.OnColumnFrequency);
-            this.columnView.SelectedColumnChanged += new System.EventHandler(this.ColumnView_SelectedColumnChanged);
             // 
             // menuStrip
             // 
@@ -412,11 +378,10 @@
             // toolStrip
             // 
             resources.ApplyResources(this.toolStrip, "toolStrip");
-            this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.dataSourcesToolStripComboBox,
-            this.addConnectionToolStripButton});
+            this.toolStripButton});
             this.toolStrip.Name = "toolStrip";
             // 
             // toolStripLabel1
@@ -426,18 +391,51 @@
             // 
             // dataSourcesToolStripComboBox
             // 
-            this.dataSourcesToolStripComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dataSourcesToolStripComboBox.Name = "dataSourcesToolStripComboBox";
             resources.ApplyResources(this.dataSourcesToolStripComboBox, "dataSourcesToolStripComboBox");
             this.dataSourcesToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.DataSourcesToolStripComboBox_SelectedIndexChanged);
             // 
-            // addConnectionToolStripButton
+            // toolStripButton
             // 
-            this.addConnectionToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.addConnectionToolStripButton.Image = global::OctofyExp.Properties.Resources.add;
-            resources.ApplyResources(this.addConnectionToolStripButton, "addConnectionToolStripButton");
-            this.addConnectionToolStripButton.Name = "addConnectionToolStripButton";
-            this.addConnectionToolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
+            this.toolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton.Image = global::OctofyExp.Properties.Resources.add;
+            resources.ApplyResources(this.toolStripButton, "toolStripButton");
+            this.toolStripButton.Name = "toolStripButton";
+            this.toolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
+            // 
+            // dbObjectsTree
+            // 
+            this.dbObjectsTree.DefaultNumOfRows = 10000;
+            resources.ApplyResources(this.dbObjectsTree, "dbObjectsTree");
+            this.dbObjectsTree.Name = "dbObjectsTree";
+            this.dbObjectsTree.AfterSelect += new System.EventHandler(this.DbObjects_AfterSelect);
+            this.dbObjectsTree.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
+            this.dbObjectsTree.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
+            // 
+            // serachPanel
+            // 
+            this.serachPanel.ConnectionString = "";
+            this.serachPanel.DefaultNumOfRows = 10000;
+            resources.ApplyResources(this.serachPanel, "serachPanel");
+            this.serachPanel.Name = "serachPanel";
+            this.serachPanel.SearchFor = "";
+            this.serachPanel.SearchHistory = "";
+            this.serachPanel.SearchType = OctofyExp.TableSearchPanel.SearchTypeNums.TableName;
+            this.serachPanel.SelectedTable = "";
+            this.serachPanel.TableType = "";
+            this.serachPanel.AfterSelect += new System.EventHandler(this.OnSerachPanel_AfterSelect);
+            this.serachPanel.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
+            this.serachPanel.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
+            // 
+            // columnView
+            // 
+            this.columnView.ConnectionString = "";
+            resources.ApplyResources(this.columnView, "columnView");
+            this.columnView.ExcludedColumns = ((System.Collections.Generic.List<string>)(resources.GetObject("columnView.ExcludedColumns")));
+            this.columnView.Name = "columnView";
+            this.columnView.ObjectName = "";
+            this.columnView.OnColumnFrequency += new System.EventHandler(this.OnColumnFrequency);
+            this.columnView.SelectedColumnChanged += new System.EventHandler(this.ColumnView_SelectedColumnChanged);
             // 
             // MainForm
             // 
@@ -489,16 +487,12 @@
         internal System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         internal System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        internal System.Windows.Forms.ToolStrip toolStrip;
         private TableSearchPanel serachPanel;
         private ColumnDefView columnView;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripComboBox dataSourcesToolStripComboBox;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private DBObjectTree dbObjectsTree;
-        private System.Windows.Forms.ToolStripButton addConnectionToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem manageConnectionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewDBConnectionToolStripMenuItem;
         internal System.Windows.Forms.StatusStrip statusStrip;
@@ -518,5 +512,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem copyColumnNameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem anaysisOnSelectedColumnsToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip toolStrip;
+        private System.Windows.Forms.ToolStripButton toolStripButton;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripComboBox dataSourcesToolStripComboBox;
     }
 }
