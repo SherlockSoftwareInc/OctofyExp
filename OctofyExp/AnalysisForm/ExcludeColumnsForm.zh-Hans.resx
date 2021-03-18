@@ -37,7 +37,7 @@
     <value>0, 25</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>关闭</value>
+    <value>关闭(&amp;C)</value>
   </data>
   <data name="closeToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>

@@ -72,14 +72,13 @@
             // 
             // connectionsListBox
             // 
-            resources.ApplyResources(this.connectionsListBox, "connectionsListBox");
             this.connectionsListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.connectionsListBox, "connectionsListBox");
             this.connectionsListBox.Name = "connectionsListBox";
             this.connectionsListBox.SelectedIndexChanged += new System.EventHandler(this.ConnectionsListBox_SelectedIndexChanged);
             // 
             // toolStrip1
             // 
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStripButton,
@@ -89,56 +88,56 @@
             this.toolStripSeparator2,
             this.closeToolStripButton,
             this.cancelToolStripButton});
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
             // addToolStripButton
             // 
-            resources.ApplyResources(this.addToolStripButton, "addToolStripButton");
             this.addToolStripButton.Image = global::OctofyExp.Properties.Resources.add;
+            resources.ApplyResources(this.addToolStripButton, "addToolStripButton");
             this.addToolStripButton.Name = "addToolStripButton";
             this.addToolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
             // 
             // deleteToolStripButton
             // 
-            resources.ApplyResources(this.deleteToolStripButton, "deleteToolStripButton");
             this.deleteToolStripButton.Image = global::OctofyExp.Properties.Resources.delete_icon;
+            resources.ApplyResources(this.deleteToolStripButton, "deleteToolStripButton");
             this.deleteToolStripButton.Name = "deleteToolStripButton";
             this.deleteToolStripButton.Click += new System.EventHandler(this.DeleteToolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // TestToolStripButton
             // 
-            resources.ApplyResources(this.TestToolStripButton, "TestToolStripButton");
             this.TestToolStripButton.Image = global::OctofyExp.Properties.Resources.checkmark;
+            resources.ApplyResources(this.TestToolStripButton, "TestToolStripButton");
             this.TestToolStripButton.Name = "TestToolStripButton";
             this.TestToolStripButton.Click += new System.EventHandler(this.TestButton_Click);
             // 
             // toolStripSeparator2
             // 
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             // 
             // closeToolStripButton
             // 
-            resources.ApplyResources(this.closeToolStripButton, "closeToolStripButton");
             this.closeToolStripButton.Image = global::OctofyExp.Properties.Resources.save;
+            resources.ApplyResources(this.closeToolStripButton, "closeToolStripButton");
             this.closeToolStripButton.Name = "closeToolStripButton";
             this.closeToolStripButton.Click += new System.EventHandler(this.CloseToolStripButton_Click);
             // 
             // cancelToolStripButton
             // 
-            resources.ApplyResources(this.cancelToolStripButton, "cancelToolStripButton");
             this.cancelToolStripButton.Image = global::OctofyExp.Properties.Resources.cancel_icon_16;
+            resources.ApplyResources(this.cancelToolStripButton, "cancelToolStripButton");
             this.cancelToolStripButton.Name = "cancelToolStripButton";
             this.cancelToolStripButton.Click += new System.EventHandler(this.CancelToolStripButton1_Click);
             // 
             // connectionGroupBox
             // 
-            resources.ApplyResources(this.connectionGroupBox, "connectionGroupBox");
             this.connectionGroupBox.Controls.Add(this.panel1);
             this.connectionGroupBox.Controls.Add(this.saveButton);
             this.connectionGroupBox.Controls.Add(this.databaseTextBox);
@@ -148,15 +147,16 @@
             this.connectionGroupBox.Controls.Add(this.serverNameTextBox);
             this.connectionGroupBox.Controls.Add(this.serverNameLabel);
             this.connectionGroupBox.Controls.Add(this.authenticationGroupBox);
+            resources.ApplyResources(this.connectionGroupBox, "connectionGroupBox");
             this.connectionGroupBox.Name = "connectionGroupBox";
             this.connectionGroupBox.TabStop = false;
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.connectionStringLabel);
             this.panel1.Controls.Add(this.useCustomConectionCheckBox);
             this.panel1.Controls.Add(this.connectionStringTextBox);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // connectionStringLabel
@@ -224,7 +224,6 @@
             // 
             // authenticationGroupBox
             // 
-            resources.ApplyResources(this.authenticationGroupBox, "authenticationGroupBox");
             this.authenticationGroupBox.Controls.Add(this.rememberPasswordCheckBox);
             this.authenticationGroupBox.Controls.Add(this.authenticationLabel);
             this.authenticationGroupBox.Controls.Add(this.passwordTextBox);
@@ -232,6 +231,7 @@
             this.authenticationGroupBox.Controls.Add(this.userNameLabel);
             this.authenticationGroupBox.Controls.Add(this.passwordLabel);
             this.authenticationGroupBox.Controls.Add(this.userNameTextBox);
+            resources.ApplyResources(this.authenticationGroupBox, "authenticationGroupBox");
             this.authenticationGroupBox.Name = "authenticationGroupBox";
             this.authenticationGroupBox.TabStop = false;
             // 
@@ -256,12 +256,12 @@
             // 
             // authenticationComboBox
             // 
-            resources.ApplyResources(this.authenticationComboBox, "authenticationComboBox");
             this.authenticationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.authenticationComboBox.FormattingEnabled = true;
             this.authenticationComboBox.Items.AddRange(new object[] {
             resources.GetString("authenticationComboBox.Items"),
             resources.GetString("authenticationComboBox.Items1")});
+            resources.ApplyResources(this.authenticationComboBox, "authenticationComboBox");
             this.authenticationComboBox.Name = "authenticationComboBox";
             this.authenticationComboBox.SelectedIndexChanged += new System.EventHandler(this.AuthenticationComboBox_SelectedIndexChanged);
             // 

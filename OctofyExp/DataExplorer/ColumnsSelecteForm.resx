@@ -180,7 +180,7 @@
     <value>43, 22</value>
   </data>
   <data name="okToolStripButton.Text" xml:space="preserve">
-    <value>OK</value>
+    <value>&amp;OK</value>
   </data>
   <data name="cancelToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -189,7 +189,7 @@
     <value>63, 22</value>
   </data>
   <data name="cancelToolStripButton.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>&amp;Cancel</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 25</value>
@@ -201,7 +201,7 @@
     <value>75, 22</value>
   </data>
   <data name="selectAllToolStripButton.Text" xml:space="preserve">
-    <value>Select All</value>
+    <value>Select &amp;All</value>
   </data>
   <data name="clearToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -210,7 +210,7 @@
     <value>54, 22</value>
   </data>
   <data name="clearToolStripButton.Text" xml:space="preserve">
-    <value>Clear</value>
+    <value>C&amp;lear</value>
   </data>
   <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

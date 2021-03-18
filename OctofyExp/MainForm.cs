@@ -34,10 +34,10 @@ namespace OctofyExp
 
         public MainForm()
         {
-            var ci = new System.Globalization.CultureInfo("zh-Hans");
-            System.Threading.Thread.CurrentThread.CurrentCulture = ci;
-            System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
-            Properties.Resources.Culture = ci;
+            //var ci = new System.Globalization.CultureInfo("zh-Hans");
+            //System.Threading.Thread.CurrentThread.CurrentCulture = ci;
+            //System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
+            //Properties.Resources.Culture = ci;
 
             InitializeComponent();
         }

@@ -3963,8 +3963,9 @@
           <target state="translated">55, 24</target>
         </trans-unit>
         <trans-unit id="closeToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Close</source>
-          <target state="translated">關閉</target>
+          <source>&amp;Close</source>
+          <target state="needs-review-translation">關閉</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="closeToolStripButton.ToolTipText" translate="yes" xml:space="preserve">
           <source>Close the window</source>
@@ -3985,8 +3986,9 @@
           <target state="translated">55, 24</target>
         </trans-unit>
         <trans-unit id="chartViewToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Graph view</source>
-          <target state="translated">圖表</target>
+          <source>&amp;Graph view</source>
+          <target state="needs-review-translation">圖表</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="chartViewToolStripButton.ToolTipText" translate="yes" xml:space="preserve">
           <source>View results in the graph chart</source>
@@ -4002,8 +4004,9 @@
           <target state="translated">55, 24</target>
         </trans-unit>
         <trans-unit id="gridViewToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Data view</source>
-          <target state="translated">數據</target>
+          <source>&amp;Data view</source>
+          <target state="needs-review-translation">數據</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="gridViewToolStripButton.ToolTipText" translate="yes" xml:space="preserve">
           <source>View results in the data grid</source>
@@ -4024,8 +4027,9 @@
           <target state="translated">55, 24</target>
         </trans-unit>
         <trans-unit id="sortToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Sort</source>
-          <target state="translated">排序</target>
+          <source>&amp;Sort</source>
+          <target state="needs-review-translation">排序</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="sortToolStripButton.ToolTipText" translate="yes" xml:space="preserve">
           <source>Sort by counts of category from large to small</source>
@@ -4046,8 +4050,9 @@
           <target state="translated">79, 24</target>
         </trans-unit>
         <trans-unit id="excludeBlanksToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Blanks</source>
-          <target state="translated">除去空白</target>
+          <source>&amp;Blanks</source>
+          <target state="needs-review-translation">除去空白</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="excludeBlanksToolStripButton.ToolTipText" translate="yes" xml:space="preserve">
           <source>Exclude blanks</source>
@@ -4183,8 +4188,9 @@
           <note from="MultilingualUpdate" priority="2">When the XLIFF file support was added via MAT, existing resources were found and auto-imported.  This source and target string contained the same value so the resource was marked as 'Needs review' to ensure the translation could be easily reviewed.</note>
         </trans-unit>
         <trans-unit id="messageToolStripStatusLabel.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>695, 19</source>
-          <target state="translated">726, 19</target>
+          <source>726, 19</source>
+          <target state="needs-review-translation">726, 19</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="messageToolStripStatusLabel.TextAlign" translate="yes" extype="System.Drawing.ContentAlignment, System.Drawing" xml:space="preserve">
           <source>MiddleLeft</source>
@@ -5625,12 +5631,14 @@
           <note from="MultilingualUpdate" priority="2">When the XLIFF file support was added via MAT, existing resources were found and auto-imported.  This source and target string contained the same value so the resource was marked as 'Needs review' to ensure the translation could be easily reviewed.</note>
         </trans-unit>
         <trans-unit id="closeToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>103, 22</source>
-          <target state="translated">98, 22</target>
+          <source>184, 26</source>
+          <target state="needs-review-translation">98, 22</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="closeToolStripMenuItem.Text" translate="yes" xml:space="preserve">
-          <source>Close</source>
-          <target state="translated">關閉</target>
+          <source>&amp;Close</source>
+          <target state="needs-review-translation">關閉</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="fileToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>37, 20</source>
@@ -5641,32 +5649,39 @@
           <target state="translated">文件</target>
         </trans-unit>
         <trans-unit id="copyChartToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>211, 22</source>
-          <target state="translated">197, 22</target>
+          <source>215, 26</source>
+          <target state="needs-review-translation">197, 22</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="copyChartToolStripMenuItem.Text" translate="yes" xml:space="preserve">
-          <source>Copy Chart</source>
-          <target state="translated">複製圖表</target>
+          <source>&amp;Copy Chart</source>
+          <target state="needs-review-translation">複製圖表</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="copyAggregateDataToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>211, 22</source>
-          <target state="translated">197, 22</target>
+          <source>215, 26</source>
+          <target state="needs-review-translation">197, 22</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="copyAggregateDataToolStripMenuItem.Text" translate="yes" xml:space="preserve">
-          <source>Copy Chart Data</source>
-          <target state="translated">複製圖表數據</target>
+          <source>Copy Chart &amp;Data</source>
+          <target state="needs-review-translation">複製圖表數據</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator4.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>208, 6</source>
-          <target state="translated">194, 6</target>
+          <source>212, 6</source>
+          <target state="needs-review-translation">194, 6</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="exportAggregateDataToExcelToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>211, 22</source>
-          <target state="translated">197, 22</target>
+          <source>215, 26</source>
+          <target state="needs-review-translation">197, 22</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="exportAggregateDataToExcelToolStripMenuItem.Text" translate="yes" xml:space="preserve">
-          <source>Export Chart Data to Excel</source>
-          <target state="translated">將圖表數據導出到Excel</target>
+          <source>&amp;Export Chart Data to Excel</source>
+          <target state="needs-review-translation">將圖表數據導出到Excel</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="editToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>39, 20</source>
@@ -5677,24 +5692,29 @@
           <target state="translated">編輯</target>
         </trans-unit>
         <trans-unit id="barChartToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>167, 22</source>
-          <target state="translated">146, 22</target>
+          <source>184, 26</source>
+          <target state="needs-review-translation">146, 22</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="barChartToolStripMenuItem.Text" translate="yes" xml:space="preserve">
-          <source>Bar Chart</source>
-          <target state="translated">条形图</target>
+          <source>&amp;Bar Chart</source>
+          <target state="needs-review-translation">条形图</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="stackedBarChartToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>167, 22</source>
-          <target state="translated">146, 22</target>
+          <source>184, 26</source>
+          <target state="needs-review-translation">146, 22</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="stackedBarChartToolStripMenuItem.Text" translate="yes" xml:space="preserve">
-          <source>Stacked Bar Chart</source>
-          <target state="translated">堆積條形圖</target>
+          <source>&amp;Stacked Bar Chart</source>
+          <target state="needs-review-translation">堆積條形圖</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator5.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>164, 6</source>
-          <target state="translated">143, 6</target>
+          <source>181, 6</source>
+          <target state="needs-review-translation">143, 6</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator5.Visible" translate="yes" extype="System.Boolean, mscorlib" xml:space="preserve">
           <source>False</source>
@@ -5702,12 +5722,14 @@
           <note from="MultilingualUpdate" priority="2">When the XLIFF file support was added via MAT, existing resources were found and auto-imported.  This source and target string contained the same value so the resource was marked as 'Needs review' to ensure the translation could be easily reviewed.</note>
         </trans-unit>
         <trans-unit id="allCasesToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>167, 22</source>
-          <target state="translated">146, 22</target>
+          <source>184, 26</source>
+          <target state="needs-review-translation">146, 22</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="allCasesToolStripMenuItem.Text" translate="yes" xml:space="preserve">
-          <source>List All Cases</source>
-          <target state="translated">列出所有數據</target>
+          <source>List &amp;All Cases</source>
+          <target state="needs-review-translation">列出所有數據</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="allCasesToolStripMenuItem.Visible" translate="yes" extype="System.Boolean, mscorlib" xml:space="preserve">
           <source>False</source>
@@ -5756,8 +5778,9 @@
           <target state="translated">55, 24</target>
         </trans-unit>
         <trans-unit id="closeToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Close</source>
-          <target state="translated">關閉</target>
+          <source>&amp;Close</source>
+          <target state="needs-review-translation">關閉</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator1.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>6, 27</source>
@@ -5783,8 +5806,9 @@
           <note from="MultilingualUpdate" priority="2">When the XLIFF file support was added via MAT, existing resources were found and auto-imported.  This source and target string contained the same value so the resource was marked as 'Needs review' to ensure the translation could be easily reviewed.</note>
         </trans-unit>
         <trans-unit id="barChartToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Bar Chart</source>
-          <target state="translated">條形圖</target>
+          <source>&amp;Bar Chart</source>
+          <target state="needs-review-translation">條形圖</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="stackedBarChartToolStripButton.ImageTransparentColor" translate="yes" extype="System.Drawing.Color, System.Drawing" xml:space="preserve">
           <source>Magenta</source>
@@ -5797,8 +5821,9 @@
           <note from="MultilingualUpdate" priority="2">When the XLIFF file support was added via MAT, existing resources were found and auto-imported.  This source and target string contained the same value so the resource was marked as 'Needs review' to ensure the translation could be easily reviewed.</note>
         </trans-unit>
         <trans-unit id="stackedBarChartToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Stacked bar chart</source>
-          <target state="translated">堆積條形圖</target>
+          <source>&amp;Stacked bar chart</source>
+          <target state="needs-review-translation">堆積條形圖</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator2.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>6, 27</source>

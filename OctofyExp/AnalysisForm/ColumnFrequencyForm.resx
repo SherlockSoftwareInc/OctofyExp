@@ -150,7 +150,7 @@
     <value>60, 24</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>Close</value>
+    <value>&amp;Close</value>
   </data>
   <data name="closeToolStripButton.ToolTipText" xml:space="preserve">
     <value>Close the window</value>
@@ -165,7 +165,7 @@
     <value>90, 24</value>
   </data>
   <data name="chartViewToolStripButton.Text" xml:space="preserve">
-    <value>Graph view</value>
+    <value>&amp;Graph view</value>
   </data>
   <data name="chartViewToolStripButton.ToolTipText" xml:space="preserve">
     <value>View results in the graph chart</value>
@@ -177,7 +177,7 @@
     <value>82, 24</value>
   </data>
   <data name="gridViewToolStripButton.Text" xml:space="preserve">
-    <value>Data view</value>
+    <value>&amp;Data view</value>
   </data>
   <data name="gridViewToolStripButton.ToolTipText" xml:space="preserve">
     <value>View results in the data grid</value>
@@ -192,7 +192,7 @@
     <value>52, 24</value>
   </data>
   <data name="sortToolStripButton.Text" xml:space="preserve">
-    <value>Sort</value>
+    <value>&amp;Sort</value>
   </data>
   <data name="sortToolStripButton.ToolTipText" xml:space="preserve">
     <value>Sort by counts of category from large to small</value>
@@ -207,7 +207,7 @@
     <value>65, 24</value>
   </data>
   <data name="excludeBlanksToolStripButton.Text" xml:space="preserve">
-    <value>Blanks</value>
+    <value>&amp;Blanks</value>
   </data>
   <data name="excludeBlanksToolStripButton.ToolTipText" xml:space="preserve">
     <value>Exclude blanks</value>
@@ -307,7 +307,7 @@
     <value>1</value>
   </data>
   <data name="messageToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>695, 19</value>
+    <value>726, 19</value>
   </data>
   <data name="messageToolStripStatusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>

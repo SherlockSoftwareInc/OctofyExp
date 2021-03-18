@@ -133,7 +133,7 @@
     <value>0</value>
   </data>
   <data name="okButton.Text" xml:space="preserve">
-    <value>OK</value>
+    <value>&amp;OK</value>
   </data>
   <data name="&gt;&gt;okButton.Name" xml:space="preserve">
     <value>okButton</value>
@@ -160,7 +160,7 @@
     <value>1</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>&amp;Cancel</value>
   </data>
   <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
     <value>cancelButton</value>

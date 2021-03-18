@@ -334,7 +334,7 @@
     <value>103, 22</value>
   </data>
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
+    <value>&amp;Close</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 20</value>
@@ -349,13 +349,13 @@
     <value>211, 22</value>
   </data>
   <data name="copyChartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Copy Chart</value>
+    <value>&amp;Copy Chart</value>
   </data>
   <data name="copyAggregateDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 22</value>
   </data>
   <data name="copyAggregateDataToolStripMenuItem.Text" xml:space="preserve">
-    <value>Copy Chart Data</value>
+    <value>Copy Chart &amp;Data</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 6</value>
@@ -364,7 +364,7 @@
     <value>211, 22</value>
   </data>
   <data name="exportAggregateDataToExcelToolStripMenuItem.Text" xml:space="preserve">
-    <value>Export Chart Data to Excel</value>
+    <value>&amp;Export Chart Data to Excel</value>
   </data>
   <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -376,13 +376,13 @@
     <value>167, 22</value>
   </data>
   <data name="barChartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Bar Chart</value>
+    <value>&amp;Bar Chart</value>
   </data>
   <data name="stackedBarChartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 22</value>
   </data>
   <data name="stackedBarChartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Stacked Bar Chart</value>
+    <value>&amp;Stacked Bar Chart</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 6</value>
@@ -394,7 +394,7 @@
     <value>167, 22</value>
   </data>
   <data name="allCasesToolStripMenuItem.Text" xml:space="preserve">
-    <value>List All Cases</value>
+    <value>List &amp;All Cases</value>
   </data>
   <data name="allCasesToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -442,7 +442,7 @@
     <value>60, 24</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>Close</value>
+    <value>&amp;Close</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
@@ -460,7 +460,7 @@
     <value>24, 24</value>
   </data>
   <data name="barChartToolStripButton.Text" xml:space="preserve">
-    <value>Bar Chart</value>
+    <value>&amp;Bar Chart</value>
   </data>
   <data name="stackedBarChartToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -469,7 +469,7 @@
     <value>24, 24</value>
   </data>
   <data name="stackedBarChartToolStripButton.Text" xml:space="preserve">
-    <value>Stacked bar chart</value>
+    <value>&amp;Stacked bar chart</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>

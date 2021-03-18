@@ -678,7 +678,7 @@
     <value>899, 450</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>关闭</value>
+    <value>关闭(&amp;C)</value>
   </data>
   <data name="statusStrip1.Text" xml:space="preserve">
     <value></value>

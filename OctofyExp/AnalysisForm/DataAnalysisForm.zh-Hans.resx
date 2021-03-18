@@ -118,7 +118,7 @@
     <value>99, 22</value>
   </data>
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>关闭</value>
+    <value>关闭(&amp;C)</value>
   </data>
   <data name="fileToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -130,13 +130,13 @@
     <value>199, 22</value>
   </data>
   <data name="copyChartToolStripMenuItem.Text" xml:space="preserve">
-    <value>复制图表</value>
+    <value>复制图表(&amp;C)</value>
   </data>
   <data name="copyAggregateDataToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>199, 22</value>
   </data>
   <data name="copyAggregateDataToolStripMenuItem.Text" xml:space="preserve">
-    <value>复制图表数据</value>
+    <value>复制图表数据(&amp;D)</value>
   </data>
   <data name="toolStripSeparator4.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>196, 6</value>
@@ -145,7 +145,7 @@
     <value>199, 22</value>
   </data>
   <data name="exportAggregateDataToExcelToolStripMenuItem.Text" xml:space="preserve">
-    <value>将图表数据导出到Excel</value>
+    <value>将图表数据导出到Excel(&amp;E)</value>
   </data>
   <data name="editToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>
@@ -157,13 +157,13 @@
     <value>146, 22</value>
   </data>
   <data name="barChartToolStripMenuItem.Text" xml:space="preserve">
-    <value>条形图</value>
+    <value>条形图(&amp;B)</value>
   </data>
   <data name="stackedBarChartToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>146, 22</value>
   </data>
   <data name="stackedBarChartToolStripMenuItem.Text" xml:space="preserve">
-    <value>堆积条形图</value>
+    <value>堆积条形图(&amp;S)</value>
   </data>
   <data name="toolStripSeparator5.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>143, 6</value>
@@ -175,7 +175,7 @@
     <value>146, 22</value>
   </data>
   <data name="allCasesToolStripMenuItem.Text" xml:space="preserve">
-    <value>列出所有数据</value>
+    <value>列出所有数据(&amp;A)</value>
   </data>
   <data name="allCasesToolStripMenuItem.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -208,7 +208,7 @@
     <value>56, 24</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>关闭</value>
+    <value>关闭(&amp;C)</value>
   </data>
   <data name="toolStripSeparator1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
