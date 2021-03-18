@@ -139,7 +139,7 @@
     <value>81, 22</value>
   </data>
   <data name="toolStripLabel1.Text" xml:space="preserve">
-    <value>データ ソース：</value>
+    <value>データ ソース:</value>
   </data>
   <data name="dataSourcesToolStripComboBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>300, 25</value>
@@ -973,9 +973,6 @@
         /6xB//+sQf4HrEH8A6xB+AGsQfjwrEHx+KxB8fisQfH4rEHw+KxBAHCsQQABrEHwA6xB/AesQf//rEH/
         /6xB
 </value>
-  </data>
-  <data name="$this.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" xml:space="preserve" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>Manual</value>

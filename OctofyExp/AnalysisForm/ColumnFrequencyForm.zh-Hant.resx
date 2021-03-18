@@ -12,6 +12,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="toolStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>933, 27</value>
+  </data>
+  <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="closeToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
@@ -133,9 +142,6 @@
   <data name="nextToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="nextToolStripButton.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
   <data name="nextToolStripButton.ToolTipText" xml:space="preserve">
     <value>下一項​​</value>
   </data>
@@ -148,26 +154,20 @@
   <data name="previousToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="previousToolStripButton.Text" xml:space="preserve">
-    <value>↑</value>
-  </data>
   <data name="previousToolStripButton.ToolTipText" xml:space="preserve">
     <value>上一項</value>
   </data>
   <data name="previousToolStripButton.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="toolStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="statusStrip.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+    <value>0, 495</value>
   </data>
-  <data name="toolStrip1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>933, 27</value>
+  <data name="statusStrip.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>933, 24</value>
   </data>
-  <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>ToolStrip1</value>
+  <data name="statusStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="messageToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>726, 19</value>
@@ -210,18 +210,6 @@
   </data>
   <data name="rowNumToolStripStatusLabel.ToolTipText" xml:space="preserve">
     <value>當前類別位置</value>
-  </data>
-  <data name="statusStrip.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>0, 495</value>
-  </data>
-  <data name="statusStrip.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>933, 24</value>
-  </data>
-  <data name="statusStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="statusStrip.Text" xml:space="preserve">
-    <value>statusStrip1</value>
   </data>
   <data name="frequencyDataGridView.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>211, 130</value>

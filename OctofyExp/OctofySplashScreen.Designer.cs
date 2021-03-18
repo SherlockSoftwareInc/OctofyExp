@@ -77,8 +77,8 @@ namespace OctofyExp
             // 
             resources.ApplyResources(this.octofyLogoControl, "octofyLogoControl");
             this.octofyLogoControl.Animation = false;
-            this.octofyLogoControl.Colors = "#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#71685A,#FF6700,#" +
-    "909465,#956B43,#FEA022";
+            this.octofyLogoControl.Colors = "#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#94C600,#" +
+    "71685A,#FF6700,#909465,#956B43,#FEA022";
             this.octofyLogoControl.InitialAngle = 0F;
             this.octofyLogoControl.Name = "octofyLogoControl";
             this.octofyLogoControl.SaveFolderName = "";

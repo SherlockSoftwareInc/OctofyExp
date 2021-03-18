@@ -34,7 +34,7 @@
     <value>True</value>
   </data>
   <data name="cancelToolStripButton.Text" xml:space="preserve">
-    <value>取消</value>
+    <value>取消(&amp;C)</value>
   </data>
   <data name="passwordLabel.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>4</value>
@@ -85,7 +85,7 @@
     <value>285, 342</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
-    <value>确认</value>
+    <value>确定(&amp;O)</value>
   </data>
   <data name="closeToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>56, 24</value>
@@ -241,7 +241,7 @@
     <value>55, 45</value>
   </data>
   <data name="authenticationComboBox.Items" xml:space="preserve">
-    <value>SQL Server身份验证</value>
+    <value>Windows 验证</value>
   </data>
   <data name="authenticationLabel.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -269,9 +269,6 @@
   </data>
   <data name="panel1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>11</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value></value>
   </data>
   <data name="toolStripSeparator1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
@@ -355,7 +352,7 @@
     <value>验证方式：</value>
   </data>
   <data name="authenticationComboBox.Items1" xml:space="preserve">
-    <value>SQL Server身份验证</value>
+    <value>SQL Server 验证</value>
   </data>
   <data name="useCustomConectionCheckBox.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>146, 17</value>

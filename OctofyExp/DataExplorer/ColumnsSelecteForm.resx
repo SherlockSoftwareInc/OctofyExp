@@ -177,7 +177,7 @@
     <value>Magenta</value>
   </data>
   <data name="okToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 22</value>
+    <value>43, 22</value>
   </data>
   <data name="okToolStripButton.Text" xml:space="preserve">
     <value>OK</value>
@@ -186,7 +186,7 @@
     <value>Magenta</value>
   </data>
   <data name="cancelToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 22</value>
+    <value>63, 22</value>
   </data>
   <data name="cancelToolStripButton.Text" xml:space="preserve">
     <value>Cancel</value>
@@ -198,7 +198,7 @@
     <value>Magenta</value>
   </data>
   <data name="selectAllToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 22</value>
+    <value>75, 22</value>
   </data>
   <data name="selectAllToolStripButton.Text" xml:space="preserve">
     <value>Select All</value>
@@ -207,7 +207,7 @@
     <value>Magenta</value>
   </data>
   <data name="clearToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 22</value>
+    <value>54, 22</value>
   </data>
   <data name="clearToolStripButton.Text" xml:space="preserve">
     <value>Clear</value>
@@ -220,9 +220,6 @@
   </data>
   <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
   </data>
   <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
     <value>toolStrip1</value>

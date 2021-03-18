@@ -46,7 +46,7 @@
     <value>12, 41</value>
   </data>
   <data name="okToolStripButton.Text" xml:space="preserve">
-    <value>确认</value>
+    <value>确定(&amp;O)</value>
   </data>
   <data name="$this.ClientSize" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>430, 326</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="selectAllToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
   </data>
   <data name="okToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -91,7 +88,7 @@
     <value>0, 0</value>
   </data>
   <data name="cancelToolStripButton.Text" xml:space="preserve">
-    <value>取消</value>
+    <value>取消(&amp;C)</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>数据栏选择对话框</value>

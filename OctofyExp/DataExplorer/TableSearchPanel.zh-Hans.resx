@@ -97,7 +97,7 @@
     <value>174, 6</value>
   </data>
   <data name="searchFromCombox.Items" xml:space="preserve">
-    <value>数据表/视图名称</value>
+    <value>数据表/视图</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>搜索结果：</value>

@@ -15,26 +15,14 @@
   <data name="$this.AutoScaleDimensions" xml:space="preserve" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
   <data name="dataGridView1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>413, 348</value>
-  </data>
-  <data name="statusStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>0, 351</value>
   </data>
   <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="toolStrip1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>413, 25</value>
-  </data>
-  <data name="statusStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="statusStrip1.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
-    <value>413, 22</value>
   </data>
   <data name="$this.ClientSize" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>413, 373</value>
@@ -45,17 +33,11 @@
   <data name="$this.StartPosition" xml:space="preserve" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
   <data name="dataGridView1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>0, 25</value>
   </data>
   <data name="closeToolStripButton.Text" xml:space="preserve">
     <value>关闭</value>
-  </data>
-  <data name="statusStrip1.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="closeToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -77,8 +59,5 @@
   </metadata>
   <metadata name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>122, 17</value>
   </metadata>
 </root>

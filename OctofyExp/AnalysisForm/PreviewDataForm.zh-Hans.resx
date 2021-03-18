@@ -683,13 +683,13 @@
   <data name="statusStrip1.Text" xml:space="preserve">
     <value></value>
   </data>
-  <metadata name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>398, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </data>
+  <data name="statusStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>662, 17</value>
-  </metadata>
+  </data>
 </root>

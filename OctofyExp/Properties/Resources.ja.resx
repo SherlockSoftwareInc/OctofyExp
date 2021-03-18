@@ -13,7 +13,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="A082" xml:space="preserve">
-    <value>X軸列：</value>
+    <value>X軸列:</value>
   </data>
   <data name="SimplBarChart" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SimplBarChart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -28,7 +28,7 @@
     <value>表示するオブジェクトはありません</value>
   </data>
   <data name="A020" xml:space="preserve">
-    <value>データテーブル分析：{0}秒</value>
+    <value>データテーブル分析:{0}秒</value>
   </data>
   <data name="A040" xml:space="preserve">
     <value>チャート...</value>
@@ -37,7 +37,7 @@
     <value>..\Resources\down_arrow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A016" xml:space="preserve">
-    <value>データの読み込み：{0}秒</value>
+    <value>データの読み込み:{0}秒</value>
   </data>
   <data name="save" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -97,7 +97,7 @@
     <value>上記のフィールドに入力してください。</value>
   </data>
   <data name="A047" xml:space="preserve">
-    <value>Y軸データ列：</value>
+    <value>Y軸データ列:</value>
   </data>
   <data name="A073" xml:space="preserve">
     <value>256から{0}までの数字を入力してください。</value>
@@ -133,7 +133,7 @@
     <value>プレビューデータ-{0}</value>
   </data>
   <data name="A025" xml:space="preserve">
-    <value>カテゴリ：{0}</value>
+    <value>カテゴリ:{0}</value>
   </data>
   <data name="A018" xml:space="preserve">
     <value>データテーブル分析中...</value>
@@ -172,7 +172,7 @@
     <value>ブランクを含める</value>
   </data>
   <data name="A022" xml:space="preserve">
-    <value>チャートデータ作成：{0}秒</value>
+    <value>チャートデータ作成:{0}秒</value>
   </data>
   <data name="A013" xml:space="preserve">
     <value>データのロードに失敗しました</value>
@@ -205,7 +205,7 @@
     <value>..\Resources\include_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A014" xml:space="preserve">
-    <value>{0}の次のデータ列は分類できず、除外されました：</value>
+    <value>{0}の次のデータ列は分類できず、除外されました:</value>
   </data>
   <data name="A043" xml:space="preserve">
     <value>行数: {0}</value>
@@ -293,7 +293,7 @@
     <value>システムは長いテキスト列の頻度を計算できません。</value>
   </data>
   <data name="A048" xml:space="preserve">
-    <value>測定データ列：</value>
+    <value>測定データ列:</value>
   </data>
   <data name="A057" xml:space="preserve">
     <value>新規</value>
@@ -344,9 +344,15 @@
     <value>データベース接続文字列を入力してください。</value>
   </data>
   <data name="A063" xml:space="preserve">
-    <value>（始まる）</value>
+    <value>（で始まる）</value>
   </data>
   <data name="database" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A084" xml:space="preserve">
+    <value>この操作を完了するのに十分なメモリがありません。</value>
+  </data>
+  <data name="A085" xml:space="preserve">
+    <value>タスクがキャンセルされました</value>
   </data>
 </root>

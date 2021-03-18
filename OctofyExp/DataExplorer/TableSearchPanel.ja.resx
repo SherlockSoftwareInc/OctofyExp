@@ -100,7 +100,7 @@
     <value>テーブル/ ビュー</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>結果</value>
+    <value>結果:</value>
   </data>
   <data name="searchTypeLabel.Text" xml:space="preserve">
     <value>どのような種類のオブジェクトを検索します。</value>

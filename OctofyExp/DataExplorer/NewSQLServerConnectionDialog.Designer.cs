@@ -85,17 +85,18 @@
             // 
             // authenticationComboBox
             // 
+            resources.ApplyResources(this.authenticationComboBox, "authenticationComboBox");
             this.authenticationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.authenticationComboBox.FormattingEnabled = true;
             this.authenticationComboBox.Items.AddRange(new object[] {
             resources.GetString("authenticationComboBox.Items"),
             resources.GetString("authenticationComboBox.Items1")});
-            resources.ApplyResources(this.authenticationComboBox, "authenticationComboBox");
             this.authenticationComboBox.Name = "authenticationComboBox";
             this.authenticationComboBox.SelectedIndexChanged += new System.EventHandler(this.AuthenticationComboBox_SelectedIndexChanged);
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.rememberPasswordCheckBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.passwordTextBox);
@@ -103,7 +104,6 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.userNameTextBox);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 

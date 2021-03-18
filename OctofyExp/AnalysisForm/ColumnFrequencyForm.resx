@@ -121,6 +121,28 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>933, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="closeToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
@@ -131,7 +153,7 @@
     <value>Close</value>
   </data>
   <data name="closeToolStripButton.ToolTipText" xml:space="preserve">
-    <value>Close</value>
+    <value>Close the window</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
@@ -175,7 +197,6 @@
   <data name="sortToolStripButton.ToolTipText" xml:space="preserve">
     <value>Sort by counts of category from large to small</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="excludeBlanksToolStripButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -243,9 +264,6 @@
   <data name="nextToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="nextToolStripButton.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
   <data name="nextToolStripButton.ToolTipText" xml:space="preserve">
     <value>Next</value>
   </data>
@@ -258,44 +276,38 @@
   <data name="previousToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="previousToolStripButton.Text" xml:space="preserve">
-    <value>↑</value>
-  </data>
   <data name="previousToolStripButton.ToolTipText" xml:space="preserve">
     <value>Previous</value>
   </data>
   <data name="previousToolStripButton.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>933, 27</value>
-  </data>
-  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>ToolStrip1</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
   </metadata>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 495</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>933, 24</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="messageToolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>726, 19</value>
+    <value>695, 19</value>
   </data>
   <data name="messageToolStripStatusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -335,30 +347,6 @@
   </data>
   <data name="rowNumToolStripStatusLabel.ToolTipText" xml:space="preserve">
     <value>Current category position</value>
-  </data>
-  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 495</value>
-  </data>
-  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>933, 24</value>
-  </data>
-  <data name="statusStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="statusStrip.Text" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
-    <value>statusStrip</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="frequencyDataGridView.Location" type="System.Drawing.Point, System.Drawing">
     <value>211, 130</value>

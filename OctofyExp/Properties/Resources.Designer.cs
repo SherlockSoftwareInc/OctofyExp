@@ -808,6 +808,24 @@ namespace OctofyExp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There is no enough memory to complete this operation..
+        /// </summary>
+        internal static string A084 {
+            get {
+                return ResourceManager.GetString("A084", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Task canceled.
+        /// </summary>
+        internal static string A085 {
+            get {
+                return ResourceManager.GetString("A085", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap add {

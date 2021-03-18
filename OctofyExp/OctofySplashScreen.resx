@@ -117,22 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="applicationTitleLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="subtitleLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 14.25pt</value>
-  </data>
   <data name="&gt;&gt;applicationTitleLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="websiteButton.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="editionLabel.Text" xml:space="preserve">
     <value>Express</value>
+  </data>
+  <data name="&gt;&gt;timer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;closeButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -149,6 +145,7 @@
   <data name="&gt;&gt;subtitleLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="copyrightLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>304, 20</value>
   </data>
@@ -182,6 +179,9 @@
   <data name="subtitleLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;octofyLogoControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="descriptionLabel.Text" xml:space="preserve">
     <value>This program is free software.</value>
   </data>
@@ -191,9 +191,6 @@
   <data name="editionLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
   </data>
-  <data name="&gt;&gt;applicationTitleLabel.Name" xml:space="preserve">
-    <value>applicationTitleLabel</value>
-  </data>
   <data name="&gt;&gt;versionLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -201,8 +198,11 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
-  <data name="editionLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="editionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 83</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;closeButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -228,9 +228,6 @@
   <data name="descriptionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>304, 20</value>
   </data>
-  <data name="&gt;&gt;editionLabel.Name" xml:space="preserve">
-    <value>editionLabel</value>
-  </data>
   <data name="&gt;&gt;editionLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -252,23 +249,23 @@
   <data name="versionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>271, 20</value>
   </data>
-  <data name="&gt;&gt;timer2.Name" xml:space="preserve">
-    <value>timer2</value>
+  <data name="subtitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 109</value>
   </data>
   <data name="&gt;&gt;versionLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="subtitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 23</value>
+  </data>
   <data name="octofyLogoControl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;subtitleLabel.Name" xml:space="preserve">
-    <value>subtitleLabel</value>
   </data>
   <data name="&gt;&gt;copyrightLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;timer2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="editionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="octofyLogoControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>16, 16</value>
@@ -279,20 +276,23 @@
   <data name="editionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
   </data>
-  <data name="subtitleLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 109</value>
+  <data name="versionLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="&gt;&gt;websiteButton.ZOrder" xml:space="preserve">
+  <data name="applicationTitleLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="copyrightLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 215</value>
   </data>
   <data name="&gt;&gt;versionLabel.Name" xml:space="preserve">
     <value>versionLabel</value>
   </data>
-  <data name="&gt;&gt;copyrightLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="subtitleLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
   </data>
-  <data name="copyrightLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;timer2.Name" xml:space="preserve">
+    <value>timer2</value>
   </data>
   <data name="editionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -300,26 +300,29 @@
   <data name="versionLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>180, 195</value>
   </data>
+  <data name="&gt;&gt;websiteButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>
   </data>
   <data name="websiteButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="editionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 83</value>
+  <data name="&gt;&gt;applicationTitleLabel.Name" xml:space="preserve">
+    <value>applicationTitleLabel</value>
   </data>
   <data name="subtitleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="versionLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
+  <data name="&gt;&gt;subtitleLabel.Name" xml:space="preserve">
+    <value>subtitleLabel</value>
   </data>
   <data name="&gt;&gt;closeButton.Name" xml:space="preserve">
     <value>closeButton</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>OctofySplashScreen</value>
+  <data name="websiteButton.Text" xml:space="preserve">
+    <value>&amp;Website</value>
   </data>
   <data name="descriptionLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -339,17 +342,14 @@
   <data name="&gt;&gt;copyrightLabel.Name" xml:space="preserve">
     <value>copyrightLabel</value>
   </data>
-  <data name="subtitleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 23</value>
+  <data name="subtitleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 14.25pt</value>
   </data>
   <data name="applicationTitleLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
   </data>
   <data name="&gt;&gt;websiteButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="websiteButton.Text" xml:space="preserve">
-    <value>&amp;Website</value>
   </data>
   <data name="&gt;&gt;closeButton.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -360,8 +360,8 @@
   <data name="&gt;&gt;websiteButton.Name" xml:space="preserve">
     <value>websiteButton</value>
   </data>
-  <data name="subtitleLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomLeft</value>
+  <data name="&gt;&gt;editionLabel.Name" xml:space="preserve">
+    <value>editionLabel</value>
   </data>
   <data name="&gt;&gt;octofyLogoControl.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -378,8 +378,8 @@
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;octofyLogoControl.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="copyrightLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>496, 303</value>
@@ -387,11 +387,11 @@
   <data name="applicationTitleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OctofySplashScreen</value>
   </data>
-  <data name="copyrightLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 215</value>
+  <data name="&gt;&gt;copyrightLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;versionLabel.Parent" xml:space="preserve">
     <value>$this</value>

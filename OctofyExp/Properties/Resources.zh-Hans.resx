@@ -349,4 +349,10 @@
   <data name="database" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="A084" xml:space="preserve">
+    <value>没有足够的内存来完成此操作。</value>
+  </data>
+  <data name="A085" xml:space="preserve">
+    <value>任务取消</value>
+  </data>
 </root>

@@ -46,7 +46,7 @@
     <value>StatusStrip</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>工具</value>
+    <value>工具(&amp;T)</value>
   </data>
   <data name="tableToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>55, 20</value>
@@ -672,7 +672,7 @@
     <value>F7</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>帮助</value>
+    <value>帮助(&amp;H)</value>
   </data>
   <data name="addNewDBConnectionToolStripMenuItem.Text" xml:space="preserve">
     <value>添加新数据库连接</value>
@@ -690,7 +690,7 @@
     <value>45, 20</value>
   </data>
   <data name="tableToolStripMenuItem.Text" xml:space="preserve">
-    <value>数据表</value>
+    <value>数据表(&amp;B)</value>
   </data>
   <data name="copyToolStripMenuItem.ShortcutKeys" xml:space="preserve" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+C</value>
@@ -789,7 +789,7 @@
     <value>200, 200</value>
   </data>
   <data name="viewToolStripMenuItem.Text" xml:space="preserve">
-    <value>视图</value>
+    <value>查看(&amp;V)</value>
   </data>
   <data name="serachPanel.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -894,7 +894,7 @@
     <value>156, 6</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
-    <value>编辑</value>
+    <value>编辑(&amp;E)</value>
   </data>
   <data name="menuStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>0</value>
@@ -903,7 +903,7 @@
     <value>0, 0</value>
   </data>
   <data name="columnToolStripMenuItem.Text" xml:space="preserve">
-    <value>数据栏</value>
+    <value>数据栏(&amp;C)</value>
   </data>
   <data name="serverToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>48, 19</value>
@@ -936,7 +936,7 @@
     <value>191, 22</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>文件</value>
+    <value>文件(&amp;F)</value>
   </data>
   <data name="toolStripLabel1.Text" xml:space="preserve">
     <value>数据源:</value>
@@ -954,7 +954,7 @@
     <value>300, 27</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>关于...</value>
+    <value>关于...(&amp;A)</value>
   </data>
   <data name="statusStrip.Dock" xml:space="preserve" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>None</value>
@@ -983,9 +983,6 @@
   <metadata name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>427, 17</value>
   </metadata>
-  <data name="$this.ImeMode" xml:space="preserve" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="toolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>

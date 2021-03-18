@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="B001" xml:space="preserve">
+    <value>Es gibt zu viele Datenpunkte, um in das Diagramm zu passen.</value>
+  </data>
+  <data name="B002" xml:space="preserve">
+    <value>Es sind zu viele Datenreihen zum Anzeigen vorhanden.</value>
+  </data>
+  <data name="B003" xml:space="preserve">
+    <value>(Leer)</value>
+  </data>
+  <data name="B004" xml:space="preserve">
+    <value>Anzahl: {0}</value>
+  </data>
+  <data name="B005" xml:space="preserve">
+    <value>Gesamtsumme: {0}</value>
+  </data>
+  <data name="B006" xml:space="preserve">
+    <value>Anzahl der Legendenelemente</value>
+  </data>
+  <data name="B007" xml:space="preserve">
+    <value>Die maximale Anzahl von Legendenelementen beträgt 1 bis 256.</value>
+  </data>
+  <data name="B008" xml:space="preserve">
+    <value>{0}: {1} zu {2}</value>
+  </data>
+  <data name="B009" xml:space="preserve">
+    <value>Es sind zu viele Datenreihen oder Datenpunkte vorhanden, um in dieses Diagramm zu passen.</value>
+  </data>
+  <data name="B010" xml:space="preserve">
+    <value>Gesamtsumme von {0}: {1}</value>
+  </data>
+  <data name="B011" xml:space="preserve">
+    <value>{0} Group nach {1}</value>
+  </data>
+  <data name="B012" xml:space="preserve">
+    <value>{0} bis {1}</value>
+  </data>
+  <data name="B013" xml:space="preserve">
+    <value>Bitte wählen Sie einen Berichtszeitraum aus.</value>
+  </data>
+  <data name="B014" xml:space="preserve">
+    <value>Es gibt {0} Elemente in dieser Kategorie. Möchten Sie sie laden?</value>
+  </data>
+  <data name="B015" xml:space="preserve">
+    <value>Warnung vor langsamem Operation</value>
+  </data>
+</root>

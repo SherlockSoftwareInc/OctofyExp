@@ -130,7 +130,7 @@
         </trans-unit>
         <trans-unit id="B003" translate="yes" xml:space="preserve">
           <source>(Blanks)</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">(空白)</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">（ブランク）</target>
         </trans-unit>
         <trans-unit id="B004" translate="yes" xml:space="preserve">
           <source>Count:  {0}</source>
@@ -178,7 +178,7 @@
         </trans-unit>
         <trans-unit id="B015" translate="yes" xml:space="preserve">
           <source>Warning of slow operation</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">低速動作の警告</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">時間のかかる操作警告</target>
         </trans-unit>
       </group>
     </body>

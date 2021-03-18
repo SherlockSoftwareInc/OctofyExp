@@ -25,7 +25,7 @@
     <value>1</value>
   </data>
   <data name="schemasCheckBox.Text" xml:space="preserve">
-    <value>搜索特定的计划</value>
+    <value>搜索特定的架构</value>
   </data>
   <data name="schemasCheckBox.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>

@@ -19,7 +19,7 @@
     <value>表示するデータ系列が多すぎます。</value>
   </data>
   <data name="B003" xml:space="preserve">
-    <value>(空白)</value>
+    <value>（ブランク）</value>
   </data>
   <data name="B004" xml:space="preserve">
     <value>カウント: {0}</value>
@@ -55,6 +55,6 @@
     <value>このカテゴリには{0}アイテムがあります。読み込みしますか?</value>
   </data>
   <data name="B015" xml:space="preserve">
-    <value>低速動作の警告</value>
+    <value>時間のかかる操作警告</value>
   </data>
 </root>

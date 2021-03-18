@@ -64,7 +64,7 @@
     <value>0</value>
   </data>
   <data name="closeButton.Text" xml:space="preserve">
-    <value>关闭</value>
+    <value>关闭(&amp;C)</value>
   </data>
   <data name="closeButton.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>

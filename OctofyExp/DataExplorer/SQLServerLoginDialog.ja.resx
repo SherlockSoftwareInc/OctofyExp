@@ -136,7 +136,7 @@
     <value>4</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>認証：</value>
+    <value>認証:</value>
   </data>
   <data name="passwordTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>92, 68</value>

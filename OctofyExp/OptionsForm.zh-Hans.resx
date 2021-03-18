@@ -13,7 +13,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="maxXTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>165, 42</value>
+    <value>125, 42</value>
   </data>
   <data name="maxXTextBox.MaxLength" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>
@@ -28,7 +28,7 @@
     <value>64</value>
   </data>
   <data name="maxYTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>165, 16</value>
+    <value>125, 16</value>
   </data>
   <data name="maxYTextBox.MaxLength" xml:space="preserve" type="System.Int32, mscorlib">
     <value>7</value>
@@ -55,7 +55,7 @@
     <value>2</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>X 轴上的最大类别：</value>
+    <value>X轴上的类别数超过：</value>
   </data>
   <data name="label1.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -70,7 +70,7 @@
     <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>y 轴上的最大类别：</value>
+    <value>Y轴上的类别数超过：</value>
   </data>
   <data name="groupBox1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -82,10 +82,10 @@
     <value>0</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>计算排除</value>
+    <value>计算排除以下数据栏</value>
   </data>
   <data name="topRowsTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>69, 24</value>
+    <value>94, 24</value>
   </data>
   <data name="topRowsTextBox.MaxLength" xml:space="preserve" type="System.Int32, mscorlib">
     <value>6</value>
@@ -103,7 +103,7 @@
     <value>True</value>
   </data>
   <data name="label4.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>123, 27</value>
+    <value>148, 27</value>
   </data>
   <data name="label4.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>113, 13</value>
@@ -112,7 +112,7 @@
     <value>2</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>用于快速分析的行</value>
+    <value>行用于快速分析</value>
   </data>
   <data name="label3.AutoSize" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -127,7 +127,7 @@
     <value>0</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>阅读顶部</value>
+    <value>读取最前面的</value>
   </data>
   <data name="groupBox2.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>12, 94</value>
@@ -154,7 +154,7 @@
     <value>0</value>
   </data>
   <data name="okButton.Text" xml:space="preserve">
-    <value>确定</value>
+    <value>确定(&amp;O)</value>
   </data>
   <data name="cancelButton.Anchor" xml:space="preserve" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -169,10 +169,10 @@
     <value>1</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
-    <value>取消</value>
+    <value>取消(&amp;C)</value>
   </data>
   <data name="timeoutTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>115, 25</value>
+    <value>76, 25</value>
   </data>
   <data name="timeoutTextBox.MaxLength" xml:space="preserve" type="System.Int32, mscorlib">
     <value>4</value>
@@ -211,7 +211,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
-    <value>169, 28</value>
+    <value>130, 28</value>
   </data>
   <data name="label6.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>

@@ -131,8 +131,8 @@
   <data name="topRowsTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="okButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 341</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -183,6 +183,9 @@
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>371, 376</value>
+  </data>
   <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -207,6 +210,9 @@
   <data name="maxXTextBox.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="okButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="&gt;&gt;okButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -222,8 +228,8 @@
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="okButton.Text" xml:space="preserve">
-    <value>OK</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Read top </value>
@@ -282,8 +288,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>OptionsForm</value>
   </data>
-  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -357,9 +363,6 @@
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
   </data>
@@ -381,6 +384,9 @@
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;maxXTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -395,9 +401,6 @@
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;topRowsTextBox.Name" xml:space="preserve">
     <value>topRowsTextBox</value>
@@ -416,9 +419,6 @@
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Maximum categories on x-axis:</value>
-  </data>
-  <data name="okButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 341</value>
   </data>
   <data name="&gt;&gt;maxXTextBox.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -447,8 +447,8 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="maxYTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 16</value>
@@ -480,8 +480,8 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 45</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>371, 376</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Calculation exclusions</value>
   </data>
   <data name="&gt;&gt;topRowsTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -494,9 +494,6 @@
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -522,14 +519,17 @@
   <data name="okButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <data name="maxXTextBox.Text" xml:space="preserve">
-    <value>64</value>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Calculation exclusions</value>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;topRowsTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="maxXTextBox.Text" xml:space="preserve">
+    <value>64</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>169, 28</value>

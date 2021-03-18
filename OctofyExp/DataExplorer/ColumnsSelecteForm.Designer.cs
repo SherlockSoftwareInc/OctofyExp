@@ -73,8 +73,8 @@ namespace OctofyExp
             // 
             // cancelToolStripButton
             // 
-            resources.ApplyResources(this.cancelToolStripButton, "cancelToolStripButton");
             this.cancelToolStripButton.Image = global::OctofyExp.Properties.Resources.delete_icon;
+            resources.ApplyResources(this.cancelToolStripButton, "cancelToolStripButton");
             this.cancelToolStripButton.Name = "cancelToolStripButton";
             this.cancelToolStripButton.Click += new System.EventHandler(this.CancelToolStripButton_Click);
             // 
@@ -85,15 +85,15 @@ namespace OctofyExp
             // 
             // selectAllToolStripButton
             // 
-            resources.ApplyResources(this.selectAllToolStripButton, "selectAllToolStripButton");
             this.selectAllToolStripButton.Image = global::OctofyExp.Properties.Resources.select_all_16;
+            resources.ApplyResources(this.selectAllToolStripButton, "selectAllToolStripButton");
             this.selectAllToolStripButton.Name = "selectAllToolStripButton";
             this.selectAllToolStripButton.Click += new System.EventHandler(this.SelectAllToolStripButton_Click);
             // 
             // clearToolStripButton
             // 
-            resources.ApplyResources(this.clearToolStripButton, "clearToolStripButton");
             this.clearToolStripButton.Image = global::OctofyExp.Properties.Resources.clear_all_16;
+            resources.ApplyResources(this.clearToolStripButton, "clearToolStripButton");
             this.clearToolStripButton.Name = "clearToolStripButton";
             this.clearToolStripButton.Click += new System.EventHandler(this.ClearToolStripButton_Click);
             // 

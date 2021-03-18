@@ -1,110 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -117,342 +12,347 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="A048" xml:space="preserve">
-    <value>Measurement column:</value>
+  <data name="A082" xml:space="preserve">
+    <value>X축 열:</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SimplBarChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="SimplBarChart" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SimplBarChart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A045" xml:space="preserve">
-    <value>No table or view specified.</value>
+    <value>지정된 테이블이나 보기가 없습니다.</value>
   </data>
   <data name="A010" xml:space="preserve">
-    <value>Please wait while calculating {0}%...</value>
+    <value>{0}%를 계산하는 동안 기다려 주세요...</value>
   </data>
   <data name="A046" xml:space="preserve">
-    <value>No Object to view</value>
+    <value>볼 개체 없음</value>
   </data>
   <data name="A020" xml:space="preserve">
-    <value>Table analysis: {0}s</value>
+    <value>표 분석: {0}</value>
   </data>
-  <data name="down_arrow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="A040" xml:space="preserve">
+    <value>차트 채우기...</value>
+  </data>
+  <data name="down_arrow1" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\down_arrow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="A016" xml:space="preserve">
+    <value>로드 데이터: {0}</value>
+  </data>
+  <data name="save" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Excla_mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Excla_mark" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Excla_mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A008" xml:space="preserve">
-    <value>An error occurred</value>
+    <value>오류 발생</value>
   </data>
-  <data name="down_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="down_arrow" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\down_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A033" xml:space="preserve">
-    <value>There are too many categories in this table column.</value>
+    <value>이 테이블 열에는 범주가 너무 많습니다.</value>
   </data>
   <data name="A027" xml:space="preserve">
-    <value>Count</value>
+    <value>개수</value>
   </data>
   <data name="A006" xml:space="preserve">
-    <value>There is no column in the table that can be used for analysis.</value>
+    <value>테이블에 분석에 사용할 수 있는 열이 없습니다.</value>
   </data>
   <data name="A024" xml:space="preserve">
-    <value>{0} blanks excluded</value>
+    <value>{0} 공백 제외</value>
   </data>
   <data name="A029" xml:space="preserve">
-    <value>Please wait while calculating...</value>
+    <value>계산하는 동안 기다려 주십시오 ...</value>
   </data>
-  <data name="copy_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="copy_chart" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\copy_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="checkmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="checkmark" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A077" xml:space="preserve">
-    <value>The system cannot calculate the frequencies for this column.</value>
+    <value>시스템은 이 열의 주파수를 계산할 수 없습니다.</value>
   </data>
   <data name="A003" xml:space="preserve">
-    <value>Connect to {0}...</value>
+    <value>{0}에 연결</value>
   </data>
   <data name="A052" xml:space="preserve">
-    <value>Date time column</value>
+    <value>날짜 시간 열</value>
   </data>
   <data name="A037" xml:space="preserve">
-    <value>Exclude blanks</value>
+    <value>공백 제외</value>
   </data>
   <data name="A005" xml:space="preserve">
-    <value>Connection failure</value>
+    <value>연결 실패</value>
   </data>
   <data name="A039" xml:space="preserve">
-    <value>Calculating...</value>
+    <value>계산하는 중...</value>
   </data>
   <data name="A011" xml:space="preserve">
-    <value>Loading data...</value>
+    <value>데이터 로드 중...</value>
   </data>
-  <data name="A040" xml:space="preserve">
-    <value>Populating the chart...</value>
+  <data name="A060" xml:space="preserve">
+    <value>위의 필드를 완료하십시오.</value>
   </data>
   <data name="A047" xml:space="preserve">
-    <value>Y-axis column:</value>
+    <value>Y축 열:</value>
   </data>
   <data name="A073" xml:space="preserve">
-    <value>Please enter a number between 256 and {0}.</value>
+    <value>256~{0} 숫자를 입력해 주세요.</value>
   </data>
-  <data name="icon_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="icon_exit" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pie_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="pie_chart" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pie_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BarChartIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BarChartIcon" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BarChartIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A055" xml:space="preserve">
-    <value>Data type not support</value>
+    <value>지원되지 않는 데이터 유형</value>
   </data>
   <data name="A032" xml:space="preserve">
-    <value>No match found!</value>
+    <value>일치하는 결과가 없습니다</value>
   </data>
   <data name="A065" xml:space="preserve">
-    <value>(Equals)</value>
+    <value>같음</value>
   </data>
   <data name="A041" xml:space="preserve">
-    <value>Frequency</value>
+    <value>주파수</value>
   </data>
   <data name="A031" xml:space="preserve">
-    <value>Include blanks of Y-axis</value>
+    <value>Y축 공백 포함</value>
   </data>
   <data name="A015" xml:space="preserve">
-    <value>Excluded columns</value>
+    <value>제외된 열</value>
   </data>
   <data name="A042" xml:space="preserve">
-    <value>Preview Data - {0}</value>
+    <value>데이터 미리 보기 - {0}</value>
   </data>
   <data name="A025" xml:space="preserve">
-    <value>Categories: {0}</value>
+    <value>범주: {0}</value>
   </data>
   <data name="A018" xml:space="preserve">
-    <value>Table analysis...</value>
+    <value>테이블 분석...</value>
   </data>
   <data name="A004" xml:space="preserve">
-    <value>Failed to connect to the data source.</value>
+    <value>데이터 원본에 연결하지 못했습니다.</value>
   </data>
-  <data name="data_grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="data_grid" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\data_grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A049" xml:space="preserve">
-    <value>Number of categories exceed the maximum setting</value>
+    <value>최대 설정을 초과하는 범주 수</value>
   </data>
   <data name="A007" xml:space="preserve">
-    <value>No categorical column</value>
+    <value>범주형 열 없음</value>
   </data>
   <data name="A076" xml:space="preserve">
-    <value>{0} Group by {1}</value>
-  </data>
-  <data name="A075" xml:space="preserve">
-    <value>Please enter a number between 100 and 999999.</value>
-  </data>
-  <data name="A051" xml:space="preserve">
-    <value>Non-categorical column</value>
-  </data>
-  <data name="A036" xml:space="preserve">
-    <value>Database connection does not specified.</value>
-  </data>
-  <data name="A061" xml:space="preserve">
-    <value>Fields not complete</value>
-  </data>
-  <data name="A035" xml:space="preserve">
-    <value>Data type of the column is not supported.</value>
-  </data>
-  <data name="A038" xml:space="preserve">
-    <value>Include blanks</value>
-  </data>
-  <data name="A022" xml:space="preserve">
-    <value>Build chart data: {0}s</value>
-  </data>
-  <data name="A013" xml:space="preserve">
-    <value>Failed to load the data</value>
-  </data>
-  <data name="A021" xml:space="preserve">
-    <value>Build data for the chart...</value>
-  </data>
-  <data name="A069" xml:space="preserve">
-    <value>One item found</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>{0} 그룹 별 {1}</value>
   </data>
   <data name="A002" xml:space="preserve">
-    <value>Quick analysis on top {0} rows</value>
+    <value>상단 {0} 행에 대한 빠른 분석</value>
   </data>
-  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="A051" xml:space="preserve">
+    <value>비범주열 열</value>
+  </data>
+  <data name="A036" xml:space="preserve">
+    <value>데이터베이스 연결은 지정되지 않습니다.</value>
+  </data>
+  <data name="A061" xml:space="preserve">
+    <value>완료되지 않은 필드</value>
+  </data>
+  <data name="A083" xml:space="preserve">
+    <value>버전 {0}</value>
+  </data>
+  <data name="A038" xml:space="preserve">
+    <value>공백 포함</value>
+  </data>
+  <data name="A022" xml:space="preserve">
+    <value>차트 데이터 빌드: {0}</value>
+  </data>
+  <data name="A013" xml:space="preserve">
+    <value>데이터를 로드하지 못했습니다.</value>
+  </data>
+  <data name="A021" xml:space="preserve">
+    <value>차트에 대한 데이터 빌드...</value>
+  </data>
+  <data name="A069" xml:space="preserve">
+    <value>항목 1개 발견</value>
+  </data>
+  <data name="add" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="A060" xml:space="preserve">
-    <value>Please complete the fields above.</value>
+  <data name="A035" xml:space="preserve">
+    <value>열의 데이터 형식은 지원되지 않습니다.</value>
   </data>
   <data name="A054" xml:space="preserve">
-    <value>The system cannot calculate the frequencies on a binary column.</value>
+    <value>시스템은 이진 열의 주파수를 계산할 수 없습니다.</value>
+  </data>
+  <data name="A058" xml:space="preserve">
+    <value>'{0}'을(를) 삭제하시겠습니까?</value>
   </data>
   <data name="A030" xml:space="preserve">
-    <value>Exclude blanks of Y-axis</value>
+    <value>Y축 의 공백 제외</value>
   </data>
-  <data name="include_blanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="include_blanks" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\include_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A014" xml:space="preserve">
-    <value>Following column(s) in {0} have been excluded:</value>
+    <value>{0} 다음 열은 제외되었습니다.</value>
   </data>
   <data name="A043" xml:space="preserve">
-    <value>Rows: {0}</value>
+    <value>행: {0}</value>
   </data>
   <data name="A026" xml:space="preserve">
-    <value>(Subtotal)</value>
+    <value>소계</value>
   </data>
   <data name="A017" xml:space="preserve">
-    <value>{0} rows</value>
+    <value>{0}개 행</value>
   </data>
   <data name="A068" xml:space="preserve">
-    <value>No match found</value>
+    <value>일치하는 결과가 없습니다</value>
   </data>
-  <data name="sort_icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="sort_icon_16" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sort_icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="no_blanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="no_blanks" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\no_blanks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="copy_selections" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="copy_selections" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\copy_selections.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A070" xml:space="preserve">
-    <value>{0} items found</value>
+    <value>{0}개의 항목을 찾았습니다.</value>
   </data>
-  <data name="to_excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="to_excel" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\to_excel.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A001" xml:space="preserve">
-    <value>(Blanks)</value>
+    <value>(비어 있음)</value>
     <comment>How to express blanks in both chart and data grid</comment>
   </data>
   <data name="A059" xml:space="preserve">
-    <value>Delete Connection Item</value>
+    <value>연결 항목 삭제</value>
   </data>
-  <data name="up_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="up_arrow" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\up_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A053" xml:space="preserve">
-    <value>Empty column</value>
+    <value>빈 열</value>
+  </data>
+  <data name="A064" xml:space="preserve">
+    <value>끝 문자</value>
   </data>
   <data name="A044" xml:space="preserve">
-    <value>Due to the inability to display content, the following columns in {0} have been excluded:</value>
+    <value>콘텐츠를 표시할 수 없기 때문에 {0} 다음 열은 제외되었습니다.</value>
   </data>
   <data name="A023" xml:space="preserve">
-    <value>1 blank excluded</value>
+    <value>1 공백 제외</value>
   </data>
   <data name="A012" xml:space="preserve">
-    <value>Please wait while loading data. It may take a while..</value>
+    <value>데이터를 로드하는 동안 기다려 주십시오. 시간이 좀 걸릴 수 있습니다..</value>
   </data>
   <data name="A072" xml:space="preserve">
-    <value>Invalid input</value>
+    <value>잘못된 입력</value>
   </data>
   <data name="A074" xml:space="preserve">
-    <value>Please enter a number between 16 and 128.</value>
+    <value>16~128번으로 입력해 주세요.</value>
   </data>
   <data name="A071" xml:space="preserve">
-    <value>Please enter numeric only.</value>
+    <value>숫자만 입력하십시오.</value>
   </data>
-  <data name="stacked_column" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stacked_column.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="A080" xml:space="preserve">
+    <value>데이터베이스에 연결하지 못했습니다!</value>
   </data>
-  <data name="ToPPT16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="A078" xml:space="preserve">
+    <value>성공</value>
+  </data>
+  <data name="ToPPT16" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ToPPT16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A009" xml:space="preserve">
-    <value>No data available</value>
+    <value>사용 가능한 데이터 없음</value>
   </data>
-  <data name="A058" xml:space="preserve">
-    <value>Do you want to delete {0}?</value>
+  <data name="A028" xml:space="preserve">
+    <value>%</value>
   </data>
-  <data name="area_percentage_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="area_percentage_icon" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\area_percentage_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A067" xml:space="preserve">
-    <value>(Contains)</value>
+    <value>포함</value>
   </data>
   <data name="A056" xml:space="preserve">
-    <value>The system cannot calculate the frequencies on a text column.</value>
+    <value>시스템은 텍스트 열의 주파수를 계산할 수 없습니다.</value>
   </data>
-  <data name="A028" xml:space="preserve">
-    <value>Percent</value>
-  </data>
-  <data name="A064" xml:space="preserve">
-    <value>(Ends with)</value>
+  <data name="A048" xml:space="preserve">
+    <value>측정 열:</value>
   </data>
   <data name="A057" xml:space="preserve">
-    <value>New</value>
+    <value>새로 만들기</value>
   </data>
-  <data name="A016" xml:space="preserve">
-    <value>Load data: {0}s</value>
+  <data name="A075" xml:space="preserve">
+    <value>100~99999의 숫자를 입력해 주세요.</value>
+  </data>
+  <data name="clear_all_16" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stacked_column" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stacked_column.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A019" xml:space="preserve">
-    <value>Please wait while performing data analysis...</value>
+    <value>데이터 분석을 수행하는 동안 기다려 주십시오...</value>
   </data>
-  <data name="select_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="select_all_16" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\select_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="A079" xml:space="preserve">
+    <value>연결 테스트</value>
+  </data>
+  <data name="delete_icon" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A000" xml:space="preserve">
-    <value>Octofy Express</value>
+    <value>Octofy 익스프레스</value>
   </data>
-  <data name="cancel_icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="cancel_icon_16" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A062" xml:space="preserve">
-    <value>Script has been copied to the clipboard.</value>
+    <value>스크립트가 클립보드에 복사되었습니다.</value>
   </data>
   <data name="A034" xml:space="preserve">
-    <value>Category names are too long.</value>
+    <value>범주 이름이 너무 깁니다.</value>
   </data>
-  <data name="search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="search_icon" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="server" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="A050" xml:space="preserve">
-    <value>Category text length exceed the maximum setting</value>
-  </data>
-  <data name="A063" xml:space="preserve">
-    <value>(Starts with)</value>
-  </data>
-  <data name="clear_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clear_all_16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A078" xml:space="preserve">
-    <value>Succeed!</value>
-  </data>
-  <data name="A079" xml:space="preserve">
-    <value>Connection testing</value>
-  </data>
-  <data name="A080" xml:space="preserve">
-    <value>Failed to connect to the database!</value>
+    <value>범주 텍스트 길이가 최대 설정을 초과합니다.</value>
   </data>
   <data name="A081" xml:space="preserve">
-    <value>Please enter database connection string.</value>
+    <value>데이터베이스 연결 문자열을 입력하십시오.</value>
   </data>
-  <data name="A082" xml:space="preserve">
-    <value>X-axis column:</value>
+  <data name="A063" xml:space="preserve">
+    <value>시작</value>
   </data>
-  <data name="A083" xml:space="preserve">
-    <value>Version {0}</value>
+  <data name="database" xml:space="preserve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A084" xml:space="preserve">
-    <value>There is no enough memory to complete this operation.</value>
+    <value>이 작업을 완료할 메모리가 충분하지 않습니다.</value>
   </data>
   <data name="A085" xml:space="preserve">
-    <value>Task cancelled</value>
+    <value>작업이 취소되었습니다.</value>
   </data>
 </root>

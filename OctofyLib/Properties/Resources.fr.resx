@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="B001" xml:space="preserve">
+    <value>Il y a trop de points de données pour s’insérer dans le graphique.</value>
+  </data>
+  <data name="B002" xml:space="preserve">
+    <value>Il y a trop de séries de données à afficher.</value>
+  </data>
+  <data name="B003" xml:space="preserve">
+    <value>(Vides)</value>
+  </data>
+  <data name="B004" xml:space="preserve">
+    <value>Comte: {0}</value>
+  </data>
+  <data name="B005" xml:space="preserve">
+    <value>Grand total: {0}</value>
+  </data>
+  <data name="B006" xml:space="preserve">
+    <value>Nombre d’éléments de légende</value>
+  </data>
+  <data name="B007" xml:space="preserve">
+    <value>Le nombre maximum d’objets de légende est de 1 à 256.</value>
+  </data>
+  <data name="B008" xml:space="preserve">
+    <value>{0}: {1} à {2}</value>
+  </data>
+  <data name="B009" xml:space="preserve">
+    <value>Il y a trop de séries de données ou de points de données pour s’insérer dans ce graphique.</value>
+  </data>
+  <data name="B010" xml:space="preserve">
+    <value>Grand total de {0}: {1}</value>
+  </data>
+  <data name="B011" xml:space="preserve">
+    <value>{0} Group par {1}</value>
+  </data>
+  <data name="B012" xml:space="preserve">
+    <value>{0} à {1}</value>
+  </data>
+  <data name="B013" xml:space="preserve">
+    <value>Veuillez sélectionner une plage de date de déclaration.</value>
+  </data>
+  <data name="B014" xml:space="preserve">
+    <value>Il y a {0} articles dans cette catégorie. Voulez-vous les charger?</value>
+  </data>
+  <data name="B015" xml:space="preserve">
+    <value>Avertissement de lenteur du fonctionnement</value>
+  </data>
+</root>

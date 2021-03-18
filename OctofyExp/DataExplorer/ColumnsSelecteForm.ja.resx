@@ -87,9 +87,6 @@
   <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
   <data name="$this.AutoScaleDimensions" xml:space="preserve" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>

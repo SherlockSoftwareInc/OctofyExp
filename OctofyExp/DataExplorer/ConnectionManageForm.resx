@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TestToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 24</value>
+    <value>51, 24</value>
   </data>
   <data name="&gt;&gt;serverNameLabel.Parent" xml:space="preserve">
     <value>connectionGroupBox</value>
@@ -268,7 +268,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="closeToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 24</value>
+    <value>47, 24</value>
   </data>
   <data name="passwordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -331,7 +331,7 @@
     <value>$this</value>
   </data>
   <data name="addToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 24</value>
+    <value>55, 24</value>
   </data>
   <data name="authenticationLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -439,7 +439,7 @@
     <value>3</value>
   </data>
   <data name="deleteToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 24</value>
+    <value>64, 24</value>
   </data>
   <data name="deleteToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -630,8 +630,8 @@
   <data name="&gt;&gt;authenticationGroupBox.Name" xml:space="preserve">
     <value>authenticationGroupBox</value>
   </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
+  <data name="useCustomConectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 17</value>
   </data>
   <data name="useCustomConectionCheckBox.Text" xml:space="preserve">
     <value>Use custom connection string</value>
@@ -774,9 +774,6 @@
   <data name="&gt;&gt;databaseTextBox.Name" xml:space="preserve">
     <value>databaseTextBox</value>
   </data>
-  <data name="useCustomConectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 17</value>
-  </data>
   <data name="userNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -808,7 +805,7 @@
     <value>306, 35</value>
   </data>
   <data name="cancelToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 24</value>
+    <value>67, 24</value>
   </data>
   <data name="&gt;&gt;connectionsListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

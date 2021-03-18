@@ -76,7 +76,7 @@
     <value>65, 24</value>
   </data>
   <data name="excludeBlanksToolStripButton.Text" xml:space="preserve">
-    <value>(ブランク)</value>
+    <value>ブランク</value>
   </data>
   <data name="excludeBlanksToolStripButton.ToolTipText" xml:space="preserve">
     <value>ブランクを除外する</value>
@@ -88,7 +88,7 @@
     <value>63, 24</value>
   </data>
   <data name="searchForToolStripLabel.Text" xml:space="preserve">
-    <value>検索対象:</value>
+    <value>検索:</value>
   </data>
   <data name="searchForToolStripLabel.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -133,9 +133,6 @@
   <data name="nextToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="nextToolStripButton.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
   <data name="nextToolStripButton.ToolTipText" xml:space="preserve">
     <value>次へ</value>
   </data>
@@ -147,9 +144,6 @@
   </data>
   <data name="previousToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
-  </data>
-  <data name="previousToolStripButton.Text" xml:space="preserve">
-    <value>↑</value>
   </data>
   <data name="previousToolStripButton.ToolTipText" xml:space="preserve">
     <value>前へ</value>
@@ -165,9 +159,6 @@
   </data>
   <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>ToolStrip1</value>
   </data>
   <data name="messageToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>726, 19</value>
@@ -219,9 +210,6 @@
   </data>
   <data name="statusStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="statusStrip.Text" xml:space="preserve">
-    <value>statusStrip1</value>
   </data>
   <data name="frequencyDataGridView.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>211, 130</value>

@@ -124,7 +124,7 @@
     <value>43, 20</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>文件</value>
+    <value>文件(&amp;F)</value>
   </data>
   <data name="copyChartToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>199, 22</value>
@@ -151,7 +151,7 @@
     <value>45, 20</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
-    <value>编辑</value>
+    <value>编辑(&amp;E)</value>
   </data>
   <data name="barChartToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>146, 22</value>
@@ -184,7 +184,7 @@
     <value>45, 20</value>
   </data>
   <data name="viewToolStripMenuItem.Text" xml:space="preserve">
-    <value>视图</value>
+    <value>查看(&amp;V)</value>
   </data>
   <data name="menuStrip.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

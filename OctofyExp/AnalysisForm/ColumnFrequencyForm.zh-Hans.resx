@@ -79,7 +79,7 @@
     <value>空白</value>
   </data>
   <data name="excludeBlanksToolStripButton.ToolTipText" xml:space="preserve">
-    <value>隐藏空白</value>
+    <value>除去空白</value>
   </data>
   <data name="toolStripSeparator4.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
@@ -133,9 +133,6 @@
   <data name="nextToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="nextToolStripButton.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
   <data name="nextToolStripButton.ToolTipText" xml:space="preserve">
     <value>下一个</value>
   </data>
@@ -147,9 +144,6 @@
   </data>
   <data name="previousToolStripButton.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
-  </data>
-  <data name="previousToolStripButton.Text" xml:space="preserve">
-    <value>↑</value>
   </data>
   <data name="previousToolStripButton.ToolTipText" xml:space="preserve">
     <value>上一个</value>
@@ -165,9 +159,6 @@
   </data>
   <data name="toolStrip1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value></value>
   </data>
   <data name="messageToolStripStatusLabel.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
     <value>726, 19</value>
@@ -219,9 +210,6 @@
   </data>
   <data name="statusStrip.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="statusStrip.Text" xml:space="preserve">
-    <value></value>
   </data>
   <data name="frequencyDataGridView.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>211, 130</value>

@@ -217,7 +217,7 @@
     <value>74, 24</value>
   </data>
   <data name="toolStripLabel1.Text" xml:space="preserve">
-    <value>チャートタイプ：</value>
+    <value>チャートタイプ:</value>
   </data>
   <data name="barChartToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -286,7 +286,7 @@
     <value>37, 24</value>
   </data>
   <data name="searchForToolStripLabel.Text" xml:space="preserve">
-    <value>検索：</value>
+    <value>検索:</value>
   </data>
   <data name="searchForToolStripLabel.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
     <value>False</value>

@@ -25,7 +25,7 @@
     <value>0</value>
   </data>
   <data name="okButton.Text" xml:space="preserve">
-    <value>确定</value>
+    <value>确定(&amp;O)</value>
   </data>
   <data name="cancelButton.Anchor" xml:space="preserve" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -40,7 +40,7 @@
     <value>1</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
-    <value>取消</value>
+    <value>取消(&amp;C)</value>
   </data>
   <data name="databaseTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>99, 38</value>
@@ -103,10 +103,10 @@
     <value>服务器名称:</value>
   </data>
   <data name="authenticationComboBox.Items" xml:space="preserve">
-    <value>Windows 身份验证</value>
+    <value>Windows 验证</value>
   </data>
   <data name="authenticationComboBox.Items1" xml:space="preserve">
-    <value>SQL Server 身份验证</value>
+    <value>SQL Server 验证</value>
   </data>
   <data name="authenticationComboBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>92, 21</value>
@@ -136,7 +136,7 @@
     <value>4</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>认证：</value>
+    <value>验证方式：</value>
   </data>
   <data name="passwordTextBox.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>92, 68</value>

@@ -39,7 +39,10 @@
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dbObjectsTree = new OctofyExp.DBObjectTree();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.serachPanel = new OctofyExp.TableSearchPanel();
+            this.columnView = new OctofyExp.ColumnDefView();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,9 +76,6 @@
             this.dataSourcesToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.dbObjectsTree = new OctofyExp.DBObjectTree();
-            this.serachPanel = new OctofyExp.TableSearchPanel();
-            this.columnView = new OctofyExp.ColumnDefView();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
@@ -136,12 +136,14 @@
             // serverToolStripStatusLabel
             // 
             this.serverToolStripStatusLabel.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
+            this.serverToolStripStatusLabel.Image = global::OctofyExp.Properties.Resources.server;
             this.serverToolStripStatusLabel.Name = "serverToolStripStatusLabel";
             resources.ApplyResources(this.serverToolStripStatusLabel, "serverToolStripStatusLabel");
             // 
             // databaseToolStripStatusLabel
             // 
             this.databaseToolStripStatusLabel.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
+            this.databaseToolStripStatusLabel.Image = global::OctofyExp.Properties.Resources.database;
             this.databaseToolStripStatusLabel.Name = "databaseToolStripStatusLabel";
             resources.ApplyResources(this.databaseToolStripStatusLabel, "databaseToolStripStatusLabel");
             // 
@@ -173,12 +175,46 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dbObjectsTree
+            // 
+            this.dbObjectsTree.DefaultNumOfRows = 10000;
+            resources.ApplyResources(this.dbObjectsTree, "dbObjectsTree");
+            this.dbObjectsTree.Name = "dbObjectsTree";
+            this.dbObjectsTree.AfterSelect += new System.EventHandler(this.DbObjects_AfterSelect);
+            this.dbObjectsTree.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
+            this.dbObjectsTree.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.serachPanel);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // serachPanel
+            // 
+            this.serachPanel.ConnectionString = "";
+            this.serachPanel.DefaultNumOfRows = 10000;
+            resources.ApplyResources(this.serachPanel, "serachPanel");
+            this.serachPanel.Name = "serachPanel";
+            this.serachPanel.SearchFor = "";
+            this.serachPanel.SearchHistory = "";
+            this.serachPanel.SearchType = OctofyExp.TableSearchPanel.SearchTypeNums.TableName;
+            this.serachPanel.SelectedTable = "";
+            this.serachPanel.TableType = "";
+            this.serachPanel.AfterSelect += new System.EventHandler(this.OnSerachPanel_AfterSelect);
+            this.serachPanel.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
+            this.serachPanel.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
+            // 
+            // columnView
+            // 
+            this.columnView.ConnectionString = "";
+            resources.ApplyResources(this.columnView, "columnView");
+            this.columnView.ExcludedColumns = ((System.Collections.Generic.List<string>)(resources.GetObject("columnView.ExcludedColumns")));
+            this.columnView.Name = "columnView";
+            this.columnView.ObjectName = "";
+            this.columnView.OnColumnFrequency += new System.EventHandler(this.OnColumnFrequency);
+            this.columnView.SelectedColumnChanged += new System.EventHandler(this.ColumnView_SelectedColumnChanged);
             // 
             // menuStrip
             // 
@@ -402,40 +438,6 @@
             resources.ApplyResources(this.toolStripButton, "toolStripButton");
             this.toolStripButton.Name = "toolStripButton";
             this.toolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
-            // 
-            // dbObjectsTree
-            // 
-            this.dbObjectsTree.DefaultNumOfRows = 10000;
-            resources.ApplyResources(this.dbObjectsTree, "dbObjectsTree");
-            this.dbObjectsTree.Name = "dbObjectsTree";
-            this.dbObjectsTree.AfterSelect += new System.EventHandler(this.DbObjects_AfterSelect);
-            this.dbObjectsTree.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
-            this.dbObjectsTree.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
-            // 
-            // serachPanel
-            // 
-            this.serachPanel.ConnectionString = "";
-            this.serachPanel.DefaultNumOfRows = 10000;
-            resources.ApplyResources(this.serachPanel, "serachPanel");
-            this.serachPanel.Name = "serachPanel";
-            this.serachPanel.SearchFor = "";
-            this.serachPanel.SearchHistory = "";
-            this.serachPanel.SearchType = OctofyExp.TableSearchPanel.SearchTypeNums.TableName;
-            this.serachPanel.SelectedTable = "";
-            this.serachPanel.TableType = "";
-            this.serachPanel.AfterSelect += new System.EventHandler(this.OnSerachPanel_AfterSelect);
-            this.serachPanel.OnAnalysisTable += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnAnalysisTable);
-            this.serachPanel.OnPreviewData += new System.EventHandler<OnAnalysisTableEventArgs>(this.OnPreviewData);
-            // 
-            // columnView
-            // 
-            this.columnView.ConnectionString = "";
-            resources.ApplyResources(this.columnView, "columnView");
-            this.columnView.ExcludedColumns = ((System.Collections.Generic.List<string>)(resources.GetObject("columnView.ExcludedColumns")));
-            this.columnView.Name = "columnView";
-            this.columnView.ObjectName = "";
-            this.columnView.OnColumnFrequency += new System.EventHandler(this.OnColumnFrequency);
-            this.columnView.SelectedColumnChanged += new System.EventHandler(this.ColumnView_SelectedColumnChanged);
             // 
             // MainForm
             // 
