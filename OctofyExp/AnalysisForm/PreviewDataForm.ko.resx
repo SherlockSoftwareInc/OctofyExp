@@ -656,9 +656,6 @@
   <data name="closeToolStripButton.ImageTransparentColor" xml:space="preserve" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value></value>
-  </data>
   <data name="toolStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -680,16 +677,13 @@
   <data name="closeToolStripButton.Text" xml:space="preserve">
     <value>닫다</value>
   </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value></value>
-  </data>
-  <data name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+  <metadata name="toolStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>398, 17</value>
-  </data>
-  <data name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib">
+  </metadata>
+  <metadata name="$this.Localizable" xml:space="preserve" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="statusStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
+  </metadata>
+  <metadata name="statusStrip1.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>662, 17</value>
-  </data>
+  </metadata>
 </root>

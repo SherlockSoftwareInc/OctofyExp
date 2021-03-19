@@ -1159,8 +1159,9 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="okToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>OK</source>
+          <source>&amp;OK</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">実行</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="cancelToolStripButton.ImageTransparentColor" translate="yes" extype="System.Drawing.Color, System.Drawing" xml:space="preserve">
           <source>Magenta</source>
@@ -1172,8 +1173,9 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="cancelToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Cancel</source>
+          <source>&amp;Cancel</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">キャンセル</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator1.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>6, 25</source>
@@ -1189,8 +1191,9 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="selectAllToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Select All</source>
+          <source>Select &amp;All</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">すべて選択</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="clearToolStripButton.ImageTransparentColor" translate="yes" extype="System.Drawing.Color, System.Drawing" xml:space="preserve">
           <source>Magenta</source>
@@ -1202,8 +1205,9 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="clearToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Clear</source>
+          <source>C&amp;lear</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">クリア</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStrip1.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
           <source>0, 0</source>
@@ -1772,8 +1776,9 @@
           <target state="needs-review-translation">0, 25</target>
         </trans-unit>
         <trans-unit id="closeToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Close</source>
+          <source>&amp;Close</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">閉じる</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="closeToolStripButton.ImageTransparentColor" translate="yes" extype="System.Drawing.Color, System.Drawing" xml:space="preserve">
           <source>Magenta</source>
@@ -3040,11 +3045,6 @@
           <source>Magenta</source>
           <target state="needs-review-translation">Magenta</target>
         </trans-unit>
-        <trans-unit id="toolStrip1.Text" translate="yes" xml:space="preserve">
-          <source></source>
-          <target state="needs-review-translation">ToolStrip1</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
-        </trans-unit>
         <trans-unit id="toolStrip1.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
           <source>0, 0</source>
           <target state="needs-review-translation">0, 0</target>
@@ -3070,23 +3070,19 @@
           <target state="needs-review-translation">899, 450</target>
         </trans-unit>
         <trans-unit id="closeToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Close</source>
+          <source>&amp;Close</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">閉じる</target>
-        </trans-unit>
-        <trans-unit id="statusStrip1.Text" translate="yes" xml:space="preserve">
-          <source></source>
-          <target state="needs-review-translation">StatusStrip1</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
-        <trans-unit id="toolStrip1.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing" extradata="metadata" xml:space="preserve">
+        <trans-unit id="toolStrip1.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
           <source>398, 17</source>
           <target state="needs-review-translation">398, 17</target>
         </trans-unit>
-        <trans-unit id="$this.Localizable" translate="yes" extype="System.Boolean, mscorlib" extradata="metadata" xml:space="preserve">
+        <trans-unit id="$this.Localizable" translate="yes" extype="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" extradata="metadata" xml:space="preserve">
           <source>True</source>
           <target state="needs-review-translation">True</target>
         </trans-unit>
-        <trans-unit id="statusStrip1.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing" extradata="metadata" xml:space="preserve">
+        <trans-unit id="statusStrip1.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
           <source>662, 17</source>
           <target state="needs-review-translation">662, 17</target>
         </trans-unit>
@@ -3116,8 +3112,9 @@
           <target state="needs-review-translation">0</target>
         </trans-unit>
         <trans-unit id="okButton.Text" translate="yes" xml:space="preserve">
-          <source>OK</source>
+          <source>&amp;OK</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">実行</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="cancelButton.Anchor" translate="yes" extype="System.Windows.Forms.AnchorStyles, System.Windows.Forms" xml:space="preserve">
           <source>Bottom, Right</source>
@@ -3136,8 +3133,9 @@
           <target state="needs-review-translation">1</target>
         </trans-unit>
         <trans-unit id="cancelButton.Text" translate="yes" xml:space="preserve">
-          <source>Cancel</source>
+          <source>&amp;Cancel</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">キャンセル</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="databaseTextBox.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
           <source>99, 38</source>
@@ -3425,8 +3423,9 @@
           <target state="needs-review-translation">0</target>
         </trans-unit>
         <trans-unit id="okButton.Text" translate="yes" xml:space="preserve">
-          <source>OK</source>
+          <source>&amp;OK</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">実行</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="cancelButton.Anchor" translate="yes" extype="System.Windows.Forms.AnchorStyles, System.Windows.Forms" xml:space="preserve">
           <source>Bottom, Right</source>
@@ -3445,8 +3444,9 @@
           <target state="needs-review-translation">1</target>
         </trans-unit>
         <trans-unit id="cancelButton.Text" translate="yes" xml:space="preserve">
-          <source>Cancel</source>
+          <source>&amp;Cancel</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">キャンセル</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="databaseTextBox.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
           <source>110, 34</source>
@@ -3826,8 +3826,9 @@
           <target state="needs-review-translation">NoControl</target>
         </trans-unit>
         <trans-unit id="okButton.Text" translate="yes" xml:space="preserve">
-          <source>OK</source>
+          <source>&amp;OK</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">実行</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="label3.Text" translate="yes" xml:space="preserve">
           <source>Read top </source>
@@ -3882,8 +3883,9 @@
           <target state="needs-review-translation">2, 2, 2, 2</target>
         </trans-unit>
         <trans-unit id="cancelButton.Text" translate="yes" xml:space="preserve">
-          <source>Cancel</source>
+          <source>&amp;Cancel</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">キャンセル</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="timeoutTextBox.Text" translate="yes" xml:space="preserve">
           <source>120</source>
@@ -5558,8 +5560,9 @@
           <target state="translated">データ ソース名:</target>
         </trans-unit>
         <trans-unit id="addToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>New</source>
+          <source>&amp;New</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">新規</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="userNameTextBox.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>162, 20</source>
@@ -5570,8 +5573,9 @@
           <target state="needs-review-translation">0</target>
         </trans-unit>
         <trans-unit id="cancelToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Cancel</source>
+          <source>&amp;Cancel</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">キャンセル</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="passwordLabel.TabIndex" translate="yes" extype="System.Int32, mscorlib" xml:space="preserve">
           <source>4</source>
@@ -5638,8 +5642,9 @@
           <target state="needs-review-translation">285, 342</target>
         </trans-unit>
         <trans-unit id="closeToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>OK</source>
+          <source>&amp;OK</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">実行</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="closeToolStripButton.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>47, 24</source>
@@ -5740,8 +5745,9 @@
           <target state="needs-review-translation">2, 0, 2, 0</target>
         </trans-unit>
         <trans-unit id="TestToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Test</source>
-          <target state="translated">テスト</target>
+          <source>&amp;Test</source>
+          <target state="needs-review-translation">テスト</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="connectionNameLabel.Margin" translate="yes" extype="System.Windows.Forms.Padding, System.Windows.Forms" xml:space="preserve">
           <source>2, 0, 2, 0</source>
@@ -5809,16 +5815,18 @@
           <target state="needs-review-translation">False</target>
         </trans-unit>
         <trans-unit id="saveButton.Text" translate="yes" xml:space="preserve">
-          <source>Add</source>
+          <source>&amp;Add</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">追加</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="userNameTextBox.TabIndex" translate="yes" extype="System.Int32, mscorlib" xml:space="preserve">
           <source>3</source>
           <target state="needs-review-translation">3</target>
         </trans-unit>
         <trans-unit id="deleteToolStripButton.Text" translate="yes" xml:space="preserve">
-          <source>Delete</source>
+          <source>&amp;Delete</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">削除</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="connectionsListBox.TabIndex" translate="yes" extype="System.Int32, mscorlib" xml:space="preserve">
           <source>1</source>
@@ -6239,7 +6247,7 @@
           <target state="needs-review-translation">12</target>
         </trans-unit>
         <trans-unit id="closeToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>184, 26</source>
+          <source>103, 22</source>
           <target state="needs-review-translation">184, 26</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6257,7 +6265,7 @@
           <target state="translated">ファイル</target>
         </trans-unit>
         <trans-unit id="copyChartToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>215, 26</source>
+          <source>211, 22</source>
           <target state="needs-review-translation">249, 26</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6267,7 +6275,7 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="copyAggregateDataToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>215, 26</source>
+          <source>211, 22</source>
           <target state="needs-review-translation">249, 26</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6277,12 +6285,12 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator4.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>212, 6</source>
+          <source>208, 6</source>
           <target state="needs-review-translation">246, 6</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="exportAggregateDataToExcelToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>215, 26</source>
+          <source>211, 22</source>
           <target state="needs-review-translation">249, 26</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6300,7 +6308,7 @@
           <target state="translated">編集</target>
         </trans-unit>
         <trans-unit id="barChartToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>184, 26</source>
+          <source>167, 22</source>
           <target state="needs-review-translation">202, 26</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6310,7 +6318,7 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="stackedBarChartToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>184, 26</source>
+          <source>167, 22</source>
           <target state="needs-review-translation">202, 26</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6320,7 +6328,7 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="toolStripSeparator5.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>181, 6</source>
+          <source>164, 6</source>
           <target state="needs-review-translation">199, 6</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6329,7 +6337,7 @@
           <target state="needs-review-translation">False</target>
         </trans-unit>
         <trans-unit id="allCasesToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>184, 26</source>
+          <source>167, 22</source>
           <target state="needs-review-translation">202, 26</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>

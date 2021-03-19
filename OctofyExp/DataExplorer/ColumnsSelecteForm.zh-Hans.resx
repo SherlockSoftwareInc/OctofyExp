@@ -55,7 +55,7 @@
     <value>False</value>
   </data>
   <data name="selectAllToolStripButton.Text" xml:space="preserve">
-    <value>全选</value>
+    <value>全选(&amp;A)</value>
   </data>
   <data name="columnsCheckedListBox.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>1</value>
@@ -82,7 +82,7 @@
     <value>Magenta</value>
   </data>
   <data name="clearToolStripButton.Text" xml:space="preserve">
-    <value>清除</value>
+    <value>清除(&amp;L)</value>
   </data>
   <data name="toolStrip1.Location" xml:space="preserve" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
