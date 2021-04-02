@@ -4672,10 +4672,6 @@
           <source>Connection String:</source>
           <target state="translated">连接字符串：</target>
         </trans-unit>
-        <trans-unit id="panel1.Visible" translate="yes" extype="System.Boolean, mscorlib" xml:space="preserve">
-          <source>False</source>
-          <target state="needs-review-translation">False</target>
-        </trans-unit>
         <trans-unit id="panel1.TabIndex" translate="yes" extype="System.Int32, mscorlib" xml:space="preserve">
           <source>11</source>
           <target state="needs-review-translation">11</target>

@@ -242,6 +242,28 @@
   <data name="cancelToolStripButton.Text" xml:space="preserve">
     <value>&amp;Cancel</value>
   </data>
+  <data name="connectionStringLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="connectionStringLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="connectionStringLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 3</value>
+  </data>
+  <data name="connectionStringLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="connectionStringLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="connectionStringLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="connectionStringLabel.Text" xml:space="preserve">
+    <value>Connection String:</value>
+  </data>
   <data name="&gt;&gt;connectionStringLabel.Name" xml:space="preserve">
     <value>connectionStringLabel</value>
   </data>
@@ -254,6 +276,21 @@
   <data name="&gt;&gt;connectionStringLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="useCustomConectionCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="useCustomConectionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 2</value>
+  </data>
+  <data name="useCustomConectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 17</value>
+  </data>
+  <data name="useCustomConectionCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="useCustomConectionCheckBox.Text" xml:space="preserve">
+    <value>Use custom connection string</value>
+  </data>
   <data name="&gt;&gt;useCustomConectionCheckBox.Name" xml:space="preserve">
     <value>useCustomConectionCheckBox</value>
   </data>
@@ -265,6 +302,18 @@
   </data>
   <data name="&gt;&gt;useCustomConectionCheckBox.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="connectionStringTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 22</value>
+  </data>
+  <data name="connectionStringTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="connectionStringTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 79</value>
+  </data>
+  <data name="connectionStringTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;connectionStringTextBox.Name" xml:space="preserve">
     <value>connectionStringTextBox</value>
@@ -332,7 +381,6 @@
   <data name="databaseTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 66</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="databaseTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -629,90 +677,6 @@
   </data>
   <data name="&gt;&gt;connectionGroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="connectionStringLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="connectionStringLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="connectionStringLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 3</value>
-  </data>
-  <data name="connectionStringLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="connectionStringLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
-  </data>
-  <data name="connectionStringLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="connectionStringLabel.Text" xml:space="preserve">
-    <value>Connection String:</value>
-  </data>
-  <data name="&gt;&gt;connectionStringLabel.Name" xml:space="preserve">
-    <value>connectionStringLabel</value>
-  </data>
-  <data name="&gt;&gt;connectionStringLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;connectionStringLabel.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;connectionStringLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="useCustomConectionCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="useCustomConectionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 2</value>
-  </data>
-  <data name="useCustomConectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 17</value>
-  </data>
-  <data name="useCustomConectionCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="useCustomConectionCheckBox.Text" xml:space="preserve">
-    <value>Use custom connection string</value>
-  </data>
-  <data name="&gt;&gt;useCustomConectionCheckBox.Name" xml:space="preserve">
-    <value>useCustomConectionCheckBox</value>
-  </data>
-  <data name="&gt;&gt;useCustomConectionCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;useCustomConectionCheckBox.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;useCustomConectionCheckBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="connectionStringTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 22</value>
-  </data>
-  <data name="connectionStringTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="connectionStringTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 79</value>
-  </data>
-  <data name="connectionStringTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;connectionStringTextBox.Name" xml:space="preserve">
-    <value>connectionStringTextBox</value>
-  </data>
-  <data name="&gt;&gt;connectionStringTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;connectionStringTextBox.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;connectionStringTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="rememberPasswordCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

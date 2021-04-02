@@ -264,9 +264,6 @@
   <data name="connectionStringLabel.Text" xml:space="preserve">
     <value>连接字符串：</value>
   </data>
-  <data name="panel1.Visible" xml:space="preserve" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="panel1.TabIndex" xml:space="preserve" type="System.Int32, mscorlib">
     <value>11</value>
   </data>

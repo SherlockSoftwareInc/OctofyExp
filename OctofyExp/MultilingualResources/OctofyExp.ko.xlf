@@ -7452,10 +7452,6 @@
           <source>10</source>
           <target state="needs-review-translation">10</target>
         </trans-unit>
-        <trans-unit id="panel1.Visible" translate="yes" extype="System.Boolean, mscorlib" xml:space="preserve">
-          <source>False</source>
-          <target state="needs-review-translation">False</target>
-        </trans-unit>
         <trans-unit id="authenticationGroupBox.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
           <source>10, 92</source>
           <target state="needs-review-translation">10, 92</target>

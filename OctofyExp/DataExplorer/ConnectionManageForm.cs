@@ -555,6 +555,9 @@ namespace OctofyExp
         {
             bool result = false;
             Cursor = Cursors.WaitCursor;
+            if(_changed)
+                connectionStringTextBox.Text = BuildConnectionString();
+
             string connectionString = connectionStringTextBox.Text.Trim();
             if (connectionString.Length > 1)
             {
