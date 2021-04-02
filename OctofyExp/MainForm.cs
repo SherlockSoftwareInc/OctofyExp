@@ -371,13 +371,15 @@ namespace OctofyExp
                         Database = dlg.DatabaseName,
                         AuthenticationType = dlg.Authentication,
                         UserName = dlg.UserName,
-                        Password = dlg.Password
+                        Password = dlg.Password,
+                        RememberPassword = dlg.RememberPassword
                     };
-                    if (dlg.Authentication == 0)
-                        connection.BuildConnectionString();
+                    //if (dlg.Authentication == 0)
+                    connection.BuildConnectionString();
                     _connections.Add(dlg.ConnectionName, dlg.ServerName, dlg.DatabaseName,
                         dlg.Authentication, dlg.UserName, dlg.Password,
                         connection.ConnectionString, dlg.RememberPassword);
+                    
                     _connections.Save();
 
                     dataSourcesToolStripComboBox.Items.Add(connection);

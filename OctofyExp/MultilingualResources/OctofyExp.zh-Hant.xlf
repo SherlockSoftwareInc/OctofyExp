@@ -3931,6 +3931,10 @@
           <source>2, 0, 2, 0</source>
           <target state="needs-review-translation">2, 0, 2, 0</target>
         </trans-unit>
+        <trans-unit id="passwordTextBox.PasswordChar" translate="yes" xml:space="preserve" extype="System.Char, mscorlib">
+          <source>*</source>
+          <target state="needs-review-translation">*</target>
+        </trans-unit>
       </group>
     </body>
   </file>

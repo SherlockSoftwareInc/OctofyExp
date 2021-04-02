@@ -237,7 +237,7 @@ namespace OctofyExp
                 InitialCatalog = Database,
                 IntegratedSecurity = integratedSecurity
             };
-            if (!integratedSecurity)
+            if (integratedSecurity == false)
             {
                 builder.UserID = UserName;
                 builder.Password = Password;

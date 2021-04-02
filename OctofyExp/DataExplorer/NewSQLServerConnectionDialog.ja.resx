@@ -252,4 +252,7 @@
   <data name="label1.Margin" xml:space="preserve" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
+  <data name="passwordTextBox.PasswordChar" xml:space="preserve" type="System.Char, mscorlib">
+    <value>*</value>
+  </data>
 </root>

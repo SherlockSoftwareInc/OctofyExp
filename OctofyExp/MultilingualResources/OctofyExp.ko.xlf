@@ -2962,6 +2962,10 @@
           <source>True</source>
           <target state="needs-review-translation">True</target>
         </trans-unit>
+        <trans-unit id="passwordTextBox.PasswordChar" translate="yes" xml:space="preserve" extype="System.Char, mscorlib">
+          <source>*</source>
+          <target state="needs-review-translation">*</target>
+        </trans-unit>
       </group>
     </body>
   </file>

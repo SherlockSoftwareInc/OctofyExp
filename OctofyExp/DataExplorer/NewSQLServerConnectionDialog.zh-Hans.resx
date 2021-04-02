@@ -252,4 +252,7 @@
   <data name="label1.Text" xml:space="preserve">
     <value>服务器名称:</value>
   </data>
+  <data name="passwordTextBox.PasswordChar" xml:space="preserve" type="System.Char, mscorlib">
+    <value>*</value>
+  </data>
 </root>

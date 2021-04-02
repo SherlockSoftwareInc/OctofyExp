@@ -46,7 +46,7 @@ namespace OctofyExp
             string connectionString,
             bool rememberPassword)
         {
-            _connections.Add(new SQLDatabaseConnectionItem()
+            var connItem = new SQLDatabaseConnectionItem()
             {
                 Name = name,
                 ServerName = server,
@@ -56,7 +56,9 @@ namespace OctofyExp
                 Password = password,
                 ConnectionString = connectionString,
                 RememberPassword = rememberPassword
-            });
+            };
+            connItem.BuildConnectionString();
+            _connections.Add(connItem );
         }
 
         /// <summary>
