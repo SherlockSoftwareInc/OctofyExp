@@ -60,7 +60,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <EntryPointProjectUniqueName>..\OctofyExp\OctofyExp.csproj</EntryPointProjectUniqueName>
-    <PackageCertificateThumbprint>BB18706218D6AC5060B579B654D850C300AF36C3</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>27F2CF82213255FF8C87C24DDD19FBF8319480E0</PackageCertificateThumbprint>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>

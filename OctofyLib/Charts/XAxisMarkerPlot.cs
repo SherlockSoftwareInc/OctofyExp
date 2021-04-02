@@ -560,7 +560,7 @@ namespace OctofyLib
                     LayoutCompleted = true;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //Interaction.MsgBox(ex.Message, MsgBoxStyle.Critical);
             }

@@ -17,7 +17,7 @@ namespace OctofyLib
         private readonly ChartLegends _legends;          // Chart legends for boxplot
         private Rectangle _chartRect;
         private int _maxValue = 100;
-        private readonly int _maxScale;
+        private readonly int _maxScale=100;
         private ColorSchema _colors;
         private short _numOfPeriod;
         private readonly ChartLabel _title;                    // Chart title

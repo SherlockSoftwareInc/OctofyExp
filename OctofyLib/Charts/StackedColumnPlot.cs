@@ -308,7 +308,7 @@ namespace OctofyLib
 
                 LayoutCompleted = false;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
             }
         }

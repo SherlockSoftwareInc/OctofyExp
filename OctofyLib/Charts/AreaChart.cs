@@ -21,7 +21,7 @@ namespace OctofyLib
 
         private Rectangle _chartRect;
         private int _maxValue = 100;
-        private int _maxScale;
+        private int _maxScale = 100;
         private ColorSchema _colors;
         private short _numOfPeriod;
         private int _chartHeight;
@@ -258,7 +258,7 @@ namespace OctofyLib
                     LayoutCompleted = false;
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
             }
         }
@@ -604,7 +604,7 @@ namespace OctofyLib
                     LayoutCompleted = true;
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
             }
         }

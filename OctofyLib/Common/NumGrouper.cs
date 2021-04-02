@@ -24,49 +24,49 @@ namespace OctofyLib
             }
         }
 
-        /// <summary>
-        /// Open date grouper from a list of values and period type
-        /// </summary>
-        /// <param name="groupBy"></param>
-        /// <param name="values"></param>
-        /// <returns></returns>
-        public bool Open(double groupBy, List<string> values)
-        {
-            return Open(values);
-        }
+        ///// <summary>
+        ///// Open date grouper from a list of values and period type
+        ///// </summary>
+        ///// <param name="groupBy"></param>
+        ///// <param name="values"></param>
+        ///// <returns></returns>
+        //public bool Open(double groupBy, List<string> values)
+        //{
+        //    return Open(values);
+        //}
 
 
-        /// <summary>
-        /// Open date grouper from a list of values 
-        /// </summary>
-        /// <param name="periodType"></param>
-        /// <param name="values"></param>
-        /// <returns></returns>
-        public bool Open(List<string> values)
-        {
-            _hasBlanks = false;
+        ///// <summary>
+        ///// Open date grouper from a list of values 
+        ///// </summary>
+        ///// <param name="periodType"></param>
+        ///// <param name="values"></param>
+        ///// <returns></returns>
+        //public bool Open(List<string> values)
+        //{
+        //    _hasBlanks = false;
 
-            foreach (var value in values)
-            {
-                if (value.Length == 0 || value == Properties.Resources.B003)
-                {
-                    AddBlankDate();
-                }
-                else
-                {
-                    if (DateTime.TryParse(value, out DateTime eventDate))
-                    {
-                        Add(eventDate);
-                    }
-                    else
-                    {
-                        throw new InvalidDataException();
-                    }
-                }
-            }
+        //    foreach (var value in values)
+        //    {
+        //        if (value.Length == 0 || value == Properties.Resources.B003)
+        //        {
+        //            AddBlankDate();
+        //        }
+        //        else
+        //        {
+        //            if (DateTime.TryParse(value, out DateTime eventDate))
+        //            {
+        //                Add(eventDate);
+        //            }
+        //            else
+        //            {
+        //                throw new InvalidDataException();
+        //            }
+        //        }
+        //    }
 
-            return (_periods.Count > 0);
-        }
+        //    return (_periods.Count > 0);
+        //}
 
         /// <summary>
         /// Add a blank date item
@@ -84,85 +84,85 @@ namespace OctofyLib
             }
         }
 
-        /// <summary>
-        /// Add a date item
-        /// </summary>
-        /// <param name="eventDate"></param>
-        public void Add(DateTime? eventDate)
-        {
-            if (eventDate == null)
-            {
-                AddBlankDate();
-            }
-            else
-            {
-                DateTime date = (DateTime)eventDate;
-                int year = date.Year;
-                int periodIndex;
-                DateTime periodStart;
-                DateTime periodEnd;
-                string periodName;
+        ///// <summary>
+        ///// Add a date item
+        ///// </summary>
+        ///// <param name="eventDate"></param>
+        //public void Add(DateTime? eventDate)
+        //{
+        //    if (eventDate == null)
+        //    {
+        //        AddBlankDate();
+        //    }
+        //    else
+        //    {
+        //        DateTime date = (DateTime)eventDate;
+        //        int year = date.Year;
+        //        int periodIndex;
+        //        DateTime periodStart;
+        //        DateTime periodEnd;
+        //        string periodName;
 
-                if (_periods.Count == 0)
-                {
-                    //_periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
-                }
-                else if (_periods.Count == 1)
-                {
-                    if (_hasBlanks)
-                    {
-                        //_periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
-                    }
-                    else
-                    {
-                        //if (year != _periods[0].Year || periodIndex != _periods[0].Period)
-                        //{
-                        //    if (year < _periods[0].Year || (year == _periods[0].Year && periodIndex < _periods[0].Period))
-                        //    {
-                        //        _periods.Insert(0, new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
-                        //    }
-                        //    else
-                        //    {
-                        //        _periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
-                        //    }
-                        //}
-                        //else
-                        //{
-                        //    _periods[0].Count++;
-                        //}
-                    }
-                }
-                else
-                {
-                    //int startIndex = 0;
-                    //if (_hasBlanks)
-                    //{
-                    //    startIndex = 1;
-                    //}
-                    //int index = FindPeriod(date, startIndex, _periods.Count - 1);
+        //        if (_periods.Count == 0)
+        //        {
+        //            //_periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
+        //        }
+        //        else if (_periods.Count == 1)
+        //        {
+        //            if (_hasBlanks)
+        //            {
+        //                //_periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
+        //            }
+        //            else
+        //            {
+        //                //if (year != _periods[0].Year || periodIndex != _periods[0].Period)
+        //                //{
+        //                //    if (year < _periods[0].Year || (year == _periods[0].Year && periodIndex < _periods[0].Period))
+        //                //    {
+        //                //        _periods.Insert(0, new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
+        //                //    }
+        //                //    else
+        //                //    {
+        //                //        _periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
+        //                //    }
+        //                //}
+        //                //else
+        //                //{
+        //                //    _periods[0].Count++;
+        //                //}
+        //            }
+        //        }
+        //        else
+        //        {
+        //            //int startIndex = 0;
+        //            //if (_hasBlanks)
+        //            //{
+        //            //    startIndex = 1;
+        //            //}
+        //            //int index = FindPeriod(date, startIndex, _periods.Count - 1);
 
-                    //if (index == int.MinValue)
-                    //{
-                    //    _periods.Insert(startIndex, new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
-                    //}
-                    //else if (index == int.MaxValue)
-                    //{
-                    //    _periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
-                    //}
-                    //else
-                    //{
-                    //    if (index < 0)
-                    //    {
-                    //        _periods.Insert(-index, new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
-                    //    }
-                    //    else
-                    //    {
-                    //        _periods[index].Count++;
-                    //    }
-                    //}
-                }
-            }
-        }
+        //            //if (index == int.MinValue)
+        //            //{
+        //            //    _periods.Insert(startIndex, new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
+        //            //}
+        //            //else if (index == int.MaxValue)
+        //            //{
+        //            //    _periods.Add(new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
+        //            //}
+        //            //else
+        //            //{
+        //            //    if (index < 0)
+        //            //    {
+        //            //        _periods.Insert(-index, new TimePeriod(year, periodIndex, periodName, periodStart, periodEnd));
+        //            //    }
+        //            //    else
+        //            //    {
+        //            //        _periods[index].Count++;
+        //            //    }
+        //            //}
+        //        }
+        //    }
+        //}
 
         /// <summary>
         /// Find index of period list for a given date

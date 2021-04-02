@@ -9,14 +9,14 @@ namespace OctofyLib
     {
         private decimal?[,] _values;
         private int _seriesCount;
-        private Rectangle _clientRectangle;
+        //private Rectangle _clientRectangle;
         private CaptionTypes _captionType;
         private double _maximumScale;
         private int[] _coords;
         private bool _useExtenalCoords;
         private int _count;
         private float _drawingRatio;
-        private bool _autoScale = true;
+        //private bool _autoScale = true;
         private bool _percentMode;
         private double[] _seriesTotal;
         private List<PolygonItem> _areas = new List<PolygonItem>();

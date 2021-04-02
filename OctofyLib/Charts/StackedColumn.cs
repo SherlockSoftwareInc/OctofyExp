@@ -25,12 +25,12 @@ namespace OctofyLib
         private int _maximum = 100;
         private BarDirections _drawDirection = BarDirections.BottomToTop;
         private CaptionTypes _captionType = CaptionTypes.None;
-        private readonly short _selectedSection = -1;
+        //private readonly short _selectedSection = -1;
         private Point _location = new Point();
         private Size _size = new Size();
         private int?[] _values;
         private Rectangle _clientAreaRect;
-        private bool _isOverflow;
+        private bool _isOverflow=false;
         private readonly List<ColumnCellItem> _barSections = new List<ColumnCellItem>();
         private float _drawingRatio;
         private float _barWidthPercent = 0.5F;
@@ -721,7 +721,7 @@ namespace OctofyLib
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 //Interaction.MsgBox(ex.Message, MsgBoxStyle.Critical);
             }
