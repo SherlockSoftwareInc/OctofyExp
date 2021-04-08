@@ -461,4 +461,10 @@
   <data name="A085" xml:space="preserve">
     <value>Task canceled</value>
   </data>
+  <data name="A086" xml:space="preserve">
+    <value>There are {0} rows to read in.</value>
+  </data>
+  <data name="A087" xml:space="preserve">
+    <value>There is no data in the table.</value>
+  </data>
 </root>

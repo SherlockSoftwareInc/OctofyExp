@@ -826,6 +826,24 @@ namespace OctofyExp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There are {0} rows to read in..
+        /// </summary>
+        internal static string A086 {
+            get {
+                return ResourceManager.GetString("A086", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There is no data in the table..
+        /// </summary>
+        internal static string A087 {
+            get {
+                return ResourceManager.GetString("A087", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap add {

@@ -30,7 +30,7 @@ namespace OctofyExp
 
         private Views _view = Views.BarChart;
         private readonly TableAnalysis _tableAnalysis = new TableAnalysis();
-        private readonly CustomizedDataBuilder _customData = new CustomizedDataBuilder();
+        //private readonly CustomizedDataBuilder _customData = new CustomizedDataBuilder();
         private readonly Stopwatch _stopWatch = new Stopwatch();
         private int _numOfBlanks = 0;
         private int _currentSortColumn;
@@ -308,10 +308,10 @@ namespace OctofyExp
 
                 try
                 {
-                    string loadResult = await OpenDatabaseTableAsync(cancellationTokenSource.Token);
+                    //string loadResult = await OpenDatabaseTableAsync(cancellationTokenSource.Token);
 
-                    // Get source data by type
-                    if (loadResult.Length == 0)
+                    //if (loadResult.Length == 0)
+                    if (DataSource !=null)
                     {
                         messageToolStripStatusLabel.Text = "";
                         ClearChart(Properties.Resources.A019);
@@ -337,10 +337,10 @@ namespace OctofyExp
                             chart.Clear(analysisResult, Color.Red);
                         }
                     }
-                    else
-                    {
-                        chart.Clear(Properties.Resources.A013 + ":\r\n" + loadResult, Color.Red);
-                    }
+                    //else
+                    //{
+                    //    chart.Clear(Properties.Resources.A013 + ":\r\n" + loadResult, Color.Red);
+                    //}
                 }
                 catch (OutOfMemoryException)
                 {
@@ -379,40 +379,42 @@ namespace OctofyExp
             }
         }
 
-        /// <summary>
-        /// Open specified data table
-        /// </summary>
-        /// <returns></returns>
-        private async Task<string> OpenDatabaseTableAsync(CancellationToken cancellationToken)
-        {
-            string result;
-            try
-            {
-                _stopWatch.Reset();
-                _stopWatch.Start();
-                result = await _customData.OpenTableAsync(ConnectionString, TableSelectSQL, cancellationToken,
-                    Properties.Settings.Default.ConnectionTimeout);
-                _stopWatch.Stop();
+        ///// <summary>
+        ///// Open specified data table
+        ///// </summary>
+        ///// <returns></returns>
+        //private async Task<string> OpenDatabaseTableAsync(CancellationToken cancellationToken)
+        //{
+        //    string result;
+        //    try
+        //    {
+        //        _stopWatch.Reset();
+        //        _stopWatch.Start();
+        //        result = await _customData.OpenTableAsync(ConnectionString, TableSelectSQL, cancellationToken,
+        //            Properties.Settings.Default.ConnectionTimeout);
+        //        _stopWatch.Stop();
 
-                loadTimeToolStripStatusLabel.Text = string.Format(Properties.Resources.A016,
-                    ((double)_stopWatch.ElapsedMilliseconds / 1000F).ToString("N2"));
+        //        loadTimeToolStripStatusLabel.Text = string.Format(Properties.Resources.A016,
+        //            ((double)_stopWatch.ElapsedMilliseconds / 1000F).ToString("N2"));
 
-            }
-            catch (OutOfMemoryException)
-            {
-                result = "There is no enough memory to complete this operation.";
-            }
-            catch (TaskCanceledException)
-            {
-                result = "Task cancelled";
-            }
-            catch (Exception ex)
-            {
-                result = ex.Message;
-            }
+        //    }
+        //    catch (OutOfMemoryException)
+        //    {
+        //        result = "There is no enough memory to complete this operation.";
+        //    }
+        //    catch (TaskCanceledException)
+        //    {
+        //        result = "Task cancelled";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        result = ex.Message;
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
+
+        public DataTable DataSource { get; set; }
 
         private async Task<string> AnalysisDatabaseTableAsync(CancellationToken cancellationToken)
         {
@@ -420,14 +422,14 @@ namespace OctofyExp
             try
             {
                 _stopWatch.Restart();
-                DataTable data = _customData.GetData("");
+                //DataTable data = _customData.GetData("");
 
                 numOfRowsToolStripStatusLabel.Text = string.Format(Properties.Resources.A017,
-                    data.Rows.Count.ToString("N0"));
+                    DataSource.Rows.Count.ToString("N0"));
 
                 messageToolStripStatusLabel.Text = Properties.Resources.A018;
 
-                await _tableAnalysis.OpenAsync(data, cancellationToken);
+                await _tableAnalysis.OpenAsync(DataSource, cancellationToken);
                 _stopWatch.Stop();
                 analysisTimeToolStripStatusLabel.Text = string.Format(Properties.Resources.A020,
                     ((double)_stopWatch.ElapsedMilliseconds / 1000F).ToString("N2"));

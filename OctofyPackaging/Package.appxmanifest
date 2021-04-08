@@ -9,7 +9,7 @@
   <Identity
     Name="3977SherlockSoftwareInc.OctofyExpress"
     Publisher="CN=Sherlock Software Inc., O=Sherlock Software Inc., STREET=1001-5051 Lougheed Hwy., L=Burnaby, S=British Columbia, PostalCode=V5B4T5, C=CA"
-    Version="1.2.6.0" />
+    Version="1.2.10.0" />
 
   <Properties>
     <DisplayName>Octofy Express</DisplayName>

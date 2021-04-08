@@ -83,7 +83,7 @@ namespace OctofyExp
 
         private void WebsiteButton_Click(object sender, EventArgs e)
         {
-            //System.Diagnostics.Process.Start("https://sherlocksoftwareinc.godaddysites.com/");
+            System.Diagnostics.Process.Start("https://sherlocksoftwareinc.godaddysites.com/");
         }
     }
 }

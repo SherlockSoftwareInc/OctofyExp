@@ -8341,6 +8341,14 @@
           <source>Task canceled</source>
           <target state="translated">任務已取消</target>
         </trans-unit>
+        <trans-unit id="A086" translate="yes" xml:space="preserve">
+          <source>There are {0} rows to read in.</source>
+          <target state="new">There are {0} rows to read in.</target>
+        </trans-unit>
+        <trans-unit id="A087" translate="yes" xml:space="preserve">
+          <source>There is no data in the table.</source>
+          <target state="new">There is no data in the table.</target>
+        </trans-unit>
       </group>
     </body>
   </file>
@@ -10148,6 +10156,27 @@
           <source>True</source>
           <target state="needs-review-translation">True</target>
           <note from="MultilingualUpdate" priority="2">When the XLIFF file support was added via MAT, existing resources were found and auto-imported.  This source and target string contained the same value so the resource was marked as 'Needs review' to ensure the translation could be easily reviewed.</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en" target-language="zh-Hant" original="OCTOFYEXP/ANALYSISFORM/DATALOADERFORM.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6916.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="OCTOFYEXP/ANALYSISFORM/DATALOADERFORM.RESX" datatype="resx">
+        <trans-unit id="progressTimer.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>17, 17</source>
+          <target state="needs-review-translation">17, 17</target>
+        </trans-unit>
+        <trans-unit id="startTimer.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>147, 17</source>
+          <target state="needs-review-translation">147, 17</target>
+        </trans-unit>
+        <trans-unit id="exitTimer.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+          <source>254, 17</source>
+          <target state="needs-review-translation">254, 17</target>
         </trans-unit>
       </group>
     </body>

@@ -15,14 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_1625FB90E0054C268FC79575939F1D4D"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_083D63E3B21225F08EAB19B7D321B455"
+        "OwnerKey" = "8:_F911DA58BB484256BC9D2025E94C1E0C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_71E9083BDBFBD4BC6E98665122BA472C"
-        "OwnerKey" = "8:_F911DA58BB484256BC9D2025E94C1E0C"
+        "MsmKey" = "8:_1625FB90E0054C268FC79575939F1D4D"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_71E9083BDBFBD4BC6E98665122BA472C"
+        "OwnerKey" = "8:_083D63E3B21225F08EAB19B7D321B455"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -138,34 +138,14 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1625FB90E0054C268FC79575939F1D4D"
-            {
-            "SourcePath" = "8:..\\OctofyExp\\octofy_icon.ico"
-            "TargetName" = "8:octofy_icon.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_C3861B6177F7411293727BA604A4D321"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_71E9083BDBFBD4BC6E98665122BA472C"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_083D63E3B21225F08EAB19B7D321B455"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:OctofyLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_71E9083BDBFBD4BC6E98665122BA472C"
+                    "_083D63E3B21225F08EAB19B7D321B455"
                     {
                     "Name" = "8:OctofyLib.dll"
                     "Attributes" = "3:512"
@@ -187,6 +167,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1625FB90E0054C268FC79575939F1D4D"
+            {
+            "SourcePath" = "8:..\\OctofyExp\\octofy_icon.ico"
+            "TargetName" = "8:octofy_icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_C3861B6177F7411293727BA604A4D321"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -245,15 +245,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Octofy Express"
-        "ProductCode" = "8:{A900D228-1126-4BB0-9E37-3D91935DC655}"
-        "PackageCode" = "8:{544DB5A8-6E88-4EEF-A21D-618F58EFDBD3}"
+        "ProductCode" = "8:{2049AB4D-609B-41D0-BE73-1E7A19636249}"
+        "PackageCode" = "8:{40D1C2D6-72AA-4B74-8795-9841CBE7A98F}"
         "UpgradeCode" = "8:{1758A647-CC6E-4486-A6DC-28680614EB50}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.1.4"
+        "ProductVersion" = "8:1.2.7"
         "Manufacturer" = "8:Sherlock Software Inc."
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -795,7 +795,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F911DA58BB484256BC9D2025E94C1E0C"
             {
-            "SourcePath" = "8:..\\OctofyExp\\obj\\Release\\OctofyExp.exe"
+            "SourcePath" = "8:..\\OctofyExp\\obj\\Debug\\OctofyExp.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C3861B6177F7411293727BA604A4D321"

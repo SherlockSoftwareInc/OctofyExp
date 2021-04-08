@@ -430,16 +430,36 @@ namespace OctofyExp
                 //var sql = columnView.SafeSQL(numOfRows);
                 if (sql.Length > 0)
                 {
-                    using (var frm = new DataAnalysisForm()
+                    using (var dlg = new DataLoaderForm()
                     {
-                        TableName = tableName,
-                        ExcludedColumns = columnView.ExcludedColumns,
-                        NumberOfTopRows = numOfRows,
                         ConnectionString = connectionString,
+                        TableName = tableName,
                         TableSelectSQL = sql
                     })
                     {
-                        _ = frm.ShowDialog();
+                        if (dlg.ShowDialog() == DialogResult.OK)
+                        {
+                            if (dlg.ErrorInfo.Length == 0)
+                            {
+                                using (var frm = new DataAnalysisForm()
+                                {
+                                    TableName = tableName,
+                                    ExcludedColumns = columnView.ExcludedColumns,
+                                    NumberOfTopRows = numOfRows,
+                                    ConnectionString = connectionString,
+                                    TableSelectSQL = sql,
+                                    DataSource = dlg.DataSource 
+                                })
+                                {
+                                    _ = frm.ShowDialog();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show(dlg.ErrorInfo, Properties.Resources.A007,
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
                     }
                 }
                 else
