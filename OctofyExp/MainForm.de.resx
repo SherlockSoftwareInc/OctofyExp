@@ -995,4 +995,10 @@
   <metadata name="toolTip.TrayLocation" xml:space="preserve" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="excelFileAnalysisToolStripMenuItem.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>209, 26</value>
+  </data>
+  <data name="toolStripSeparator5.Size" xml:space="preserve" type="System.Drawing.Size, System.Drawing">
+    <value>206, 6</value>
+  </data>
 </root>

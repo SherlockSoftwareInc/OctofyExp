@@ -33,7 +33,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -93,6 +93,12 @@
     </Compile>
     <Compile Include="AnalysisForm\DataLoaderForm.Designer.cs">
       <DependentUpon>DataLoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalysisForm\ExcelSheetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalysisForm\ExcelSheetsForm.Designer.cs">
+      <DependentUpon>ExcelSheetsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataExplorer\ColumnsSelecteForm.cs">
       <SubType>Form</SubType>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\DataLoaderForm.resx">
       <DependentUpon>DataLoaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalysisForm\ExcelSheetsForm.resx">
+      <DependentUpon>ExcelSheetsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm\ExcludeColumnsForm.de.resx">
       <DependentUpon>ExcludeColumnsForm.cs</DependentUpon>

@@ -76,6 +76,8 @@
             this.dataSourcesToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.excelFileAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
@@ -237,6 +239,8 @@
             this.addNewDBConnectionToolStripMenuItem,
             this.manageConnectionsToolStripMenuItem,
             this.toolStripSeparator3,
+            this.excelFileAnalysisToolStripMenuItem,
+            this.toolStripSeparator5,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
@@ -439,6 +443,17 @@
             this.toolStripButton.Name = "toolStripButton";
             this.toolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
             // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
+            // 
+            // excelFileAnalysisToolStripMenuItem
+            // 
+            this.excelFileAnalysisToolStripMenuItem.Name = "excelFileAnalysisToolStripMenuItem";
+            resources.ApplyResources(this.excelFileAnalysisToolStripMenuItem, "excelFileAnalysisToolStripMenuItem");
+            this.excelFileAnalysisToolStripMenuItem.Click += new System.EventHandler(this.ExcelFileAnalysisToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -518,5 +533,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripComboBox dataSourcesToolStripComboBox;
+        private System.Windows.Forms.ToolStripMenuItem excelFileAnalysisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
     }
 }

@@ -145,7 +145,7 @@
     <value>measurementVariables</value>
   </data>
   <data name="&gt;&gt;measurementVariables.Type" xml:space="preserve">
-    <value>OctofyExp.ChartVariableSelector, OctofyExp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>OctofyExp.ChartVariableSelector, OctofyExp, Version=1.2.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;measurementVariables.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>

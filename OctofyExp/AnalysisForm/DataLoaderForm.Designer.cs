@@ -100,7 +100,7 @@ namespace OctofyExp
             this.Controls.Add(this.loadingLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DataLoaderForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DataLoaderForm";
             this.Load += new System.EventHandler(this.DataLoaderForm_Load);
             this.ResumeLayout(false);

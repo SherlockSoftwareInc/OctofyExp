@@ -1436,11 +1436,11 @@
           <source>Version {0}</source>
           <target state="translated">版本{0}</target>
         </trans-unit>
-        <trans-unit id="server" translate="yes" xml:space="preserve" extype="System.Resources.ResXFileRef, System.Windows.Forms">
+        <trans-unit id="server" translate="yes" extype="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
           <source>..\Resources\server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</source>
           <target state="needs-review-translation">..\Resources\server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</target>
         </trans-unit>
-        <trans-unit id="database" translate="yes" xml:space="preserve" extype="System.Resources.ResXFileRef, System.Windows.Forms">
+        <trans-unit id="database" translate="yes" extype="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
           <source>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</source>
           <target state="needs-review-translation">..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</target>
         </trans-unit>
@@ -4893,7 +4893,7 @@
           <source>True</source>
           <target state="needs-review-translation">True</target>
         </trans-unit>
-        <trans-unit id="panel1.Visible" translate="yes" xml:space="preserve" extype="System.Boolean, mscorlib">
+        <trans-unit id="panel1.Visible" translate="yes" extype="System.Boolean, mscorlib" xml:space="preserve">
           <source>False</source>
           <target state="needs-review-translation">False</target>
         </trans-unit>
@@ -6275,7 +6275,7 @@
           <target state="needs-review-translation">MiddleLeft</target>
         </trans-unit>
         <trans-unit id="statusBarToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>180, 22</source>
+          <source>126, 22</source>
           <target state="needs-review-translation">112, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6355,7 +6355,7 @@
           <target state="needs-review-translation">False</target>
         </trans-unit>
         <trans-unit id="aboutToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>180, 22</source>
+          <source>138, 22</source>
           <target state="needs-review-translation">126, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6400,7 +6400,7 @@
           <target state="needs-review-translation">0, 0</target>
         </trans-unit>
         <trans-unit id="copyToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>180, 22</source>
+          <source>144, 22</source>
           <target state="needs-review-translation">140, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6419,7 +6419,7 @@
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="optionsToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>180, 22</source>
+          <source>116, 22</source>
           <target state="needs-review-translation">100, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6442,7 +6442,7 @@
           <target state="translated">数据库</target>
         </trans-unit>
         <trans-unit id="toolBarToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
-          <source>180, 22</source>
+          <source>126, 22</source>
           <target state="needs-review-translation">112, 22</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -6611,11 +6611,11 @@
           <source>17, 17</source>
           <target state="needs-review-translation">17, 17</target>
         </trans-unit>
-        <trans-unit id="toolStripButton.ImageTransparentColor" translate="yes" xml:space="preserve" extype="System.Drawing.Color, System.Drawing">
+        <trans-unit id="toolStripButton.ImageTransparentColor" translate="yes" extype="System.Drawing.Color, System.Drawing" xml:space="preserve">
           <source>Magenta</source>
           <target state="needs-review-translation">Magenta</target>
         </trans-unit>
-        <trans-unit id="toolStripButton.Size" translate="yes" xml:space="preserve" extype="System.Drawing.Size, System.Drawing">
+        <trans-unit id="toolStripButton.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>23, 22</source>
           <target state="needs-review-translation">23, 22</target>
         </trans-unit>
@@ -6623,27 +6623,39 @@
           <source>Add data source</source>
           <target state="translated">添加数据源</target>
         </trans-unit>
-        <trans-unit id="toolStrip.Dock" translate="yes" xml:space="preserve" extype="System.Windows.Forms.DockStyle, System.Windows.Forms">
+        <trans-unit id="toolStrip.Dock" translate="yes" extype="System.Windows.Forms.DockStyle, System.Windows.Forms" xml:space="preserve">
           <source>None</source>
           <target state="needs-review-translation">None</target>
         </trans-unit>
-        <trans-unit id="toolStrip.Location" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing">
+        <trans-unit id="toolStrip.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
           <source>3, 24</source>
           <target state="needs-review-translation">3, 25</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
-        <trans-unit id="toolStrip.Size" translate="yes" xml:space="preserve" extype="System.Drawing.Size, System.Drawing">
+        <trans-unit id="toolStrip.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>409, 25</source>
           <target state="needs-review-translation">449, 25</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
-        <trans-unit id="toolStrip.TabIndex" translate="yes" xml:space="preserve" extype="System.Int32, mscorlib">
+        <trans-unit id="toolStrip.TabIndex" translate="yes" extype="System.Int32, mscorlib" xml:space="preserve">
           <source>1</source>
           <target state="needs-review-translation">1</target>
         </trans-unit>
-        <trans-unit id="toolStrip.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+        <trans-unit id="toolStrip.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
           <source>427, 17</source>
           <target state="needs-review-translation">427, 17</target>
+        </trans-unit>
+        <trans-unit id="excelFileAnalysisToolStripMenuItem.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
+          <source>209, 26</source>
+          <target state="needs-review-translation">209, 26</target>
+        </trans-unit>
+        <trans-unit id="excelFileAnalysisToolStripMenuItem.Text" translate="yes" xml:space="preserve">
+          <source>&amp;Excel file analysis</source>
+          <target state="new">&amp;Excel file analysis</target>
+        </trans-unit>
+        <trans-unit id="toolStripSeparator5.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
+          <source>206, 6</source>
+          <target state="needs-review-translation">206, 6</target>
         </trans-unit>
       </group>
     </body>
@@ -8670,23 +8682,23 @@
           <source>True</source>
           <target state="needs-review-translation">True</target>
         </trans-unit>
-        <trans-unit id="label1.AutoSize" translate="yes" xml:space="preserve" extype="System.Boolean, mscorlib">
+        <trans-unit id="label1.AutoSize" translate="yes" extype="System.Boolean, mscorlib" xml:space="preserve">
           <source>True</source>
           <target state="needs-review-translation">True</target>
         </trans-unit>
-        <trans-unit id="label1.Location" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing">
+        <trans-unit id="label1.Location" translate="yes" extype="System.Drawing.Point, System.Drawing" xml:space="preserve">
           <source>36, 14</source>
           <target state="needs-review-translation">36, 14</target>
         </trans-unit>
-        <trans-unit id="label1.Margin" translate="yes" xml:space="preserve" extype="System.Windows.Forms.Padding, System.Windows.Forms">
+        <trans-unit id="label1.Margin" translate="yes" extype="System.Windows.Forms.Padding, System.Windows.Forms" xml:space="preserve">
           <source>2, 0, 2, 0</source>
           <target state="needs-review-translation">2, 0, 2, 0</target>
         </trans-unit>
-        <trans-unit id="label1.Size" translate="yes" xml:space="preserve" extype="System.Drawing.Size, System.Drawing">
+        <trans-unit id="label1.Size" translate="yes" extype="System.Drawing.Size, System.Drawing" xml:space="preserve">
           <source>70, 13</source>
           <target state="needs-review-translation">70, 13</target>
         </trans-unit>
-        <trans-unit id="label1.TabIndex" translate="yes" xml:space="preserve" extype="System.Int32, mscorlib">
+        <trans-unit id="label1.TabIndex" translate="yes" extype="System.Int32, mscorlib" xml:space="preserve">
           <source>2</source>
           <target state="needs-review-translation">2</target>
         </trans-unit>
@@ -8694,7 +8706,7 @@
           <source>Server name:</source>
           <target state="translated">服务器名称:</target>
         </trans-unit>
-        <trans-unit id="passwordTextBox.PasswordChar" translate="yes" xml:space="preserve" extype="System.Char, mscorlib">
+        <trans-unit id="passwordTextBox.PasswordChar" translate="yes" extype="System.Char, mscorlib" xml:space="preserve">
           <source>*</source>
           <target state="needs-review-translation">*</target>
         </trans-unit>
@@ -9563,17 +9575,34 @@
     </header>
     <body>
       <group id="OCTOFYEXP/ANALYSISFORM/DATALOADERFORM.RESX" datatype="resx">
-        <trans-unit id="progressTimer.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+        <trans-unit id="progressTimer.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
           <source>17, 17</source>
           <target state="needs-review-translation">17, 17</target>
         </trans-unit>
-        <trans-unit id="startTimer.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+        <trans-unit id="startTimer.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
           <source>147, 17</source>
           <target state="needs-review-translation">147, 17</target>
         </trans-unit>
-        <trans-unit id="exitTimer.TrayLocation" translate="yes" xml:space="preserve" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata">
+        <trans-unit id="exitTimer.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
           <source>254, 17</source>
           <target state="needs-review-translation">254, 17</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en" target-language="zh-Hans" original="OCTOFYEXP/ANALYSISFORM/EXCELSHEETSFORM.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6916.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="OCTOFYEXP/ANALYSISFORM/EXCELSHEETSFORM.RESX" datatype="resx">
+        <trans-unit id="statusStrip1.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
+          <source>17, 17</source>
+          <target state="needs-review-translation">17, 17</target>
+        </trans-unit>
+        <trans-unit id="startTimer.TrayLocation" translate="yes" extype="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" extradata="metadata" xml:space="preserve">
+          <source>133, 17</source>
+          <target state="needs-review-translation">133, 17</target>
         </trans-unit>
       </group>
     </body>

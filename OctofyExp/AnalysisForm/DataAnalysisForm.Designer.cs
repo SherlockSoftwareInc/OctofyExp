@@ -114,8 +114,8 @@ namespace OctofyExp
             this.measurementVariables.MaxYMembers = 32768;
             this.measurementVariables.Name = "measurementVariables";
             this.measurementVariables.VariableType = OctofyExp.DataAnalysisForm.Views.BarChart;
-            this.measurementVariables.SelectionChanged += new System.EventHandler(this.MeasurementVariables_SelectionChanged);
             this.measurementVariables.SelectedDateGroupTypeChanged += new System.EventHandler(this.MeasurementVariables_SelectionChanged);
+            this.measurementVariables.SelectionChanged += new System.EventHandler(this.MeasurementVariables_SelectionChanged);
             // 
             // panel1
             // 

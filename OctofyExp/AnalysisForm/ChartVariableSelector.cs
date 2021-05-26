@@ -10,6 +10,7 @@ namespace OctofyExp
     public partial class ChartVariableSelector : UserControl
     {
         public event EventHandler SelectionChanged;
+
         public event EventHandler SelectedDateGroupTypeChanged;
 
         public ChartVariableSelector()
@@ -17,17 +18,20 @@ namespace OctofyExp
             InitializeComponent();
         }
 
-        string _selectedX = "";
-        string _selectedY = "";
+        private string _selectedX = "";
+        private string _selectedY = "";
+        private VariableSelector _activeControl;
 
         #region"Properties"
+
         /// <summary>
         /// Gets or sets date column name
         /// </summary>
         public string DateColumnName { get; set; } = "";
 
+
         /// <summary>
-        /// Gets or sets maximum category members allows for 
+        /// Gets or sets maximum category members allows for
         /// x-axis. When members of category exceed the setting,
         /// column will be exclude from selectable list
         /// </summary>
@@ -38,7 +42,7 @@ namespace OctofyExp
         }
 
         /// <summary>
-        /// Gets or sets maximum category members allows for 
+        /// Gets or sets maximum category members allows for
         /// y-axis. When members of category exceed the setting,
         /// column will be exclude from selectable list
         /// </summary>
@@ -49,7 +53,7 @@ namespace OctofyExp
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string Title
         {
@@ -86,7 +90,7 @@ namespace OctofyExp
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string XAxisCaption
         {
@@ -119,7 +123,7 @@ namespace OctofyExp
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string YAxisCaption
         {
@@ -128,10 +132,11 @@ namespace OctofyExp
                 return yAxisVariableSelector.Caption;
             }
         }
+
         #endregion
 
         /// <summary>
-        /// 
+        /// Open the variable selector control
         /// </summary>
         /// <param name="dataSource"></param>
         /// <param name="variableType"></param>
@@ -140,11 +145,10 @@ namespace OctofyExp
             yAxisVariableSelector.Open(dataSource, variableType);
             xAxisVariableSelector.Open(dataSource, variableType);
             Populate();
-
         }
 
         /// <summary>
-        /// 
+        /// Populate the variable selectors
         /// </summary>
         private void Populate()
         {
@@ -164,10 +168,12 @@ namespace OctofyExp
             _selectedX = XAxisVariable;
 
             PerformLayout();
+
+            _activeControl = yAxisVariableSelector;
         }
 
         /// <summary>
-        /// 
+        /// Perform layout for the controls
         /// </summary>
         /// <param name="e"></param>
         protected override void OnLayout(LayoutEventArgs e)
@@ -189,7 +195,7 @@ namespace OctofyExp
 
         /// <summary>
         /// Handle variable selected index change event:
-        ///     
+        ///
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -207,11 +213,17 @@ namespace OctofyExp
                     timer.Interval = 500;
                 }
             }
+
+            if (sender is VariableSelector variableSelector)
+            {
+                _activeControl = variableSelector;
+            }
+
             timer.Start();
         }
 
         /// <summary>
-        /// 
+        /// Timer tick event handle: delay to fire selection change
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -238,24 +250,34 @@ namespace OctofyExp
         }
 
         /// <summary>
-        /// 
+        /// Variable date group selection changed event handle
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void YAxisVariableSelector_SelectedDateGroupTypeChanged(object sender, EventArgs e)
         {
+            if (sender is VariableSelector variableSelector)
+            {
+                _activeControl = variableSelector;
+            }
             SelectedDateGroupTypeChanged?.Invoke(sender, e);
         }
 
         /// <summary>
         /// Handle control resize event:
-        ///     
+        ///
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void ChartVariableSelector_Resize(object sender, EventArgs e)
         {
             PerformLayout();
+        }
+
+        protected override void OnMouseEnter(EventArgs e)
+        {
+            _activeControl?.Focus();
+            //base.OnMouseEnter(e);
         }
     }
 }

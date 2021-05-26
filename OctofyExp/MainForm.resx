@@ -208,7 +208,7 @@
     <value>dbObjectsTree</value>
   </data>
   <data name="&gt;&gt;dbObjectsTree.Type" xml:space="preserve">
-    <value>OctofyExp.DBObjectTree, OctofyExp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>OctofyExp.DBObjectTree, OctofyExp, Version=1.2.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;dbObjectsTree.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -265,7 +265,7 @@
     <value>serachPanel</value>
   </data>
   <data name="&gt;&gt;serachPanel.Type" xml:space="preserve">
-    <value>OctofyExp.TableSearchPanel, OctofyExp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>OctofyExp.TableSearchPanel, OctofyExp, Version=1.2.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;serachPanel.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -367,7 +367,7 @@
     <value>columnView</value>
   </data>
   <data name="&gt;&gt;columnView.Type" xml:space="preserve">
-    <value>OctofyExp.ColumnDefView, OctofyExp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>OctofyExp.ColumnDefView, OctofyExp, Version=1.2.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;columnView.Parent" xml:space="preserve">
     <value>splitContainer.Panel2</value>
@@ -492,6 +492,15 @@
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 6</value>
   </data>
+  <data name="excelFileAnalysisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 26</value>
+  </data>
+  <data name="excelFileAnalysisToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Excel file analysis</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 6</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 26</value>
   </data>
@@ -595,7 +604,7 @@
     <value>Ctrl+C</value>
   </data>
   <data name="copyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>144, 22</value>
   </data>
   <data name="copyToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Copy</value>
@@ -610,13 +619,13 @@
     <value>False</value>
   </data>
   <data name="toolBarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>126, 22</value>
   </data>
   <data name="toolBarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Toolbar</value>
   </data>
   <data name="statusBarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>126, 22</value>
   </data>
   <data name="statusBarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Status Bar</value>
@@ -628,7 +637,7 @@
     <value>&amp;View</value>
   </data>
   <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Options</value>
@@ -643,7 +652,7 @@
     <value>F1</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>138, 22</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;About ...</value>
@@ -1528,6 +1537,18 @@
   </data>
   <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
+    <value>toolStripSeparator5</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;excelFileAnalysisToolStripMenuItem.Name" xml:space="preserve">
+    <value>excelFileAnalysisToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;excelFileAnalysisToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

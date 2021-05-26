@@ -7,30 +7,11 @@ namespace OctofyExp
 {
     public partial class MainForm : Form
     {
-        class ConnectionMenuItem : ToolStripMenuItem
-        {
-            public ConnectionMenuItem(SQLDatabaseConnectionItem connectionItem)
-                : base(connectionItem.Name)
-            {
-                Connection = connectionItem;
-            }
+        private readonly SQLServerConnections _connections = new SQLServerConnections();
 
-            public string ConnectionName
-            {
-                get { return Connection.Name; }
-            }
+        private string _currentTable = "";
 
-            public SQLDatabaseConnectionItem Connection { get; set; }
-
-            public override string ToString()
-            {
-                if (Connection != null)
-                    return Connection.Name;
-                else
-                    return "";
-            }
-        }
-
+        private SQLDatabaseConnectionItem _selectedConnection;
 
         public MainForm()
         {
@@ -42,9 +23,311 @@ namespace OctofyExp
             InitializeComponent();
         }
 
-        private readonly SQLServerConnections _connections = new SQLServerConnections();
-        private SQLDatabaseConnectionItem _selectedConnection;
-        private string _currentTable = "";
+        /// <summary>
+        /// Handle form Shown event:
+        ///     If selected table is search panel, set focus on the search text box
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnShown(EventArgs e)
+        {
+            if (tabControl.SelectedIndex == 1)
+            { serachPanel.searchTextBox.Focus(); }
+            base.OnShown(e);
+        }
+
+        /// <summary>
+        /// Handle About menu item click event:
+        ///     Show About dialog
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var dlg = new OctofySplashScreen())
+            {
+                dlg.ShowDialog();
+            }
+        }
+
+        /// <summary>
+        /// Open add connection dialog and start to add a new database connection
+        /// </summary>
+        /// <returns></returns>
+        private bool AddConnection()
+        {
+            using (var dlg = new NewSQLServerConnectionDialog())
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    var connection = new SQLDatabaseConnectionItem()
+                    {
+                        Name = dlg.ConnectionName,
+                        ServerName = dlg.ServerName,
+                        Database = dlg.DatabaseName,
+                        AuthenticationType = dlg.Authentication,
+                        UserName = dlg.UserName,
+                        Password = dlg.Password,
+                        RememberPassword = dlg.RememberPassword
+                    };
+
+                    connection.BuildConnectionString();
+                    _connections.Add(dlg.ConnectionName, dlg.ServerName, dlg.DatabaseName,
+                        dlg.Authentication, dlg.UserName, dlg.Password,
+                        connection.ConnectionString, dlg.RememberPassword);
+
+                    _connections.Save();
+
+                    dataSourcesToolStripComboBox.Items.Add(connection);
+
+                    var submenuitem = new ConnectionMenuItem(connection)
+                    {
+                        Name = string.Format("ConnectionMenuItem{0}", dataSourcesToolStripComboBox.Items.Count + 1),
+                        Size = new Size(300, 26),
+                    };
+                    submenuitem.Click += OnConnectionToolStripMenuItem_Click;
+                    connectToToolStripMenuItem.DropDown.Items.Add(submenuitem);
+
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Add button click event handle:
+        ///   Add a new connection
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AddToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (AddConnection() && dataSourcesToolStripComboBox.Items.Count > 0)
+                dataSourcesToolStripComboBox.SelectedIndex = dataSourcesToolStripComboBox.Items.Count - 1;
+        }
+
+        /// <summary>
+        /// Handle table analysis menu item click event:
+        ///     Open analysis form on entire table
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AnalysisOnEntireTableviewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_currentTable.Length > 0 && _selectedConnection?.ConnectionString.Length > 0)
+            {
+                var sql = columnView.SafeSQL(-1);
+                AnalysisTable(_currentTable, -1, _selectedConnection.ConnectionString, sql);
+            }
+        }
+
+        /// <summary>
+        /// Open DataAnalysisForm for the specified table
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <param name="numOfRows"></param>
+        /// <param name="connectionString"></param>
+        private void AnalysisTable(string tableName, int numOfRows, string connectionString, string sql)
+        {
+            try
+            {
+                //Ensure table object in column control is same as selected table
+                if (columnView.ObjectName != tableName)
+                {
+                    columnView.Open(tableName, "");
+                }
+
+                //Get SELECT statement from column control
+                //var sql = columnView.SafeSQL(numOfRows);
+                if (sql.Length > 0)
+                {
+                    using (var dlg = new DataLoaderForm()
+                    {
+                        ConnectionString = connectionString,
+                        TableName = tableName,
+                        TableSelectSQL = sql
+                    })
+                    {
+                        if (dlg.ShowDialog() == DialogResult.OK)
+                        {
+                            if (dlg.ErrorInfo.Length == 0)
+                            {
+                                using (var frm = new DataAnalysisForm()
+                                {
+                                    TableName = tableName,
+                                    ExcludedColumns = columnView.ExcludedColumns,
+                                    //NumberOfTopRows = numOfRows,
+                                    //ConnectionString = connectionString,
+                                    //TableSelectSQL = sql,
+                                    DataSource = dlg.DataSource
+                                })
+                                {
+                                    _ = frm.ShowDialog();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show(dlg.ErrorInfo, Properties.Resources.A007,
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(Properties.Resources.A006, Properties.Resources.A007,
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (ObjectDisposedException)
+            {
+                // ignore
+            }
+            catch (TargetInvocationException)
+            { }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Properties.Resources.A008, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Analysis on selected column menu item click event handl: analysis on selected columns of
+        /// the table
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AnaysisOnSelectedColumnsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_currentTable.Length > 0 && _selectedConnection?.ConnectionString.Length > 0)
+            {
+                string sql = columnView.SQLWithSelectedColumns();
+                if (sql.Length > 0)
+                {
+                    AnalysisTable(_currentTable, -1, _selectedConnection.ConnectionString, sql);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Change current database connection to a new connection
+        /// </summary>
+        /// <param name="connection">New db connection</param>
+        private void ChangeDBConnection(SQLDatabaseConnectionItem connection)
+        {
+            if (connection != null)
+            {
+                bool connectionChanged = false;
+                if (_selectedConnection == null)
+                {
+                    connectionChanged = true;
+                }
+                else
+                {
+                    if (!_selectedConnection.Equals(connection))
+                    {
+                        connectionChanged = true;
+                    }
+                }
+
+                if (connectionChanged)
+                {
+                    _selectedConnection = connection;
+                    serverToolStripStatusLabel.Text = "";
+                    databaseToolStripStatusLabel.Text = "";
+
+                    columnView.Clear();
+                    serachPanel.ConnectionString = "";
+                    dbObjectsTree.Clear();
+
+                    string connectionString = connection.ConnectionString.Length == 0 ? connection.Login() : connection.ConnectionString;
+                    serachPanel.ConnectionString = connectionString;
+                    columnView.ConnectionString = connectionString;
+
+                    string errMessage;
+                    if (connectionString.Length > 0)
+                    {
+                        errMessage = dbObjectsTree.Open(connectionString, connection.Name);
+
+                        if (errMessage.Length > 0)
+                        {
+                            serachPanel.ConnectionString = "";
+                            columnView.ConnectionString = "";
+                            connection.ConnectionString = "";
+                            connection.Password = "";
+                        }
+                        else
+                        {
+                            serverToolStripStatusLabel.Text = connection.ServerName;
+                            databaseToolStripStatusLabel.Text = connection.Database;
+                        }
+                    }
+                    else
+                    {
+                        errMessage = Properties.Resources.A004;
+                    }
+
+                    if (errMessage.Length > 0)
+                        MessageBox.Show(errMessage, Properties.Resources.A005, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Handle column control SelectedColumnChanged event:
+        ///     Enable/disable column menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ColumnView_SelectedColumnChanged(object sender, EventArgs e)
+        {
+            columnToolStripMenuItem.Enabled = (columnView.SelectedColumn.Length > 0);
+        }
+
+        /// <summary>
+        /// Handle copy column name menu item click event:
+        ///     Copy the selected column name to the clipboard
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CopyColumnNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string columnName = columnView.SelectedColumn;
+            if (columnName.Length > 0)
+                Clipboard.SetText(columnName);
+        }
+
+        /// <summary>
+        /// Handle copy table name menu item click event:
+        ///     Copy selected table name to the clipboard
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CopyTableviewNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_currentTable.Length > 0)
+                Clipboard.SetText(_currentTable);
+        }
+
+        /// <summary>
+        /// Handle DB connection combo box selected index changed event:
+        ///     Change to the new selected connection
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DataSourcesToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (dataSourcesToolStripComboBox.SelectedItem != null)
+            {
+                statusToolStripStatusLabe.Text = string.Format(Properties.Resources.A003, dataSourcesToolStripComboBox.SelectedItem.ToString());
+                Cursor = Cursors.WaitCursor;
+                Application.DoEvents();
+
+                ChangeDBConnection((SQLDatabaseConnectionItem)dataSourcesToolStripComboBox.SelectedItem);
+
+                Cursor = Cursors.Default;
+                statusToolStripStatusLabe.Text = "";
+            }
+        }
 
         /// <summary>
         /// Form closing event handle
@@ -154,6 +437,192 @@ namespace OctofyExp
         }
 
         /// <summary>
+        /// Handle database object tree AfterSelect event:
+        ///     Open columns in column control.
+        ///     Enable/disable Table menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DbObjects_AfterSelect(object sender, EventArgs e)
+        {
+            if (sender.GetType() == typeof(DBTableViewNode))
+            {
+                var node = (DBTableViewNode)sender;
+                columnView.Open(string.Format("{0}.{1}", node.SchemaName, node.TableName), "");
+            }
+            else
+            {
+                columnView.Open("", "");
+            }
+
+            _currentTable = dbObjectsTree.SelectedTable;
+            tableToolStripMenuItem.Enabled = (dbObjectsTree.SelectedTable.Length > 0);
+            messageToolStripStatusLabel.Text = dbObjectsTree.SelectedTable;
+        }
+
+        /// <summary>
+        /// Excel file analysis menu item click event handle: Select an Excel file and atart analysis
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ExcelFileAnalysisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var oFile = new OpenFileDialog() { Filter = "Excel Worksheets 2007 (*.xlsx)|*.xlsx|Excel Worksheets 2003 (*.xls)|*.xls" })
+            {
+                if (oFile.ShowDialog() == DialogResult.OK)
+                {
+                    using (ExcelSheetsForm dlg = new ExcelSheetsForm() { FileName = oFile.FileName })
+                    { dlg.ShowDialog(); }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Handle Exit menu item click event:
+        ///     Close the app.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        /// <summary>
+        /// Handle frequency menu item click event:
+        ///     Show column frequency
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrequenciesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowColumnFrequency(columnView.ObjectName, columnView.SelectedColumn);
+        }
+
+        /// <summary>
+        /// Manage Connections menu item click event handler:
+        ///     Manage the data connections
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ManageConnectionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var frm = new ConnectionManageForm() { DataConnections = _connections })
+            {
+                string currentSelection = "";
+                if (dataSourcesToolStripComboBox.SelectedItem != null)
+                {
+                    var selectedItem = (SQLDatabaseConnectionItem)(dataSourcesToolStripComboBox.SelectedItem);
+                    currentSelection = selectedItem.Name;
+                }
+                frm.ShowDialog();
+                PopulateConnections();
+
+                if (dataSourcesToolStripComboBox.Items.Count > 0)
+                {
+                    int index = 0;
+                    for (int i = 0; i < dataSourcesToolStripComboBox.Items.Count; i++)
+                    {
+                        var item = (SQLDatabaseConnectionItem)(dataSourcesToolStripComboBox.Items[i]);
+                        if (item.Name == currentSelection)
+                        {
+                            index = i;
+                            break;
+                        }
+                    }
+                    dataSourcesToolStripComboBox.SelectedIndex = index;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Handler OnAnylysisTable event from both DB object tree control and Search panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnAnalysisTable(object sender, OnAnalysisTableEventArgs e)
+        {
+            var sql = columnView.SafeSQL(e.NumOfRows);
+            AnalysisTable(e.TableName, e.NumOfRows, e.ConnectionString, sql);
+        }
+
+        /// <summary>
+        /// Handle column control OnColumnFrequency event:
+        ///     Show column frequency
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnColumnFrequency(object sender, EventArgs e)
+        {
+            ShowColumnFrequency(columnView.ObjectName, columnView.SelectedColumn);
+        }
+
+        /// <summary>
+        /// Handle connection menu item click event:
+        ///     Open selected connection
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (sender.GetType() == typeof(ConnectionMenuItem))
+            {
+                var menuItem = (ConnectionMenuItem)sender;
+                for (int i = 0; i < dataSourcesToolStripComboBox.ComboBox.Items.Count; i++)
+                {
+                    if (menuItem.Connection.Equals((SQLDatabaseConnectionItem)dataSourcesToolStripComboBox.ComboBox.Items[i]))
+                        dataSourcesToolStripComboBox.SelectedIndex = i;
+                }
+            }
+        }
+
+        /// <summary>
+        /// OnPreviewData event handler:
+        ///     Show table data in PreviewDataForm
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnPreviewData(object sender, OnAnalysisTableEventArgs e)
+        {
+            PreviewTableData(e.TableName, e.ConnectionString);
+        }
+
+        /// <summary>
+        /// Search panel AfterSelect event handle
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnSerachPanel_AfterSelect(object sender, EventArgs e)
+        {
+            _currentTable = serachPanel.SelectedTable;
+            columnView.Open(serachPanel.SelectedTable, serachPanel.SearchFor,
+                (serachPanel.SearchType == TableSearchPanel.SearchTypeNums.ColumnName));
+            tableToolStripMenuItem.Enabled = (_currentTable.Length > 0);
+            messageToolStripStatusLabel.Text = _currentTable;
+        }
+
+        /// <summary>
+        /// Handle options menu item click event:
+        ///     Show Options dialog.
+        ///     Update app options after setting.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OptionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var dlg = new OptionsForm())
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    int numOfRows = Properties.Settings.Default.NumOfRowOnDoubleClick;
+                    dbObjectsTree.DefaultNumOfRows = numOfRows;
+                    serachPanel.DefaultNumOfRows = numOfRows;
+                    quickAnalysisToolStripMenuItem.Text = string.Format(Properties.Resources.A002, numOfRows);
+                }
+            }
+        }
+
+        /// <summary>
         /// Populate connections to menu and combobox
         /// </summary>
         private void PopulateConnections()
@@ -197,298 +666,15 @@ namespace OctofyExp
         }
 
         /// <summary>
-        /// Search panel AfterSelect event handle
+        /// Handle Preview table menu item click event:
+        ///     Open current selected table in PreviewData Form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void OnSerachPanel_AfterSelect(object sender, EventArgs e)
+        private void PreviewDataToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            _currentTable = serachPanel.SelectedTable;
-            columnView.Open(serachPanel.SelectedTable, serachPanel.SearchFor,
-                (serachPanel.SearchType == TableSearchPanel.SearchTypeNums.ColumnName));
-            tableToolStripMenuItem.Enabled = (_currentTable.Length > 0);
-            messageToolStripStatusLabel.Text = _currentTable;
-        }
-
-        /// <summary>
-        /// Handle DB connection combo box selected index changed event:
-        ///     Change to the new selected connection
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void DataSourcesToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (dataSourcesToolStripComboBox.SelectedItem != null)
-            {
-                statusToolStripStatusLabe.Text = string.Format(Properties.Resources.A003, dataSourcesToolStripComboBox.SelectedItem.ToString());
-                Cursor = Cursors.WaitCursor;
-                Application.DoEvents();
-
-                ChangeDBConnection((SQLDatabaseConnectionItem)dataSourcesToolStripComboBox.SelectedItem);
-
-                Cursor = Cursors.Default;
-                statusToolStripStatusLabe.Text = "";
-            }
-        }
-
-        /// <summary>
-        /// Change current database connection to a new connection
-        /// </summary>
-        /// <param name="connection">New db connection</param>
-        private void ChangeDBConnection(SQLDatabaseConnectionItem connection)
-        {
-            if (connection != null)
-            {
-                bool connectionChanged = false;
-                if (_selectedConnection == null)
-                    connectionChanged = true;
-                else
-                {
-                    if (!_selectedConnection.Equals(connection))
-                        connectionChanged = true;
-                }
-
-                if (connectionChanged)
-                {
-                    _selectedConnection = connection;
-                    serverToolStripStatusLabel.Text = "";
-                    databaseToolStripStatusLabel.Text = "";
-
-                    columnView.Clear();
-                    serachPanel.ConnectionString = "";
-                    dbObjectsTree.Clear();
-
-                    string connectionString;
-                    if (connection.ConnectionString.Length == 0)
-                        connectionString = connection.Login();
-                    else
-                        connectionString = connection.ConnectionString;
-
-                    serachPanel.ConnectionString = connectionString;
-                    columnView.ConnectionString = connectionString;
-
-                    string errMessage;
-                    if (connectionString.Length > 0)
-                    {
-                        errMessage = dbObjectsTree.Open(connectionString, connection.Name);
-
-                        if (errMessage.Length > 0)
-                        {
-                            serachPanel.ConnectionString = "";
-                            columnView.ConnectionString = "";
-                            connection.ConnectionString = "";
-                            connection.Password = "";
-                        }
-                        else
-                        {
-                            serverToolStripStatusLabel.Text = connection.ServerName;
-                            databaseToolStripStatusLabel.Text = connection.Database;
-                        }
-                    }
-                    else
-                    {
-                        errMessage = Properties.Resources.A004;
-                    }
-
-                    if (errMessage.Length > 0)
-                        MessageBox.Show(errMessage, Properties.Resources.A005, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        /// <summary>
-        /// Handle connection menu item click event:
-        ///     Open selected connection
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OnConnectionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (sender.GetType() == typeof(ConnectionMenuItem))
-            {
-                var menuItem = (ConnectionMenuItem)sender;
-                for (int i = 0; i < dataSourcesToolStripComboBox.ComboBox.Items.Count; i++)
-                {
-                    if (menuItem.Connection.Equals((SQLDatabaseConnectionItem)dataSourcesToolStripComboBox.ComboBox.Items[i]))
-                        dataSourcesToolStripComboBox.SelectedIndex = i;
-
-                }
-            }
-        }
-
-        /// <summary>
-        /// Handle database object tree AfterSelect event:
-        ///     Open columns in column control.
-        ///     Enable/disable Table menu 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void DbObjects_AfterSelect(object sender, EventArgs e)
-        {
-            if (sender.GetType() == typeof(DBTableViewNode))
-            {
-                var node = (DBTableViewNode)sender;
-                columnView.Open(string.Format("{0}.{1}", node.SchemaName, node.TableName), "");
-            }
-            else
-            {
-                columnView.Open("", "");
-            }
-
-            _currentTable = dbObjectsTree.SelectedTable;
-            tableToolStripMenuItem.Enabled = (dbObjectsTree.SelectedTable.Length > 0);
-            messageToolStripStatusLabel.Text = dbObjectsTree.SelectedTable;
-        }
-
-        /// <summary>
-        /// Add button click event handle:
-        ///   Add a new connection
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void AddToolStripButton_Click(object sender, EventArgs e)
-        {
-            if (AddConnection())
-                if (dataSourcesToolStripComboBox.Items.Count > 0)
-                    dataSourcesToolStripComboBox.SelectedIndex = dataSourcesToolStripComboBox.Items.Count - 1;
-
-        }
-
-        /// <summary>
-        /// Open add connection dialog and start to add a new database connection
-        /// </summary>
-        /// <returns></returns>
-        private bool AddConnection()
-        {
-            using (var dlg = new NewSQLServerConnectionDialog())
-            {
-                if (dlg.ShowDialog() == DialogResult.OK)
-                {
-                    var connection = new SQLDatabaseConnectionItem()
-                    {
-                        Name = dlg.ConnectionName,
-                        ServerName = dlg.ServerName,
-                        Database = dlg.DatabaseName,
-                        AuthenticationType = dlg.Authentication,
-                        UserName = dlg.UserName,
-                        Password = dlg.Password,
-                        RememberPassword = dlg.RememberPassword
-                    };
-                    //if (dlg.Authentication == 0)
-                    connection.BuildConnectionString();
-                    _connections.Add(dlg.ConnectionName, dlg.ServerName, dlg.DatabaseName,
-                        dlg.Authentication, dlg.UserName, dlg.Password,
-                        connection.ConnectionString, dlg.RememberPassword);
-                    
-                    _connections.Save();
-
-                    dataSourcesToolStripComboBox.Items.Add(connection);
-
-                    var submenuitem = new ConnectionMenuItem(connection)
-                    {
-                        Name = string.Format("ConnectionMenuItem{0}", dataSourcesToolStripComboBox.Items.Count + 1),
-                        Size = new Size(300, 26),
-                    };
-                    submenuitem.Click += OnConnectionToolStripMenuItem_Click;
-                    connectToToolStripMenuItem.DropDown.Items.Add(submenuitem);
-
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        /// <summary>
-        /// Handler OnAnylysisTable event from both DB object tree control and Search panel
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OnAnalysisTable(object sender, OnAnalysisTableEventArgs e)
-        {
-            var sql = columnView.SafeSQL(e.NumOfRows);
-            AnalysisTable(e.TableName, e.NumOfRows, e.ConnectionString, sql);
-        }
-
-
-        /// <summary>
-        /// Open DataAnalysisForm for the specified table
-        /// </summary>
-        /// <param name="tableName"></param>
-        /// <param name="numOfRows"></param>
-        /// <param name="connectionString"></param>
-        private void AnalysisTable(string tableName, int numOfRows, string connectionString, string sql)
-        {
-            try
-            {
-                //Ensure table object in column control is same as selected table
-                if (columnView.ObjectName != tableName)
-                {
-                    columnView.Open(tableName, "");
-                }
-
-                //Get SELECT statement from column control
-                //var sql = columnView.SafeSQL(numOfRows);
-                if (sql.Length > 0)
-                {
-                    using (var dlg = new DataLoaderForm()
-                    {
-                        ConnectionString = connectionString,
-                        TableName = tableName,
-                        TableSelectSQL = sql
-                    })
-                    {
-                        if (dlg.ShowDialog() == DialogResult.OK)
-                        {
-                            if (dlg.ErrorInfo.Length == 0)
-                            {
-                                using (var frm = new DataAnalysisForm()
-                                {
-                                    TableName = tableName,
-                                    ExcludedColumns = columnView.ExcludedColumns,
-                                    NumberOfTopRows = numOfRows,
-                                    ConnectionString = connectionString,
-                                    TableSelectSQL = sql,
-                                    DataSource = dlg.DataSource 
-                                })
-                                {
-                                    _ = frm.ShowDialog();
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show(dlg.ErrorInfo, Properties.Resources.A007,
-                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    MessageBox.Show(Properties.Resources.A006, Properties.Resources.A007,
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch (ObjectDisposedException)
-            {
-                // ignore
-            }
-            catch (TargetInvocationException)
-            { }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, Properties.Resources.A008, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        /// <summary>
-        /// OnPreviewData event handler:
-        ///     Show table data in PreviewDataForm
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OnPreviewData(object sender, OnAnalysisTableEventArgs e)
-        {
-            PreviewTableData(e.TableName, e.ConnectionString);
+            if (_currentTable.Length > 0 && _selectedConnection?.ConnectionString.Length > 0)
+                PreviewTableData(_currentTable, _selectedConnection.ConnectionString);
         }
 
         /// <summary>
@@ -525,115 +711,6 @@ namespace OctofyExp
             }
         }
 
-
-        /// <summary>
-        /// Manage Connections menu item click event handler:
-        ///     Manage the data connections
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ManageConnectionsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (var frm = new ConnectionManageForm() { DataConnections = _connections })
-            {
-                string currentSelection = "";
-                if (dataSourcesToolStripComboBox.SelectedItem != null)
-                {
-                    var selectedItem = (SQLDatabaseConnectionItem)(dataSourcesToolStripComboBox.SelectedItem);
-                    currentSelection = selectedItem.Name;
-                }
-                frm.ShowDialog();
-                PopulateConnections();
-
-                if (dataSourcesToolStripComboBox.Items.Count > 0)
-                {
-                    int index = 0;
-                    for (int i = 0; i < dataSourcesToolStripComboBox.Items.Count; i++)
-                    {
-                        var item = (SQLDatabaseConnectionItem)(dataSourcesToolStripComboBox.Items[i]);
-                        if (item.Name == currentSelection)
-                        {
-                            index = i;
-                            break;
-                        }
-                    }
-                    dataSourcesToolStripComboBox.SelectedIndex = index;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Handle About menu item click event:
-        ///     Show About dialog
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (var dlg = new OctofySplashScreen())
-            {
-                dlg.ShowDialog();
-            }
-        }
-
-        /// <summary>
-        /// Handle Exit menu item click event:
-        ///     Close the app.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        /// <summary>
-        /// Handle tool bar menu item click event:
-        ///     Toggle show/hide tool bar on the form
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bool toolBarVisible = !toolBarToolStripMenuItem.Checked;
-            toolBarToolStripMenuItem.Checked = toolBarVisible;
-            toolStrip.Visible = toolBarVisible;
-        }
-
-        /// <summary>
-        /// Handle status bar menu item click event:
-        ///     Toggle show/hide status bar on the form
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bool statusBarVisible = !statusBarToolStripMenuItem.Checked;
-            statusBarToolStripMenuItem.Checked = statusBarVisible;
-            statusStrip.Visible = statusBarVisible;
-        }
-
-        /// <summary>
-        /// Handle options menu item click event:
-        ///     Show Options dialog.
-        ///     Update app options after setting.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OptionsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (var dlg = new OptionsForm())
-            {
-                if (dlg.ShowDialog() == DialogResult.OK)
-                {
-                    int numOfRows = Properties.Settings.Default.NumOfRowOnDoubleClick;
-                    dbObjectsTree.DefaultNumOfRows = numOfRows;
-                    serachPanel.DefaultNumOfRows = numOfRows;
-                    quickAnalysisToolStripMenuItem.Text = string.Format(Properties.Resources.A002, numOfRows);
-                }
-            }
-        }
-
         /// <summary>
         /// Handle quick analysis menu item click event:
         ///     Open analysis form with NumOfRowOnDoubleClick rows
@@ -650,82 +727,6 @@ namespace OctofyExp
                     AnalysisTable(_currentTable, numOfRows,
                         _selectedConnection.ConnectionString, sql);
                 }
-        }
-
-        /// <summary>
-        /// Handle table analysis menu item click event:
-        ///     Open analysis form on entire table
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void AnalysisOnEntireTableviewToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (_currentTable.Length > 0 && _selectedConnection != null)
-                if (_selectedConnection.ConnectionString.Length > 0)
-                {
-                    var sql = columnView.SafeSQL(-1);
-                    AnalysisTable(_currentTable, -1, _selectedConnection.ConnectionString, sql);
-                }
-        }
-
-        /// <summary>
-        /// Handle Preview table menu item click event:
-        ///     Open current selected table in PreviewData Form
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void PreviewDataToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (_currentTable.Length > 0 && _selectedConnection != null)
-                if (_selectedConnection.ConnectionString.Length > 0)
-                    PreviewTableData(_currentTable, _selectedConnection.ConnectionString);
-        }
-
-        /// <summary>
-        /// Handle copy table name menu item click event:
-        ///     Copy selected table name to the clipboard
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CopyTableviewNameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (_currentTable.Length > 0)
-                Clipboard.SetText(_currentTable);
-        }
-
-        /// <summary>
-        /// Handle frequency menu item click event:
-        ///     Show column frequency
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void FrequenciesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ShowColumnFrequency(columnView.ObjectName, columnView.SelectedColumn);
-        }
-
-        /// <summary>
-        /// Handle copy column name menu item click event:
-        ///     Copy the selected column name to the clipboard
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CopyColumnNameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string columnName = columnView.SelectedColumn;
-            if (columnName.Length > 0)
-                Clipboard.SetText(columnName);
-        }
-
-        /// <summary>
-        /// Handle column control OnColumnFrequency event:
-        ///     Show column frequency
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OnColumnFrequency(object sender, EventArgs e)
-        {
-            ShowColumnFrequency(columnView.ObjectName, columnView.SelectedColumn);
         }
 
         /// <summary>
@@ -746,7 +747,9 @@ namespace OctofyExp
                         TableName = tableName,
                         ColumnName = columnName
                     })
+                    {
                         _ = frm.ShowDialog();
+                    }
                 }
             }
             catch (Exception ex)
@@ -756,40 +759,53 @@ namespace OctofyExp
         }
 
         /// <summary>
-        /// Handle column control SelectedColumnChanged event:
-        ///     Enable/disable column menu
+        /// Handle status bar menu item click event:
+        ///     Toggle show/hide status bar on the form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ColumnView_SelectedColumnChanged(object sender, EventArgs e)
+        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            columnToolStripMenuItem.Enabled = (columnView.SelectedColumn.Length > 0);
+            bool statusBarVisible = !statusBarToolStripMenuItem.Checked;
+            statusBarToolStripMenuItem.Checked = statusBarVisible;
+            statusStrip.Visible = statusBarVisible;
         }
 
         /// <summary>
-        /// Handle form Shown event:
-        ///     If selected table is search panel, set focus on the search text box
+        /// Handle tool bar menu item click event:
+        ///     Toggle show/hide tool bar on the form
         /// </summary>
+        /// <param name="sender"></param>
         /// <param name="e"></param>
-        protected override void OnShown(EventArgs e)
+        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (tabControl.SelectedIndex == 1)
-            { serachPanel.searchTextBox.Focus(); }
-            base.OnShown(e);
+            bool toolBarVisible = !toolBarToolStripMenuItem.Checked;
+            toolBarToolStripMenuItem.Checked = toolBarVisible;
+            toolStrip.Visible = toolBarVisible;
         }
 
-        private void AnaysisOnSelectedColumnsToolStripMenuItem_Click(object sender, EventArgs e)
+        private class ConnectionMenuItem : ToolStripMenuItem
         {
-            if (_currentTable.Length > 0 && _selectedConnection != null)
-                if (_selectedConnection.ConnectionString.Length > 0)
-                {
-                    string sql = columnView.SQLWithSelectedColumns();
-                    if (sql.Length > 0)
-                    {
-                        AnalysisTable(_currentTable, -1, _selectedConnection.ConnectionString, sql);
-                    }
-                }
-        }
+            public ConnectionMenuItem(SQLDatabaseConnectionItem connectionItem)
+                : base(connectionItem.Name)
+            {
+                Connection = connectionItem;
+            }
 
+            public SQLDatabaseConnectionItem Connection { get; set; }
+
+            public string ConnectionName
+            {
+                get { return Connection.Name; }
+            }
+
+            public override string ToString()
+            {
+                if (Connection != null)
+                    return Connection.Name;
+                else
+                    return "";
+            }
+        }
     }
 }
