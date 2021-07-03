@@ -378,30 +378,66 @@ namespace OctofyExp
             {
                 return false;
             }
-            //else if (dataType == "xml")
-            //{
-            //    return false;
-            //}
-            //else
-            //{
-            //    //List<string> excludeDataTypes = new List<string>(new string[] { "cursor", "rowversion", "hierarchyid", "sql_variant", "uniqueidentifier", "table", "geography" });
-            //    //if (excludeDataTypes.Contains(dataType.ToLower()))
-            //    //{
-            //    //    return false;
-            //    //}
-            //    //else
-            //    //{
-            //    if (!includeTextColumn)
-            //    {
-            //        if (dataType == "text" || dataType == "ntext")
-            //        {
-            //            return false;
-            //        }
-            //    }
-            //    //}
-            //}
             return true;
         }
+
+        /// <summary>
+        /// Get displayable columns for data grid of the table
+        /// </summary>
+        /// <returns></returns>
+        public string DisplayColumns()
+        {
+            bool firstColumn = true;
+            string result = "";
+            ExcludedColumns.Clear();
+
+            for (int i = 0; i < columnDefDataGridView.Rows.Count; i++)
+            {
+                if (IsDisplayableColumn(i))
+                {
+                    string columnName = columnDefDataGridView.Rows[i].Cells["ColumnName"].Value.ToString();
+                    if (firstColumn)
+                    {
+                        result += "[" + columnName + "]";
+                        firstColumn = false;
+                    }
+                    else
+                    {
+                        result += ", [" + columnName + "]";
+                    }
+                }
+                else
+                {
+                    ExcludedColumns.Add(columnDefDataGridView.Rows[i].Cells["ColumnName"].Value.ToString());
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Checks if the specified column a displayable column
+        /// </summary>
+        /// <param name="columnIndex"></param>
+        /// <param name="includeTextColumn"></param>
+        /// <returns></returns>
+        private bool IsDisplayableColumn(int columnIndex)
+        {
+            string dataType = columnDefDataGridView.Rows[columnIndex].Cells["DataType"].Value.ToString().ToLower();
+            if (dataType.IndexOf("image") >= 0 || dataType.IndexOf("binary") >= 0)
+            {
+                return true;
+            }
+            else if (dataType.StartsWith("geo"))
+            {
+                return false;
+            }
+            else if (dataType == "cursor" || dataType == "rowversion" || dataType == "hierarchyid" || dataType == "sql_variant" || dataType == "table")
+            {
+                return false;
+            }
+            return true;
+        }
+
 
         /// <summary>
         /// Handle copy selections menu item click event:

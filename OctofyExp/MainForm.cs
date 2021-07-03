@@ -379,7 +379,7 @@ namespace OctofyExp
                     _connections.Add(dlg.ConnectionName, dlg.ServerName, dlg.DatabaseName,
                         dlg.Authentication, dlg.UserName, dlg.Password,
                         connection.ConnectionString, dlg.RememberPassword);
-                    
+
                     _connections.Save();
 
                     dataSourcesToolStripComboBox.Items.Add(connection);
@@ -484,7 +484,7 @@ namespace OctofyExp
                 {
                     columnView.Open(tableName, "");
                 }
-                var columns = columnView.CategoricalColumns(true);
+                var columns = columnView.DisplayColumns();
                 if (columns.Length > 0)
                 {
                     using (var frm = new PreviewDataForm()
