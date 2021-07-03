@@ -690,7 +690,7 @@ namespace OctofyExp
                 {
                     columnView.Open(tableName, "");
                 }
-                var columns = columnView.CategoricalColumns(true);
+                var columns = columnView.DisplayColumns();
                 if (columns.Length > 0)
                 {
                     using (var frm = new PreviewDataForm()
