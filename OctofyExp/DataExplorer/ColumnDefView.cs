@@ -374,7 +374,7 @@ namespace OctofyExp
             {
                 return false;
             }
-            else if (dataType == "timestamp" || dataType == "cursor" || dataType == "rowversion" || dataType == "hierarchyid" || dataType == "sql_variant" || dataType == "uniqueidentifier" || dataType == "table")
+            else if (dataType == "timestamp" || dataType == "cursor" || dataType == "rowversion" || dataType == "hierarchyid" || dataType == "sql_variant" || dataType == "table")
             {
                 return false;
             }
