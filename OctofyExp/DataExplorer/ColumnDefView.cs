@@ -425,7 +425,7 @@ namespace OctofyExp
             string dataType = columnDefDataGridView.Rows[columnIndex].Cells["DataType"].Value.ToString().ToLower();
             if (dataType.IndexOf("image") >= 0 || dataType.IndexOf("binary") >= 0)
             {
-                return true;
+                return false;
             }
             else if (dataType.StartsWith("geo"))
             {
