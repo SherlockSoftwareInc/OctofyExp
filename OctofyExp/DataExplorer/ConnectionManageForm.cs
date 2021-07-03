@@ -452,6 +452,7 @@ namespace OctofyExp
             {
                 //Ignore the error
             }
+            databases.Sort();
             return databases;
         }
 
