@@ -11,20 +11,16 @@ namespace OctofyExp
 {
     public partial class DataLoaderForm : Form
     {
-        private readonly CustomizedDataBuilder _customData = new CustomizedDataBuilder();
+        internal readonly CustomizedDataBuilder _customData = new CustomizedDataBuilder();
 
+        internal CancellationTokenSource _cancellation;
         private readonly Stopwatch _stopWatch = new Stopwatch();
-
-        private CancellationTokenSource _cancellation;
-
         private DataSourceTypesEnum _dataSourceType = DataSourceTypesEnum.SQLServerDataTable;
 
-        private string _excelFileName = "";
+        //private string _excelFileName = "";
 
         private DataTable _resultDataTable;
-
         private string _tableName = "";
-
         public DataLoaderForm()
         {
             InitializeComponent();
@@ -53,7 +49,6 @@ namespace OctofyExp
         }
 
         public DataSourceTypesEnum DataSourceType { set { _dataSourceType = value; } }
-
         /// <summary>
         /// Error message for reading the data.
         /// Empty if reading data successfully.
@@ -61,24 +56,15 @@ namespace OctofyExp
         public string ErrorInfo { get; set; }
 
         /// <summary>
-        /// Excel file name
+        /// Number of top rows to reading.
+        /// -1 for all rows.
         /// </summary>
-        public string ExcelFileName
-        {
-            set
-            {
-                if (!string.IsNullOrWhiteSpace(value))
-                {
-                    _excelFileName = value;
-                    _dataSourceType = DataSourceTypesEnum.ExcelFile;
-                }
-            }
-        }
+        public long NumOfTopRows { get; set; } = -1;
 
         /// <summary>
         /// The time it takes to read in the data (in second)
         /// </summary>
-        public double LoadTime { get; set; }
+        public double ReadingDataTime { get; set; }
 
         /// <summary>
         /// The target table name with schema (required)
@@ -92,8 +78,15 @@ namespace OctofyExp
                 {
                     _tableName = value;
                 }
+                else
+                {
+                    _tableName = "";
+                }
             }
         }
+
+        //public DataTable TableSchema { get; set; }
+
 
         /// <summary>
         /// The SELECT SQL statement
@@ -163,7 +156,7 @@ namespace OctofyExp
                     {
                         using (var cmd = new SqlCommand(sql, conn) { CommandType = CommandType.Text, CommandTimeout = timeout })
                         {
-                            await conn.OpenAsync();
+                            await conn.OpenAsync().ConfigureAwait(false);
                             using (CancellationTokenRegistration crt = cancellationToken.Register(() => cmd.Cancel()))
                             {
                                 using (var reader = await cmd.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false))
@@ -204,7 +197,26 @@ namespace OctofyExp
         {
             Cursor = Cursors.Default;
             progressTimer.Stop();
-            DialogResult = DialogResult.Cancel;
+            if (_cancellation != null)
+            {
+                try
+                {
+                    _cancellation.Cancel();
+                }
+                catch (ObjectDisposedException)
+                {
+                    // ignore
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                DialogResult = DialogResult.Cancel;
+            }
+            else
+            {
+                DialogResult = DialogResult.OK;
+            }
             Close();
         }
 
@@ -253,6 +265,13 @@ namespace OctofyExp
                             })
                             {
                                 conn.Open();
+                                //using (var reader = await cmd.ExecuteReaderAsync().ConfigureAwait(false))
+                                //{
+                                //    if (reader.Read())
+                                //    {
+                                //        numOfRows = Convert.ToInt64(reader[0]);
+                                //    }
+                                //}
                                 numOfRows = Convert.ToInt64(cmd.ExecuteScalar());
                             }
                         }
@@ -279,82 +298,30 @@ namespace OctofyExp
             {
                 using (var cancellationTokenSource = new CancellationTokenSource())
                 {
+                    _cancellation = cancellationTokenSource;
                     ErrorInfo = await OpenExcelFileAsync(ConnectionString, cancellationTokenSource.Token).ConfigureAwait(false);
                     _stopWatch.Stop();
-                    LoadTime = (double)_stopWatch.ElapsedMilliseconds / 1000F;
+                    ReadingDataTime = (double)_stopWatch.ElapsedMilliseconds / 1000F;
                     DialogResult = DialogResult.OK;
                     exitTimer.Start();
-
-                    //using (var conn = new System.Data.OleDb.OleDbConnection(ConnectionString))
-                    //{
-                    //    using (var cmd = new System.Data.OleDb.OleDbCommand(TableSelectSQL, conn)
-                    //    {
-                    //        CommandType = CommandType.Text
-                    //    })
-                    //    {
-                    //        using (CancellationTokenRegistration crt = cancellationTokenSource.Token.Register(() => cmd.Cancel()))
-                    //        {
-                    //            await conn.OpenAsync().ConfigureAwait(false);
-                    //            //await conn.OpenAsync();
-
-                    //            using (var reader = await cmd.ExecuteReaderAsync(cancellationTokenSource.Token).ConfigureAwait(false))
-                    //            {
-                    //                _resultDataTable = new DataTable();
-                    //                _resultDataTable.Load(reader);
-                    //                reader.Close();
-
-                    //                _stopWatch.Stop();
-                    //                LoadTime = (double)_stopWatch.ElapsedMilliseconds / 1000F;
-
-                    //                DialogResult = DialogResult.OK;
-                    //                ErrorInfo = "";
-                    //            }
-                    //            //cmd.TableMappings.Add("Table", TableName);
-                    //            //DataSet dtSet = new System.Data.DataSet();
-                    //            //cmd.Fill(dtSet);
-
-                    //            //if (dtSet != null)
-                    //            //{
-                    //            //    _resultDataTable = dtSet.Tables[0];
-                    //            //    DialogResult = DialogResult.OK;
-                    //            //    ErrorInfo = "";
-                    //            //}
-                    //            //else
-                    //            //{
-                    //            //    ErrorInfo = "No data available";
-                    //            //}
-                    //        }
-                    //    }
-                    //}
-
-                    //try
-                    //{
-                    //}
-                    //catch (TaskCanceledException)
-                    //{
-                    //    ErrorInfo = "Cancelled";
-                    //}
-                    //catch (Exception ex)
-                    //{
-                    //    ErrorInfo = ex.Message;
-                    //    //throw;
-                    //}
-                    //finally
-                    //{
-                    //    exitTimer.Start();
-                    //}
                 }
             }
         }
+
         /// <summary>
         /// Loading data from the SQL server
         /// </summary>
         private async void OpenSQLDataSource()
         {
-            long numOfRows = GetNumOfRows();
+            long numOfRows = 1;
+            if (NumOfTopRows == -1 && !string.IsNullOrWhiteSpace(TableName))
+            {
+                numOfRows = GetNumOfRows();
+                numRowsLabel.Text = string.Format(Properties.Resources.A086, numOfRows.ToString("N0"));
+            }
+
             if (numOfRows > 0)
             {
-                numRowsLabel.Text = string.Format(Properties.Resources.A086, numOfRows.ToString("N0"));
 
                 using (var cancellationTokenSource = new CancellationTokenSource())
                 {
@@ -365,12 +332,8 @@ namespace OctofyExp
                         ErrorInfo = await OpenTableAsync(ConnectionString, TableSelectSQL, cancellationTokenSource.Token,
                             OctofyExp.Properties.Settings.Default.ConnectionTimeout).ConfigureAwait(false);
                         _stopWatch.Stop();
-                        LoadTime = (double)_stopWatch.ElapsedMilliseconds / 1000F;
+                        ReadingDataTime = (double)_stopWatch.ElapsedMilliseconds / 1000F;
                         DialogResult = DialogResult.OK;
-                        //if (ErrorInfo.Length == 0)
-                        //{
-                        //    _resultDataTable = _customData.GetData("");
-                        //}
                         exitTimer.Start();
                     }
                     catch (OutOfMemoryException)
@@ -384,8 +347,9 @@ namespace OctofyExp
                     catch (ObjectDisposedException)
                     {
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
+                        ErrorInfo = ex.Message;
                         throw;
                     }
                 }
@@ -398,6 +362,7 @@ namespace OctofyExp
                 Close();
             }
         }
+
         /// <summary>
         /// The timer to keep progress bar moving
         /// </summary>
@@ -412,10 +377,10 @@ namespace OctofyExp
             loadingProgressBar.Value = progress;
         }
 
-        private string SelectASheet(DataTable dtSheets)
-        {
-            return "";
-        }
+        //private string SelectASheet(DataTable dtSheets)
+        //{
+        //    return "";
+        //}
 
         /// <summary>
         /// Handle start timer tick event
